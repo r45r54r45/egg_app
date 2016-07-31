@@ -105,6 +105,7 @@ angular.module('starter.controllers', [])
   })
 
   .controller('LoginCtrl', function ($scope, User, $ionicModal) {
+    // ionic.keyboard.disable();
     $scope.login = function () {
       $scope.openModal();
     }
@@ -118,7 +119,6 @@ angular.module('starter.controllers', [])
     }).then(function (modal) {
       $scope.modal_join = modal;
     });
-
     $scope.openModal = function (type) {
       $scope.modal_join.show();
     };
