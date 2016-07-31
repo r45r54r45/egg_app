@@ -19,10 +19,10 @@
   background-color:#223c72;
 }
 span.tiny,p.tiny,select.tiny,input.tiny, button.tiny{
-  font-size:12px;
+  font-size:11px;
 }
 span.small,p.small,select.small,input.small{
-  font-size:15px;
+  font-size:13px;
 }
 span.middle,p.middle,select.middle,input.middle{
   font-size:30px;
@@ -116,6 +116,12 @@ border: none;
   color: rgba(255,255,255,.7) !important;
 }
 
+.form-input{
+  padding-bottom: 0px !important;
+  height: 25px !important;
+  margin-top: 18px !important;
+}
+
 .login-form{
   border-bottom: 1px solid rgba(255,255,255,.8);
   padding: 0px 0px;
@@ -127,10 +133,11 @@ border: none;
 
 button.transparent{
   margin-top: 75px;
-    border-radius: 17px;
-    height: 34px;
-    width: 90px;
+    border-radius: 15px;
+    padding-top: 3px;
+    height: 30px;
+    width: 80px;
     border: 1px solid rgba(255,255,255, .6);
     background-color: transparent;
-    color: rgba(255,255,255, .8);
+    color: rgba(255,255,255, 1);
 }
