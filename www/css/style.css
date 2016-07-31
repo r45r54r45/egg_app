@@ -172,6 +172,9 @@ button.transparent-large{
     height: 55px !important;
     color: rgba(255,255,255,.9) !important;
 }
+input.registration-text{
+  line-height:32px;
+}
 select.registration-text{
   padding-left:0px;
   font-family: 'Noto Sans KR', sans-serif;
