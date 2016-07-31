@@ -1,0 +1,99 @@
+/* Empty. Add your own CSS if you like */
+.tabs-color-active-positive{
+  background: #262727;
+}
+.notice-bg{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/notice-background.png");
+  background-size: cover;
+}
+
+.no-padding{
+  padding:0;
+}
+.no-wrap{
+  white-space: normal !important;
+}
+.blue-background{
+  background: none;
+  background-color:#223c72;
+}
+span.tiny,p.tiny,select.tiny,input.tiny{
+  font-size:15px;
+}
+span.small,p.small,select.small,input.small{
+  font-size:20px;
+}
+span.middle,p.middle,select.middle,input.middle{
+  font-size:30px;
+}
+span.big,p.big,select.big,input.big{
+  font-size:35px;
+}
+span.extra,p.extra,select.extra,input.extra{
+  font-size:40px;
+}
+div.center,input.center,select.center{
+  text-align: center;
+  text-align-last: center;
+}
+input.clean,label.clean,textarea.clean, select.clean{
+  border:none !important;
+  background:none !important;
+}
+button.search-button{
+  border-radius: 20px;
+  height:40px;
+  width:100px;
+  background-color:#4b5785;
+  color:white;
+}
+input, textarea, select {
+  -webkit-appearance: none;
+}
+span.rating-star.fill{
+  color: #ff5485;
+  font-size: 24px;
+}
+span.rating-star{
+  color: white;
+  font-size: 24px;
+}
+p.pink,span.pink{
+  color:#f4a3a6;
+}
+span.tag{
+  margin-right:10px;
+  color:#4c7848;
+}
+.float-right{
+  float:right;
+}
+
+.white-text,span.white{
+  color:white;
+}
+.button-icon.ion-ios-close-empty.icon:before{
+  font-size:60px !important;
+}
+div.rating-block{
+  padding:30px 10px;
+  border-bottom:1px solid grey;
+}
+.rating-yes-no>.list{
+  margin-top:20px;
+}
+.middle-content>.scroll{
+  display: table-cell; vertical-align: middle;
+}
+.middle-content{
+  display: table; width:100%; height:100%;
+}
+button.margin-auto{
+  margin:auto;
+}
+.bg-dark{
+  background: #3c3d3d;
+}
+.sub-footer {
+  position: absolute; bottom: 0px; width: 100%
+}

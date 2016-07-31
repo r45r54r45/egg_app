@@ -1,0 +1,114 @@
+<ion-view hide-nav-bar="true">
+  <ion-header-bar style="background:#252626">
+    <h1 class="title"></h1>
+    <button class="button button-icon icon ion-ios-close-empty" style="color:white" ng-click="$ionicGoBack()"></button>
+
+  </ion-header-bar>
+  <ion-content has-bouncing="false">
+    <div class="center white-text" style="background:#252626;padding:0 30px 10px;">
+      <p class="small">History of science and technology</p>
+      <p class="middle" style="margin-top:10px">3.2 / 5</p>
+      <span class="ion-star rating-star fill"></span>
+      <span class="ion-star rating-star fill"></span>
+      <span class="ion-star rating-star fill"></span>
+      <span class="ion-star rating-star"></span>
+      <span class="ion-star rating-star"></span>
+      <p class="tiny" style="margin-top:10px">Overall Quality</p>
+    </div>
+    <div style="padding:30px 10px;">
+      <div class="center">
+        <p class="small">QUALITY RATING</p>
+      </div>
+      <div class="row">
+        <div class="col center">
+          <p class="middle" style="margin-top:10px">3.2 / 5</p>
+          <p class="tiny pink">Professor</p>
+        </div>
+        <div class="col center">
+          <p class="middle" style="margin-top:10px">3.2 / 5</p>
+          <p class="tiny pink">Difficulty</p>
+        </div>
+        <div class="col center">
+          <p class="middle" style="margin-top:10px">89%</p>
+          <p class="tiny pink">Take Again?</p>
+        </div>
+      </div>
+    </div>
+    <div style="padding:50px 20px 50px; background-color:#f5f6f7;">
+      <div class="center">
+        <p class="tiny">GENERAL</p>
+      </div>
+      <div class="row" style="padding:10px 0 10px">
+        <div class="col-60">
+          <span class="tiny">Textbook Use</span>
+        </div>
+        <div class="col-40">
+          <span class="tiny">Yeah</span>
+        </div>
+      </div>
+      <div class="row" style="padding:10px 0 10px">
+        <div class="col-60">
+          <span class="tiny">Textbook Use</span>
+        </div>
+        <div class="col-40">
+          <span class="tiny">Yeah</span>
+        </div>
+      </div>
+      <div class="row" style="padding:10px 0 10px">
+        <div class="col-60">
+          <span class="tiny">Textbook Use</span>
+        </div>
+        <div class="col-40">
+          <span class="tiny">Yeah</span>
+        </div>
+      </div>
+    </div>
+    <div style="padding:50px 20px 50px;">
+      <div class="center">
+        <p class="tiny">COURSE TAGS</p>
+      </div>
+      <span class="tiny tag">#get ready to read</span>
+      <span class="tiny tag">#get ready to read</span>
+    </div>
+    <div style="height:10px; background-color:#f5f6f7;">
+    </div>
+    <ion-list>
+        <ion-item style="border-bottom: 1px solid #eeeeee;" href='#/tab/class'>
+          <div>
+            <span style="">커리큘럼은 어떻게 되나요?</span>
+            <span style="float:right;">07.2.2</span>
+          </div>
+          <div>
+            <span class="ion-star rating-star fill"></span>
+            <span class="ion-star rating-star fill"></span>
+            <span class="ion-star rating-star fill"></span>
+            <span class="ion-star rating-star"></span>
+            <span class="ion-star rating-star"></span>
+          </div>
+          <div>
+            <p>글 내용은 여기에 나옵니</p>
+          </div>
+        </ion-item>
+      <ion-item style="padding:20px 10px; border-bottom: 1px solid #eeeeee;">
+        <div>
+          <span style="">커리큘럼은 어떻게 되나요?</span>
+          <span class="float-right">07.2.2</span>
+        </div>
+        <div>
+          <span class="ion-star rating-star fill"></span>
+          <span class="ion-star rating-star fill"></span>
+          <span class="ion-star rating-star fill"></span>
+          <span class="ion-star rating-star"></span>
+          <span class="ion-star rating-star"></span>
+        </div>
+        <div>
+          <p>글 내용은 여기에 나옵니</p>
+        </div>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll
+      on-infinite="loadMore()"
+      distance="1%">
+    </ion-infinite-scroll>
+  </ion-content>
+</ion-view>

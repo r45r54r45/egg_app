@@ -1,0 +1,45 @@
+<ion-modal-view>
+  <ion-header-bar class="blue-background">
+    <h1 class="title"></h1>
+    <button class="button button-icon icon ion-ios-close-empty" style="color:white" ng-click="closeModal('sort')"></button>
+  </ion-header-bar>
+  <ion-content class="blue-background">
+    <div style="height:20vh;padding-top: 50px;">
+      <div class="center">
+        <p class="small white-text">강의 분류</p>
+      </div>
+      <div class="center">
+        <select class="middle clean white-text">
+          <option selected>공통 교과 과정 (신촌)</option>
+          <option>공통 교과 과정 (송도)</option>
+          <option>알아서 뭐하게</option>
+        </select>
+      </div>
+    </div>
+    <div style="height:20vh;padding-top: 50px;">
+      <div class="center">
+        <p class="small white-text">수강학기</p>
+      </div>
+      <div class="center">
+        <select class="middle clean white-text">
+          <option selected>2016년 2학기</option>
+        </select>
+      </div>
+    </div>
+    <div style="height:20vh;padding-top: 50px;">
+      <div class="center">
+        <p class="small white-text">검색</p>
+      </div>
+      <div class="center">
+        <label class="item item-input clean">
+          <input type="text" class="center small white-text" placeholder="검색하실 수업을 입력하세요">
+        </label>
+      </div>
+    </div>
+    <div style="height:20vh;padding-top: 50px;">
+      <div class="center">
+        <button class="button search-button">Search</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-modal-view>

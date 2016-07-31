@@ -1,0 +1,120 @@
+<ion-modal-view hide-nav-bar="true">
+  <ion-content class="padding">
+    <div class="row" style="margin-bottom:40px">
+      <div class="col-60 ">
+        <span class="middle">History of Science and Technology</span>
+      </div>
+      <div class="col-40" style="text-align: right;">
+        <button class="button button-icon icon ion-ios-close-empty" ng-click="closeModal('add')"></button>
+      </div>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Rate Your Professor</span>
+      </div>
+      <div>
+        <span class="tiny">How would you rate your professor as an instructor?</span>
+      </div>
+      <div class="row" style="padding: 0 20px 0 20px;">
+        <rzslider rz-slider-model="priceSlider.value" rz-slider-options="priceSlider.options"></rzslider>
+      </div>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Level of difficulty</span>
+      </div>
+      <div>
+        <span class="tiny">How hard did you have to work for this class?</span>
+      </div>
+      <div class="row" style="padding: 0 20px 0 20px;">
+        <rzslider rz-slider-model="priceSlider.value" rz-slider-options="priceSlider.options"></rzslider>
+      </div>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Professor</span>
+      </div>
+      <div>
+        <span class="tiny">Would you take this professor again?</span>
+      </div>
+      <ion-list class="rating-yes-no">
+        <ion-radio ng-model="choice" ng-value="'A'">YEAH</ion-radio>
+        <ion-radio ng-model="choice" ng-value="'B'">UM, NO</ion-radio>
+      </ion-list>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Attendance</span>
+      </div>
+      <div>
+        <span class="tiny">Is attendance mandatory for this class?</span>
+      </div>
+      <ion-list class="rating-yes-no">
+        <ion-radio ng-model="choice" ng-value="'A'">YEAH</ion-radio>
+        <ion-radio ng-model="choice" ng-value="'B'">UM, NO</ion-radio>
+      </ion-list>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Grade Distribution</span>
+      </div>
+      <div>
+        <span class="tiny">Does the professor fill up the plus quota fully?</span>
+      </div>
+      <ion-list class="rating-yes-no">
+        <ion-radio ng-model="choice" ng-value="'A'">YEAH</ion-radio>
+        <ion-radio ng-model="choice" ng-value="'B'">UM, NO</ion-radio>
+      </ion-list>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Course capacity</span>
+      </div>
+      <div>
+        <span class="tiny">How many students were in the class?</span>
+      </div>
+      <ion-list class="rating-yes-no">
+        <ion-radio ng-model="choice" ng-value="'A'">Below 10 (Absolute grading)</ion-radio>
+        <ion-radio ng-model="choice" ng-value="'B'">Between 10-20 (35% A)</ion-radio>
+        <ion-radio ng-model="choice" ng-value="'C'">Above 20</ion-radio>
+      </ion-list>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Course Tags</span>
+      </div>
+      <div>
+        <span class="tiny">Select tags that best describe the course. Choose carefully. The fate of future students lies in your hands!</span>
+      </div>
+      <ion-list  class="rating-yes-no">
+        <ion-checkbox ng-model="filter.red">#tough grader</ion-checkbox>
+        <ion-checkbox ng-model="filter.yellow">#gives good feedback</ion-checkbox>
+        <ion-checkbox ng-model="filter.pink">#get ready to read</ion-checkbox>
+      </ion-list>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Describe more specific</span>
+      </div>
+      <div>
+        <span class="tiny">This is optional but if you write more than 350 words, you will get an extra 50 points!</span>
+      </div>
+      <label class="item item-input">
+        <textarea placeholder="Write here!"></textarea>
+      </label>
+      <span style="float:right">0 words</span>
+      <div style="clear: both"></div>
+    </div>
+    <div class="rating-block">
+      <div>
+        <span class="small">Rate this course</span>
+      </div>
+      <div>
+        <span class="tiny">On a scale of 5, how would you rate this course?</span>
+      </div>
+
+    </div>
+
+  </ion-content>
+</ion-modal-view>
+
