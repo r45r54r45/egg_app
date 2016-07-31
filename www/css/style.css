@@ -177,22 +177,26 @@ button.transparent-large{
    color: white;
    font-family: 'Noto Sans KR', sans-serif;
    font-weight: 300;
+   height: 55px !important;
 }
 
 .registration-text:-moz-placeholder { /* Firefox 18- */
    color: white;
    font-family: 'Noto Sans KR', sans-serif;
    font-weight: 300;
+   height: 55px !important;
 }
 
 .registration-text::-moz-placeholder {  /* Firefox 19+ */
    color: white;
    font-family: 'Noto Sans KR', sans-serif;
    font-weight: 300;
+   height: 55px !important;
 }
 
 .registration-text:-ms-input-placeholder {
    color: white;
    font-family: 'Noto Sans KR', sans-serif;
    font-weight: 300;
+   height: 55px !important;
 }
