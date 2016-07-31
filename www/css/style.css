@@ -3,8 +3,9 @@
   background: #262727;
 }
 .notice-bg{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/notice-background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/notice-background.png");
   background-size: cover;
+  background-position-x: 50%;
 }
 
 .no-padding{
@@ -17,11 +18,11 @@
   background: none;
   background-color:#223c72;
 }
-span.tiny,p.tiny,select.tiny,input.tiny{
-  font-size:15px;
+span.tiny,p.tiny,select.tiny,input.tiny, button.tiny{
+  font-size:12px;
 }
 span.small,p.small,select.small,input.small{
-  font-size:20px;
+  font-size:15px;
 }
 span.middle,p.middle,select.middle,input.middle{
   font-size:30px;
@@ -96,4 +97,40 @@ button.margin-auto{
 }
 .sub-footer {
   position: absolute; bottom: 0px; width: 100%
+}
+.trans{
+background: transparent;
+}
+
+.white{
+color:#fff;
+}
+
+.no-border{
+border: none;
+}
+
+.form-text{
+  padding-bottom:3px;
+  margin-top:18px;
+  color: rgba(255,255,255,.7) !important;
+}
+
+.login-form{
+  border-bottom: 1px solid rgba(255,255,255,.8);
+  padding: 0px 0px;
+}
+
+.overall-padding{
+  padding: 80px 40px 0px;
+}
+
+button.transparent{
+  margin-top: 75px;
+    border-radius: 17px;
+    height: 34px;
+    width: 90px;
+    border: 1px solid rgba(255,255,255, .6);
+    background-color: transparent;
+    color: rgba(255,255,255, .8);
 }
