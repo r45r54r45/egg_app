@@ -172,6 +172,9 @@ button.transparent-large{
     height: 55px !important;
     color: rgba(255,255,255,.9) !important;
 }
+select.registration-text{
+  padding-left:0px;
+}
 
 .registration-text::-webkit-input-placeholder {
    color: white;
