@@ -1,4 +1,19 @@
 /* Empty. Add your own CSS if you like */
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+.eng{
+  font-family: 'Open Sans', sans-serif;
+}
+.kor{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+span, button{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 .tabs-color-active-positive{
   background: #262727;
 }
@@ -25,13 +40,13 @@ span.small,p.small,select.small,input.small{
   font-size:13px;
 }
 span.middle,p.middle,select.middle,input.middle{
-  font-size:30px;
+  font-size:25px;
 }
 span.big,p.big,select.big,input.big{
-  font-size:35px;
+  font-size:30px;
 }
 span.extra,p.extra,select.extra,input.extra{
-  font-size:40px;
+  font-size:32px;
 }
 div.center,input.center,select.center{
   text-align: center;
@@ -150,4 +165,32 @@ button.transparent-large{
     border: 1px solid rgba(255,255,255, .6);
     background-color: transparent;
     color: rgba(255,255,255, 1);
+}
+
+.registration-text{
+    margin-top: 55px ;
+}
+
+.registration-text::-webkit-input-placeholder {
+   color: white;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 300;
+}
+
+.registration-text:-moz-placeholder { /* Firefox 18- */
+   color: white;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 300;
+}
+
+.registration-text::-moz-placeholder {  /* Firefox 19+ */
+   color: white;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 300;
+}
+
+.registration-text:-ms-input-placeholder {
+   color: white;
+   font-family: 'Noto Sans KR', sans-serif;
+   font-weight: 300;
 }

@@ -1,14 +1,14 @@
 <ion-modal-view class="blue-background">
   <ion-header-bar class="blue-background">
     <h1 class="title"></h1>
-    <button class="button button-icon icon ion-ios-close-empty" style="color:white" ng-click="closeModal()"></button>
+    <button class="button button-icon icon ion-ios-close-empty" style="color:rgba(255,255,255, .7); padding-top:5px;" ng-click="closeModal()"></button>
   </ion-header-bar>
-  <ion-content class="middle-content padding" style="height:100vh">
+  <ion-content class=" padding" style="height:100vh; padding-top:24vh;">
     <div class="row">
-      <input class="extra" placeholder="닉네임" type="text">
+      <input class="extra trans white registration-text" placeholder="닉네임" type="text">
     </div>
     <div class="row">
-      <select class="middle clean extra">
+      <select class="middle clean extra white registration-text">
         <option selected>학부</option>
         <option>TAD</option>
         <option>2</option>
@@ -16,11 +16,11 @@
     </div>
   </ion-content>
   <div class="sub-footer padding">
-    <div style="text-align: right">
+    <div style="text-align: right;padding-right: 5px;">
       <button ng-click="confirm()" class="transparent-large">확인</button>
     </div>
     <div>
-      <span style="font-size:9.5px;color:rgba(255,255,255,.7)">서비스를 사용함으로서 개인정보 보호 정책과 서비스 이용약관에 동의하는 것으로 간주합니다.</span>
+      <span style="font-size:9px;color:rgba(255,255,255,.7)">서비스를 사용함으로서 개인정보 보호 정책과 서비스 이용약관에 동의하는 것으로 간주합니다.</span>
     </div>
   </div>
 </ion-modal-view>
