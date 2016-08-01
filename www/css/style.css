@@ -218,3 +218,6 @@ div.vertical-mid-div>div{
   display: table-cell;
   vertical-align: middle;
 }
+.even_item>.item-content{
+  background: grey;
+}

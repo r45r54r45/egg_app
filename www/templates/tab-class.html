@@ -1,20 +1,67 @@
-<ion-view view-title="강의평가">
-  <ion-header-bar>
+<ion-view  view-title="강의평가">
+  <ion-nav-bar class="bar-stable nav-title-slide-ios7">
     <ion-nav-buttons side="left">
-      <button class="button button-icon icon ion-navicon"></button>
+      <button class="button button-icon icon ion-android-radio-button-on" style="padding-right: 0; opacity:1" disabled></button>
+      <button class="button" style="padding-left: 0; border:none; opacity:1" disabled>3333</button>
     </ion-nav-buttons>
     <ion-nav-buttons side="right">
-      <button class="button button-icon icon ion-levels " ng-click="openModal('sort')"></button>
+    <button class="button button-icon icon ion-levels " ng-click="openModal('sort')"></button>
     </ion-nav-buttons>
-  </ion-header-bar>
-  <ion-content class="padding">
-
-
-    <h2>Welcome to Ionic</h2>
-    <a href="#/tab/class/1">ddd</a>
-    <button ng-click="showLoading()">on</button>
-    <button ng-click="openModal('add')">add modal</button>
-    <rzslider ng-model="values" rz-slider-model="priceSlider.value" rz-slider-options="priceSlider.options"></rzslider>
-    <span ng-bind="priceSlider.value"></span>
+  </ion-nav-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <span>
+          Words from<br/>the wise!
+        </span>
+      </ion-item>
+      <ion-item ng-repeat="i in [1,2,3,4]" style="padding:0" href="#/tab/class/1" ng-class="{even_item: $index%2 == 0}">
+        <!--이 아래 부분만 수정하면 화면에 나오는 네개 다 바뀝니다-->
+        <div class="row">
+          <div class="col col-50" style="height: 30px;">
+            <span style="white-space: normal">History of History ofHistory ofHistory of</span>
+          </div>
+          <div class="col col-10"></div>
+          <div class="col no-padding">
+            <div class="row">
+              <div class="col col-67">Professor</div>
+              <div class="col col-33">3.8/5</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-50"></div>
+          <div class="col col-10"></div>
+          <div class="col no-padding">
+            <div class="row">
+              <div class="col col-67">Professor</div>
+              <div class="col col-33">3.8/5</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-50">
+            star star
+          </div>
+          <div class="col col-10"></div>
+          <div class="col no-padding">
+            <div class="row">
+              <div class="col col-67">Professor</div>
+              <div class="col col-33">3.8/5</div>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+      <!--색 옅은 파란색이었다가 흰색이었다 하는 부분은 제가 추가할게요-->
+    </ion-list>
+    <ion-infinite-scroll
+      on-infinite=""
+      distance="1%">
+    </ion-infinite-scroll>
+    <!--&lt;!&ndash;<button ng-click="showLoading()">on</button>&ndash;&gt;-->
   </ion-content>
+  <!-- align to the bottom of the page -->
+  <div style="position: absolute; bottom: 60px; right:15px; ">
+    <img src="img/plus_btn.png" style="width: 80px; height:80px;" ng-click="openModal('add')">
+  </div>
 </ion-view>

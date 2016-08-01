@@ -1,11 +1,11 @@
-<ion-view hide-nav-bar="true">
-  <ion-header-bar style="background:#252626">
-    <h1 class="title"></h1>
-    <button class="button button-icon icon ion-ios-close-empty" style="color:white" ng-click="$ionicGoBack()"></button>
-
-  </ion-header-bar>
-  <ion-content has-bouncing="false">
-    <div class="center white-text" style="background:#252626;padding:0 30px 10px;">
+<ion-view hide-nav-bar="true" hide-back-button="true">
+  <ion-content>
+    <div class="center white-text" style="background:#252626; padding-bottom:20px;">
+      <div class="row">
+        <div class="col">
+          <button class="button button-icon icon ion-ios-close-empty" style="color:white; float:right;" ng-click="$ionicGoBack()"></button>
+        </div>
+      </div>
       <p class="small">History of science and technology</p>
       <p class="middle" style="margin-top:10px">3.2 / 5</p>
       <span class="ion-star rating-star fill"></span>
@@ -73,7 +73,7 @@
     <div style="height:10px; background-color:#f5f6f7;">
     </div>
     <ion-list>
-        <ion-item style="border-bottom: 1px solid #eeeeee;" href='#/tab/class'>
+        <ion-item style="border-bottom: 1px solid #eeeeee;" href='#/tab/class' ng-repeat="i in [1,2,3]">
           <div>
             <span style="">커리큘럼은 어떻게 되나요?</span>
             <span style="float:right;">07.2.2</span>
@@ -89,22 +89,6 @@
             <p>글 내용은 여기에 나옵니</p>
           </div>
         </ion-item>
-      <ion-item style="padding:20px 10px; border-bottom: 1px solid #eeeeee;">
-        <div>
-          <span style="">커리큘럼은 어떻게 되나요?</span>
-          <span class="float-right">07.2.2</span>
-        </div>
-        <div>
-          <span class="ion-star rating-star fill"></span>
-          <span class="ion-star rating-star fill"></span>
-          <span class="ion-star rating-star fill"></span>
-          <span class="ion-star rating-star"></span>
-          <span class="ion-star rating-star"></span>
-        </div>
-        <div>
-          <p>글 내용은 여기에 나옵니</p>
-        </div>
-      </ion-item>
     </ion-list>
     <ion-infinite-scroll
       on-infinite="loadMore()"
