@@ -73,10 +73,38 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board', {
         url: '/board',
+        abstract:true,
         views: {
           'tab-board': {
-            templateUrl: 'templates/tab-board.html',
-            controller: 'BoardCtrl'
+            templateUrl: 'templates/tab-board.html'
+          }
+        }
+      })
+      .state('tab.board.free', {
+        url: '/board_free',
+        views: {
+          'board-list-free': {
+            templateUrl: 'templates/board-list.html',
+            controller: 'BoardCtrl',
+            resolve:{
+              type:function(){
+                return 1;
+              }
+            }
+          }
+        }
+      })
+      .state('tab.board.council', {
+        url: '/board_council',
+        views: {
+          'board-list-council': {
+            templateUrl: 'templates/board-list.html',
+            controller: 'BoardCtrl',
+            resolve:{
+              type:function(){
+                return 2;
+              }
+            }
           }
         }
       })

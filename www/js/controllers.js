@@ -90,11 +90,15 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('BoardCtrl', function ($scope) {
+  .controller('BoardCtrl', function ($scope,type) {
     $scope.settings = {
       enableFriends: true
     };
+    $scope.type=type;
   })
+
+
+
   .controller('MypageCtrl', function ($scope, User) {
     $scope.settings = {
       enableFriends: true

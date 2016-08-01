@@ -208,3 +208,13 @@ select.registration-text{
    font-weight: 300;
    height: 55px !important;
 }
+.tab-item{
+  max-width: none;
+}
+div.vertical-mid-div{
+  display: table;
+}
+div.vertical-mid-div>div{
+  display: table-cell;
+  vertical-align: middle;
+}
