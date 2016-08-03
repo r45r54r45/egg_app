@@ -94,6 +94,9 @@ span.tag{
 .float-right{
   float:right;
 }
+.float-left{
+  float:left;
+}
 
 .white-text,span.white{
   color:white;
@@ -451,4 +454,20 @@ div.popup-buttons>button{
 }
 .button.button-positive{
   background-color: #213b73;
+}
+.text-grey{
+  color:rgba(82, 82, 82, 0.9);
+}
+.button-comment{
+  background: none;
+  color:rgba(82, 82, 82, 0.7);;
+}
+ion-footer-bar>div.item{
+  border: none;
+}
+ion-footer-bar>div.item>label.item-input-wrapper{
+  background: none;
+}
+.item-input-wrapper>input{
+  font-size: 11px;
 }

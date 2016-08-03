@@ -4,15 +4,16 @@
       <img src="img/adam.jpg" style="width: 100%;">
     </div>
     <div class="center padding">
-      <div><span>제목</span></div>
-      <div><span>시간</span></div>
-      <div><span>내용</span></div>
-      <div style="float:left"><span>하트</span></div>
-      <div style="float:right"><span>댓글</span></div>
+      <div style="margin-top:10px;"><span class="eMainTitleKor small text-grey">제목이 일허게 길어요</span></div>
+      <div><span class="eMainTitleKor xtiny text-grey">시간</span></div>
+      <div style="margin-bottom:20px;margin-top:5px;"><span class="eMainTitleKor tiny text-grey">글ㄴㄴ네용은 여기에 나옵니다. 프리뷰입니다. 프리. 프리뷰입니다. 프리뷰뷰. 프리뷰입니다. 프리뷰</span></div>
+      <div style="float:left"><img class="heart" src="img/heart.svg"><button class="xtiny boardIconText " style="color:rgba(82,82,82,.8)">8</button></div>
+      <div style="float:right"><span class="eMainTitleKor xtiny" style="color:rgba(82,82,82, .8)">댓글 <span>8</span> 개</span></div>
+
       <div style="clear:both"></div>
     </div>
     <ion-list>
-      <ion-item style="border-bottom: 1px solid #eeeeee;" ng-repeat="i in [1,2,3,4,5]">
+      <ion-item style="background-color:#f2f2f2" ng-repeat="i in [1,2,3,4,5]">
         <div>
           <span  class="tiny"style="">이름</span>
           <span class="xtiny eCourseTitle" style="float:right;color:rgba(82,82,82,.5)">07.02.16</span>
@@ -30,23 +31,23 @@
   <div style="position: absolute; left:0; top:0; width: 100%; height: 30px; background: transparent;">
     <div class="row">
       <div class="col col-33 center">
-        <button ng-click="goBack()">뒤로</button>
+        <button ng-click="goBack()" class="eMainTitleKor white float-left">뒤로</button>
+      </div>
+      <div class="col col-33 center" style="margin-top:4px; !important">
+        <span class="eMainTitleKor white">자유게시판</span>
       </div>
       <div class="col col-33 center">
-        <span>제목</span>
-      </div>
-      <div class="col col-33 center">
-        <button>수정</button>
+        <button class="eMainTitleKor white float-right">수정</button>
       </div>
     </div>
   </div>
   <ion-footer-bar align-title="left" keyboard-attach>
     <div class="item item-input-inset" style="width: 100%;">
       <label class="item-input-wrapper">
-        <input type="text" placeholder="Email">
+        <input type="text" placeholder="새 댓글을 작성하세요">
       </label>
-      <button class="button button-small">
-        Submit
+      <button class="button button-small button-comment">
+        <span class="tiny eMainTitleKor">작성</span>
       </button>
     </div>
   </ion-footer-bar>
