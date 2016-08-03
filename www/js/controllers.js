@@ -178,13 +178,23 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('BoardCtrl', function ($scope,type,$state,$ionicViewSwitcher) {
+  .controller('BoardCtrl', function ($scope,type,$state,$ionicViewSwitcher,$ionicModal) {
     $scope.type=type;
     $scope.go=function(){
-      console.log("go");
-      console.log($state);
       $ionicViewSwitcher.nextDirection('forward');
       $state.go("board-detail",{boardId:4});
+    }
+    $ionicModal.fromTemplateUrl('templates/modal/board-write.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+    }).then(function (modal) {
+      $scope.modal = modal;
+    });
+    $scope.openModal = function () {
+      $scope.modal.show();
+    };
+    $scope.goBack=function(){
+      $scope.modal.hide();
     }
   })
   .controller('BoardDetailCtrl',function($scope,$state,$ionicViewSwitcher){
