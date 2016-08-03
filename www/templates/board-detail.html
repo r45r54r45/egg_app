@@ -1,10 +1,33 @@
 <ion-view hide-nav-bar="true">
   <ion-content>
-    <div style="width: 50%; height:600px; background:blue;"></div>
-    <div style="width: 50%; height:600px; background:red;"></div>
-    <div style="width: 50%; height:600px; background:black;"></div>
+    <div>
+      <img src="img/adam.jpg" style="width: 100%;">
+    </div>
+    <div class="center padding">
+      <div><span>제목</span></div>
+      <div><span>시간</span></div>
+      <div><span>내용</span></div>
+      <div style="float:left"><span>하트</span></div>
+      <div style="float:right"><span>댓글</span></div>
+      <div style="clear:both"></div>
+    </div>
+    <ion-list>
+      <ion-item style="border-bottom: 1px solid #eeeeee;" ng-repeat="i in [1,2,3,4,5]">
+        <div>
+          <span  class="tiny"style="">이름</span>
+          <span class="xtiny eCourseTitle" style="float:right;color:rgba(82,82,82,.5)">07.02.16</span>
+        </div>
+        <div class="textPaddingTop">
+          <p><span class="xtiny">글ㄴㄴ네용은 여기에 나옵니다. 프리뷰입니다. 프리. 프리뷰입니다. 프리뷰뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰 프리뷰입니뷰입니다. 프리뷰다. 프리뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰</span></p>
+        </div>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll
+      on-infinite="loadMore()"
+      distance="1%">
+    </ion-infinite-scroll>
   </ion-content>
-  <div style="position: absolute; left:0; top:0; width: 100%; height: 30px; background: transparent; color:white;">
+  <div style="position: absolute; left:0; top:0; width: 100%; height: 30px; background: transparent;">
     <div class="row">
       <div class="col col-33 center">
         <button ng-click="goBack()">뒤로</button>
@@ -15,8 +38,16 @@
       <div class="col col-33 center">
         <button>수정</button>
       </div>
-
     </div>
-
   </div>
+  <ion-footer-bar align-title="left" keyboard-attach>
+    <div class="item item-input-inset" style="width: 100%;">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="Email">
+      </label>
+      <button class="button button-small">
+        Submit
+      </button>
+    </div>
+  </ion-footer-bar>
 </ion-view>
