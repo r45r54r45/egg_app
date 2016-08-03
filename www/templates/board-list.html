@@ -1,23 +1,23 @@
 <ion-view>
-  <ion-nav-title>Board</ion-nav-title>
+  <ion-nav-title><span >BOARD</span></ion-nav-title>
   <ion-content class="has-tabs-top">
     <ion-list>
-      <ion-item href="#/detail">
+      <ion-item href="#/detail" class="boardList">
         <!--여기 ion-item에 padding 줘봤자 안돼요.. 인스펙터에서 켜보고 그아래 a태그 있는거에 패딩 줘서 하세요 -->
         <div class="row">
           <div class="col col-75">
             <div class="row">
-              <span>제목입니다.</span>
+              <span class="textLightKorDark small">제목입니다.</span>
             </div>
             <div class="row">
-              <span>글 ㄴㄴ 내용은 프리뷰</span>
+              <span class="textLightKorDark xtiny">글 ㄴㄴ 내용은 프리뷰</span>
             </div>
             <div class="row">
-              <span>3시간 전 | 헬로미투 </span>
+              <span class="textLightKorDark textPaddingTop" style="font-size:8px;">3시간 전 | 헬로미투 </span>
             </div>
           </div>
           <div class="col col-25 col-center">
-            <img src=""><span>8</span><img src=""><span>8</span>
+            <img class="heart" src="img/heart.svg"><span class="xtiny boardIconText">8</span><img class="comment"src="img/comment.svg"><span class="xtiny boardIconText">8</span>
             <!--이 위 img 에 하트 svg 넣어주세여. 그 다음에 색 변하는건 제가 할게여-->
           </div>
         </div>

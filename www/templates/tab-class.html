@@ -11,21 +11,21 @@
   <ion-content>
     <ion-list>
       <ion-item>
-        <span>
+        <span class="middle eMainTitle">
           Words from<br/>the wise!
         </span>
       </ion-item>
-      <ion-item ng-repeat="i in [1,2,3,4]" style="padding:0" href="#/tab/class/1" ng-class="{even_item: $index%2 == 0}">
+      <ion-item ng-repeat="i in [1,2,3,4]" style="padding:0;border:none;" href="#/tab/class/1" ng-class="{even_item: $index%2 == 0, courseEvaluationRow:true}"  >
         <!--이 아래 부분만 수정하면 화면에 나오는 네개 다 바뀝니다-->
         <div class="row">
           <div class="col col-50" style="height: 30px;">
-            <span style="white-space: normal">History of History ofHistory ofHistory of</span>
+            <span class="eCourseTitle small" style="white-space: normal ">History of Science and Technology</span>
           </div>
           <div class="col col-10"></div>
           <div class="col no-padding">
             <div class="row">
-              <div class="col col-67">Professor</div>
-              <div class="col col-33">3.8/5</div>
+              <div class="col col-67"><span class="eCourseCriteria tiny">Professor</span></div>
+              <div class="col col-33"><span class="eCourseScore tiny">3.8/5</span></div>
             </div>
           </div>
         </div>
@@ -34,20 +34,24 @@
           <div class="col col-10"></div>
           <div class="col no-padding">
             <div class="row">
-              <div class="col col-67">Professor</div>
-              <div class="col col-33">3.8/5</div>
+              <div class="col col-67"><span class="eCourseCriteria tiny">Difficulty</span></div>
+              <div class="col col-33"><span class="eCourseScore tiny">1.2/5</span></div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col col-50">
-            star star
+            <img class="star"src="img/star.svg"/>
+            <img class="star"src="img/star.svg"/>
+            <img class="star"src="img/star.svg"/>
+            <img class="star"src="img/star.svg"/>
+            <img class="star"src="img/starLine.svg"/>
           </div>
           <div class="col col-10"></div>
           <div class="col no-padding">
             <div class="row">
-              <div class="col col-67">Professor</div>
-              <div class="col col-33">3.8/5</div>
+              <div class="col col-67"><span class="eCourseCriteria tiny">Take Again?</span></div>
+              <div class="col col-33"><span class="eCourseScore tiny">89%</span></div>
             </div>
           </div>
         </div>
@@ -62,6 +66,6 @@
   </ion-content>
   <!-- align to the bottom of the page -->
   <div style="position: absolute; bottom: 60px; right:15px; ">
-    <img src="img/plus_btn.png" style="width: 80px; height:80px;" ng-click="openModal('add')">
+    <img src="img/plus.svg" style="width: 50px; height:50px;" ng-click="openModal('add')">
   </div>
 </ion-view>

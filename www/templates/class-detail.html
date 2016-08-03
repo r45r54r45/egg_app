@@ -6,87 +6,107 @@
           <button class="button button-icon icon ion-ios-close-empty" style="color:white; float:right;" ng-click="$ionicGoBack()"></button>
         </div>
       </div>
-      <p class="small">History of science and technology</p>
-      <p class="middle" style="margin-top:10px">3.2 / 5</p>
+      <p class="middle eMainTitle">History of Science and Technology</p>
+      <p class="middle eMainTitle" style="margin-top:10px">3.2 / 5</p>
       <span class="ion-star rating-star fill"></span>
       <span class="ion-star rating-star fill"></span>
       <span class="ion-star rating-star fill"></span>
       <span class="ion-star rating-star"></span>
       <span class="ion-star rating-star"></span>
-      <p class="tiny" style="margin-top:10px">Overall Quality</p>
+      <p class="tiny eCourseTitle" style="margin-top:10px">Overall Quality</p>
     </div>
-    <div style="padding:30px 10px;">
+    <div style="padding:40px 10px 20px;">
       <div class="center">
         <p class="small">QUALITY RATING</p>
       </div>
       <div class="row">
         <div class="col center">
-          <p class="middle" style="margin-top:10px">3.2 / 5</p>
-          <p class="tiny pink">Professor</p>
+          <p class="middle eCourseTitle" style="margin-top:10px">3.2 / 5</p>
+          <p class="tiny eCourseCriteria">Professor</p>
         </div>
         <div class="col center">
-          <p class="middle" style="margin-top:10px">3.2 / 5</p>
-          <p class="tiny pink">Difficulty</p>
+          <p class="middle eCourseTitle" style="margin-top:10px">3.2 / 5</p>
+          <p class="tiny eCourseCriteria">Difficulty</p>
         </div>
         <div class="col center">
-          <p class="middle" style="margin-top:10px">89%</p>
-          <p class="tiny pink">Take Again?</p>
+          <p class="middle eCourseTitle" style="margin-top:10px">89%</p>
+          <p class="tiny eCourseCriteria">Take Again?</p>
         </div>
       </div>
     </div>
     <div style="padding:50px 20px 50px; background-color:#f5f6f7;">
       <div class="center">
-        <p class="tiny">GENERAL</p>
+        <p class="small">GENERAL</p>
       </div>
       <div class="row" style="padding:10px 0 10px">
         <div class="col-60">
-          <span class="tiny">Textbook Use</span>
+          <span class="tiny eCourseTitle">Textbook Use</span>
         </div>
         <div class="col-40">
-          <span class="tiny">Yeah</span>
-        </div>
-      </div>
-      <div class="row" style="padding:10px 0 10px">
-        <div class="col-60">
-          <span class="tiny">Textbook Use</span>
-        </div>
-        <div class="col-40">
-          <span class="tiny">Yeah</span>
+          <span class="tiny eCourseTitle">YEAH</span>
         </div>
       </div>
       <div class="row" style="padding:10px 0 10px">
         <div class="col-60">
-          <span class="tiny">Textbook Use</span>
+          <span class="tiny eCourseTitle">Attendance Mandatory</span>
         </div>
         <div class="col-40">
-          <span class="tiny">Yeah</span>
+          <span class="tiny eCourseTitle">UM, NO</span>
+        </div>
+      </div>
+      <div class="row" style="padding:10px 0 10px">
+        <div class="col-60">
+          <span class="tiny eCourseTitle">Gives Plus Fully</span>
+        </div>
+        <div class="col-40">
+          <span class="tiny eCourseTitle">YEAH</span>
+        </div>
+      </div>
+      <div class="row" style="padding:10px 0 10px">
+        <div class="col-60">
+          <span class="tiny eCourseTitle">Chance of being Slaughtered</span>
+        </div>
+        <div class="col-40">
+          <span class="tiny eCourseTitle">UM, NO</span>
+        </div>
+      </div>
+      <div class="row" style="padding:10px 0 10px">
+        <div class="col-60">
+          <span class="tiny eCourseTitle">Course Capacity</span>
+        </div>
+        <div class="col-40">
+          <span class="tiny eCourseTitle">BETWEEN 10-20 (35% A)</span>
         </div>
       </div>
     </div>
     <div style="padding:50px 20px 50px;">
       <div class="center">
-        <p class="tiny">COURSE TAGS</p>
+        <p class="small">COURSE TAGS</p>
       </div>
       <span class="tiny tag">#get ready to read</span>
-      <span class="tiny tag">#get ready to read</span>
+      <span class="tiny tag">#cares about students</span>
+      <span class="tiny tag">#tough grader</span>
+      <span class="tiny tag">#participation matters</span>
+      <span class="tiny tag">#lost of homework</span>
+      <span class="tiny tag">#skip class? you won't pass</span>
     </div>
-    <div style="height:10px; background-color:#f5f6f7;">
+    <div style="height:5px; background-color:#f5f6f7;">
     </div>
     <ion-list>
-        <ion-item style="border-bottom: 1px solid #eeeeee;" href='#/tab/class' ng-repeat="i in [1,2,3]">
+        <ion-item ng-style="$index==0&&{'border-top':'none'}||{}" style="border-bottom: 1px solid #eeeeee;" href='#/tab/class' ng-repeat="i in [1,2,3]">
           <div>
-            <span style="">커리큘럼은 어떻게 되나요?</span>
-            <span style="float:right;">07.2.2</span>
+            <span  class="tiny"style="">커리큘럼은 어떻게 되나요?</span>
+            <span class="xtiny eCourseTitle" style="float:right;color:rgba(82,82,82,.5)">07.02.16</span>
           </div>
           <div>
-            <span class="ion-star rating-star fill"></span>
-            <span class="ion-star rating-star fill"></span>
-            <span class="ion-star rating-star fill"></span>
-            <span class="ion-star rating-star"></span>
-            <span class="ion-star rating-star"></span>
+            <span class="ion-star rating-star fill" style="font-size:14px;"></span>
+            <span class="ion-star rating-star fill" style="font-size:14px;"></span>
+            <span class="ion-star rating-star fill" style="font-size:14px;"></span>
+            <span class="ion-star rating-star-border" style="font-size:14px;"></span>
+            <span class="ion-star rating-star-border" style="font-size:14px;"></span>
           </div>
-          <div>
-            <p>글 내용은 여기에 나옵니</p>
+          <div class="textPaddingTop">
+            <p><span class="xtiny">글ㄴㄴ네용은 여기에 나옵니다. 프리뷰입니다. 프리. 프리뷰입니다. 프리뷰뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰 프리뷰입니뷰입니다. 프리뷰다. 프리뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰</span></p>
           </div>
         </ion-item>
     </ion-list>

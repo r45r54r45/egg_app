@@ -33,11 +33,14 @@ span, button{
   background: none;
   background-color:#223c72;
 }
+span.xtiny,p.xtiny,select.xtiny,input.xtiny, button.xtiny{
+  font-size:10px;
+}
 span.tiny,p.tiny,select.tiny,input.tiny, button.tiny{
-  font-size:11px;
+  font-size:12px;
 }
 span.small,p.small,select.small,input.small{
-  font-size:13px;
+  font-size:14px;
 }
 span.middle,p.middle,select.middle,input.middle{
   font-size:25px;
@@ -68,18 +71,25 @@ input, textarea, select {
 }
 span.rating-star.fill{
   color: #ff5485;
-  font-size: 24px;
+  font-size: 18px;
 }
 span.rating-star{
   color: white;
-  font-size: 24px;
+  font-size: 18px;
+}
+span.rating-star-border{
+  color: white;
+  text-shadow: -.5px 0 #ff5485, 0 .5px #ff5485, .5px 0 #ff5485, 0 -.5px #ff5485;
+  font-size: 18px;
 }
 p.pink,span.pink{
   color:#f4a3a6;
 }
 span.tag{
   margin-right:10px;
+  font-weight: 300;
   color:#4c7848;
+  line-height: 1.8;
 }
 .float-right{
   float:right;
@@ -219,5 +229,99 @@ div.vertical-mid-div>div{
   vertical-align: middle;
 }
 .even_item>.item-content{
-  background: grey;
+  background: #f2f2f2;
+}
+
+.eMainTitle{
+  line-height: 1.5;
+  font-weight:300;
+  font-family: 'Open Sans', sans-serif;
+}
+.eCourseTitle{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:200;
+}
+.eCourseCriteria{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:200;
+  color:rgba(240, 84, 106, 0.8);
+}
+.eCourseScore{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:200;
+  color:#525252;
+}
+.star{
+  height:15px;
+}
+.textPaddingTop{
+  padding-top:5px;
+}
+
+.eMainTitleKor{
+  line-height: 1.5;
+  font-weight:400;
+  font-family: 'Noto Sans Kr', sans-serif;
+}
+.profile-img{
+  width:20vh;
+}
+
+.textLightKor{
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight:300;
+  color:rgba(255, 255, 255, 0.6);
+}
+.textLightKorDark{
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight:300;
+  color:rgba(82, 82, 82, 0.9);
+}
+.myPageform{
+  padding: 18px 30px 18px !important;
+  margin-top: 0px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);;
+}
+
+button.halfTransparent{
+  margin-top: 75px;
+  border-radius: 20px;
+  padding-top: 3px;
+  height: 40px;
+  width: 80px;
+  border: 1px solid rgba(255,255,255, .3);
+  background-color: rgba(255,255,255, .06);
+  color: rgba(255,255,255, .6);
+}
+
+.courseEvaluationRow>.item-content{
+  padding-right:5px;
+}
+ion-header-bar{
+  background:#213b73 !important;
+}
+.tab-nav{
+  /*background: #262727 !important;*/
+}
+.comment{
+  height:22px;
+}
+.heart{
+  height: 20px;
+}
+
+.boardList>.item-content{
+  padding:7px 15px 5px 15px;
+}
+.boardList>.item-content>.row{
+  padding:0px;
+}
+.boardList>.item-content>.row>.col{
+  padding:0px;
+}
+.boardList>.item-content>.row>.col>.row{
+  padding:0px;
+}
+.boardIconText{
+  margin:0px 15px 0px 10px;
 }
