@@ -178,7 +178,7 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('BoardCtrl', function ($scope,type,$state,$ionicViewSwitcher,$ionicModal) {
+  .controller('BoardCtrl', function ($scope,type,$state,$ionicViewSwitcher,$ionicModal,$ionicPopup) {
     $scope.type=type;
     $scope.go=function(){
       $ionicViewSwitcher.nextDirection('forward');
@@ -193,9 +193,39 @@ angular.module('starter.controllers', [])
     $scope.openModal = function () {
       $scope.modal.show();
     };
-    $scope.goBack=function(){
-      $scope.modal.hide();
-    }
+
+    /*
+     submit popup
+     */
+    $scope.submit = function() {
+      var confirmPopup = $ionicPopup.confirm({
+        title: '글 공개',
+        template: '글을 업로드 하시겠습니까?'
+      });
+      confirmPopup.then(function(res) {
+        if(res) {
+          console.log('You are sure');
+        } else {
+          console.log('You are not sure');
+        }
+      });
+    };
+    /*
+     cancel popup
+     */
+    $scope.goBack = function() {
+      var confirmPopup = $ionicPopup.confirm({
+        title: '글 작성 취소',
+        template: '글 작성을 취소하시겠습니까?'
+      });
+      confirmPopup.then(function(res) {
+        if(res) {
+          $scope.modal.hide();
+        } else {
+          console.log('You are not sure');
+        }
+      });
+    };
   })
   .controller('BoardDetailCtrl',function($scope,$state,$ionicViewSwitcher){
     $scope.goBack=function(){
