@@ -102,8 +102,8 @@ span.tag{
   font-size:60px !important;
 }
 div.rating-block{
-  padding:30px 10px;
-  border-bottom:1px solid grey;
+  padding:30px 16px;
+  border-bottom:1px solid rgba(82, 82, 82, 0.2);;
 }
 .rating-yes-no>.list{
   margin-top:20px;
@@ -251,8 +251,16 @@ div.vertical-mid-div>div{
   font-weight:200;
   color:#525252;
 }
+.eMainTitleEn{
+  font-family: 'Open Sans', sans-serif;
+  font-weight:200;
+}
 .star{
   height:15px;
+}
+.star-large{
+  height:35px;
+    margin:8px;
 }
 .textPaddingTop{
   padding-top:5px;
@@ -323,20 +331,23 @@ ion-header-bar{
 
 .rating-yes-no>.list>.item-radio{
   text-align: center;
-  border-radius: 27px;
+  border-radius: 30px;
   overflow: hidden;
-  width: 50%;
+  width: 100px;
+  height: 50px;
+  margin: 15px;;
+  border: 1px solid rgba(82,82,82, .2);
   display: inline-block;
 }
 /*아래는 라디오버튼 세개가 들어가는거 따로 이렇게 해줘야함. 여기서 해주는 것 이외의 속성들은 위에거 따라감*/
 .rating-yes-no.three-options>.list>.item-radio{
-   width: 33%;
+   width: 240px;
  }
 .rating-yes-no>.list>.item-radio>.radio-content>i{
   display:none;
 }
 .item-radio>.radio-content>.item-content{
-  padding: 16px;
+  padding: 12px;
 }
 
 .rating-yes-no>.list>.item-checkbox{
@@ -354,4 +365,54 @@ ion-header-bar{
 
 .bar.bar-positive .title{
   color:red;
+}
+
+.rating-yes-no>.list{
+  text-align: center;
+}
+
+.rating-yes-no label{
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight:200 !important;
+}
+.rating-three{
+  font-size: 13px;
+  margin:0px;
+}
+.rating-three .radio-content{
+  padding:3px;
+}
+
+.rating-yes-no.three-options>.list>.item-radio{
+  margin:3px;
+}
+
+.scroll .row{
+  padding 0px 16px;
+}
+.top-title{
+  padding: 16px 16px;
+}
+
+.rzslider>.rz-pointer{
+  background-color: #205b2d !important;
+}
+.rating-textarea{
+  height: 150px;
+  resize: none;
+  color: #828282;
+}
+.rating-textarea-label{
+  padding: 7px 3px;
+  margin-top:15px;
+  border:none;
+
+}
+.rating-textarea-label span{
+  font-size:10px;
+}
+
+.rating-star{
+  margin-top:30px;
+  margin-bottom: 20px;
 }
