@@ -313,15 +313,45 @@ ion-header-bar{
 .boardList>.item-content{
   padding:7px 15px 5px 15px;
 }
-.boardList>.item-content>.row{
+.boardList .row,.boardList .col{
   padding:0px;
 }
-.boardList>.item-content>.row>.col{
-  padding:0px;
-}
-.boardList>.item-content>.row>.col>.row{
-  padding:0px;
-}
+
 .boardIconText{
   margin:0px 15px 0px 10px;
+}
+
+.rating-yes-no>.list>.item-radio{
+  text-align: center;
+  border-radius: 27px;
+  overflow: hidden;
+  width: 50%;
+  display: inline-block;
+}
+/*아래는 라디오버튼 세개가 들어가는거 따로 이렇게 해줘야함. 여기서 해주는 것 이외의 속성들은 위에거 따라감*/
+.rating-yes-no.three-options>.list>.item-radio{
+   width: 33%;
+ }
+.rating-yes-no>.list>.item-radio>.radio-content>i{
+  display:none;
+}
+.item-radio>.radio-content>.item-content{
+  padding: 16px;
+}
+
+.rating-yes-no>.list>.item-checkbox{
+  display: inline-block;
+  padding:5px;
+  border:none;
+}
+.rating-yes-no>.list>.item-checkbox>.checkbox>i{
+  display:none;
+}
+.rating-yes-no>.list>.item-checkbox.clicked{
+  color:red;
+}
+
+
+.bar.bar-positive .title{
+  color:red;
 }

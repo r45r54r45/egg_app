@@ -1,5 +1,7 @@
+<!--재하형 보시오-->
+<!--버튼들 스타일링은 style.css 파일의 329줄에 있는걸로 하면 됩니당-->
 <ion-modal-view hide-nav-bar="true">
-  <ion-content class="padding">
+  <ion-content>
     <div class="row" style="margin-bottom:40px">
       <div class="col-60 ">
         <span class="middle eMainTitle">History of Science and Technology</span>
@@ -38,8 +40,8 @@
         <span class="tiny">Would you take this professor again?</span>
       </div>
       <ion-list class="rating-yes-no">
-        <ion-radio ng-model="choice" ng-value="'A'">YEAH</ion-radio>
-        <ion-radio ng-model="choice" ng-value="'B'">UM, NO</ion-radio>
+        <ion-radio ng-model="choice1" ng-value="'A'">YEAH</ion-radio>
+        <ion-radio ng-model="choice1" ng-value="'B'">UM, NO</ion-radio>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -50,8 +52,8 @@
         <span class="tiny">Is attendance mandatory for this class?</span>
       </div>
       <ion-list class="rating-yes-no">
-        <ion-radio ng-model="choice" ng-value="'A'">YEAH</ion-radio>
-        <ion-radio ng-model="choice" ng-value="'B'">UM, NO</ion-radio>
+        <ion-radio ng-model="choice2" ng-value="'A'">YEAH</ion-radio>
+        <ion-radio ng-model="choice2" ng-value="'B'">UM, NO</ion-radio>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -62,8 +64,8 @@
         <span class="tiny">Does the professor fill up the plus quota fully?</span>
       </div>
       <ion-list class="rating-yes-no">
-        <ion-radio ng-model="choice" ng-value="'A'">YEAH</ion-radio>
-        <ion-radio ng-model="choice" ng-value="'B'">UM, NO</ion-radio>
+        <ion-radio ng-model="choice3" ng-value="'A'">YEAH</ion-radio>
+        <ion-radio ng-model="choice3" ng-value="'B'">UM, NO</ion-radio>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -73,10 +75,10 @@
       <div>
         <span class="tiny">How many students were in the class?</span>
       </div>
-      <ion-list class="rating-yes-no">
-        <ion-radio ng-model="choice" ng-value="'A'">Below 10 (Absolute grading)</ion-radio>
-        <ion-radio ng-model="choice" ng-value="'B'">Between 10-20 (35% A)</ion-radio>
-        <ion-radio ng-model="choice" ng-value="'C'">Above 20</ion-radio>
+      <ion-list class="rating-yes-no three-options">
+        <ion-radio ng-model="choice4" ng-value="'A'">Below 10 (Absolute grading)</ion-radio>
+        <ion-radio ng-model="choice4" ng-value="'B'">Between 10-20 (35% A)</ion-radio>
+        <ion-radio ng-model="choice4" ng-value="'C'">Above 20</ion-radio>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -87,9 +89,7 @@
         <span class="tiny">Select tags that best describe the course. Choose carefully. The fate of future students lies in your hands!</span>
       </div>
       <ion-list  class="rating-yes-no">
-        <ion-checkbox ng-model="filter.red">#tough grader</ion-checkbox>
-        <ion-checkbox ng-model="filter.yellow">#gives good feedback</ion-checkbox>
-        <ion-checkbox ng-model="filter.pink">#get ready to read</ion-checkbox>
+        <ion-checkbox ng-repeat="i in checkboxList" ng-change="checkCheckboxCount($index)" ng-model="checkboxResult[$index]" ng-class="{'clicked' : checkboxResult[$index]}">#{{i}}</ion-checkbox>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -100,9 +100,9 @@
         <span class="tiny">This is optional but if you write more than 350 words, you will get an extra 50 points!</span>
       </div>
       <label class="item item-input">
-        <textarea placeholder="Write here!"></textarea>
+        <textarea placeholder="Write here!" ng-model="textarea"></textarea>
       </label>
-      <span style="float:right">0 words</span>
+      <span style="float:right">{{countOf(textarea)}} words</span>
       <div style="clear: both"></div>
     </div>
     <div class="rating-block">
@@ -112,8 +112,9 @@
       <div>
         <span class="tiny">On a scale of 5, how would you rate this course?</span>
       </div>
-
     </div>
 
+      <button ng-click="submit()" style="width: 100vw; border: none; height: 50px; background: red;">Submit</button>
   </ion-content>
+
 </ion-modal-view>
