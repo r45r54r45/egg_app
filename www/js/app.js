@@ -81,6 +81,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board', {
         url: '/board',
+        cache: false,
         abstract:true,
         views: {
           'tab-board': {
@@ -90,13 +91,14 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board.free', {
         url: '/free',
+        cache: false,
         views: {
           'board-list-free': {
             templateUrl: 'templates/board-list.html',
             controller: 'BoardCtrl',
             resolve:{
               type:function(){
-                return 1;
+                return "free";
               }
             }
           }
@@ -104,22 +106,33 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board.council', {
         url: '/council',
+        cache: false,
         views: {
           'board-list-council': {
             templateUrl: 'templates/board-list.html',
             controller: 'BoardCtrl',
             resolve:{
               type:function(){
-                return 2;
+                return "council";
               }
             }
           }
         }
       })
-      .state('tab.board-detail', {
+      .state('tab.board.free-detail', {
         url: '/free/:boardId',
         views: {
-          'tab-board': {
+          'board-list-free': {
+            templateUrl: 'templates/board-detail.html',
+            controller: 'BoardDetailCtrl'
+          }
+        }
+      })
+      .state('tab.board.council-detail', {
+        url: '/council/:boardId',
+        cache: false,
+        views: {
+          'board-list-council': {
             templateUrl: 'templates/board-detail.html',
             controller: 'BoardDetailCtrl'
           }
