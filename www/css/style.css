@@ -111,6 +111,9 @@ div.rating-block{
 .middle-content>.scroll{
   display: table-cell; vertical-align: middle;
 }
+.middle-content>div{
+  display: table-cell; vertical-align: middle;
+}
 .middle-content{
   display: table; width:100%; height:100%;
 }
