@@ -61,7 +61,15 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
           }
         }
       })
-
+      .state('class-detail.comment', {
+        url: '/class/:classId/:commentId',
+        views: {
+          'class-comment': {
+            templateUrl: 'templates/modal/class-detail-comment.html',
+            controller: 'ClassDetailCommentCtrl'
+          }
+        }
+      })
       .state('tab.notice', {
         url: '/notice',
         views: {

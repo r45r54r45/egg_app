@@ -93,7 +93,7 @@
     <div style="height:5px; background-color:#f5f6f7;">
     </div>
     <ion-list>
-        <ion-item ng-style="$index==0&&{'border-top':'none'}||{}" style="border-bottom: 1px solid #eeeeee;" href='#/tab/class' ng-repeat="i in [1,2,3]">
+        <ion-item ng-style="$index==0&&{'border-top':'none'}||{}" style="border-bottom: 1px solid #eeeeee;" ng-repeat="i in [1,2,3]">
           <div>
             <span  class="tiny"style="">커리큘럼은 어떻게 되나요?</span>
             <span class="xtiny eCourseTitle" style="float:right;color:rgba(82,82,82,.5)">07.02.16</span>
@@ -107,6 +107,10 @@
           </div>
           <div class="textPaddingTop">
             <p><span class="xtiny">글ㄴㄴ네용은 여기에 나옵니다. 프리뷰입니다. 프리. 프리뷰입니다. 프리뷰뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰 프리뷰입니뷰입니다. 프리뷰다. 프리뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰</span></p>
+          </div>
+          <div class="button-bar">
+            <a class="button">Like</a>
+            <a class="button" ng-click="openModal()">Comment</a>
           </div>
         </ion-item>
     </ion-list>

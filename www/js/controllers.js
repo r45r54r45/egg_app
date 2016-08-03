@@ -133,7 +133,9 @@ angular.module('starter.controllers', [])
   })
   .controller('NoticeCtrl', function ($scope) {
   })
+  .controller('ClassDetailCommentCtrl',function($scope){
 
+  })
   .controller('ChatsCtrl', function ($scope, Chats) {
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -149,9 +151,21 @@ angular.module('starter.controllers', [])
     };
   })
 
-  .controller('ClassDetailCtrl', function ($scope, $stateParams) {
+  .controller('ClassDetailCtrl', function ($scope, $stateParams,$ionicModal) {
     // $scope.chat = Chats.get($stateParams.chatId);
     console.log($stateParams.classId);
+    $ionicModal.fromTemplateUrl('templates/modal/class-detail-comment.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+    }).then(function (modal) {
+      $scope.modal = modal;
+    });
+    $scope.openModal = function () {
+      $scope.modal.show();
+    };
+    $scope.closeModal = function () {
+      $scope.modal.hide();
+    };
     $scope.loadMore = function () {
       console.log("class detail", "load more");
       setTimeout(function () {
