@@ -178,16 +178,20 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('BoardCtrl', function ($scope,type,$state) {
+  .controller('BoardCtrl', function ($scope,type,$state,$ionicViewSwitcher) {
     $scope.type=type;
     $scope.go=function(){
       console.log("go");
       console.log($state);
-      $state.go("tab.board."+type+"-detail",{boardId:4});
+      $ionicViewSwitcher.nextDirection('forward');
+      $state.go("board-detail",{boardId:4});
     }
   })
-  .controller('BoardDetailCtrl',function($scope){
-
+  .controller('BoardDetailCtrl',function($scope,$state,$ionicViewSwitcher){
+    $scope.goBack=function(){
+      $ionicViewSwitcher.nextDirection('back');
+      $state.go("tab.board.free");
+    }
   })
 
   .controller('MypageCtrl', function ($scope, User) {

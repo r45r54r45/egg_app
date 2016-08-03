@@ -119,14 +119,10 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
           }
         }
       })
-      .state('tab.board.free-detail', {
+      .state('board-detail', {
         url: '/free/:boardId',
-        views: {
-          'board-list-free': {
-            templateUrl: 'templates/board-detail.html',
-            controller: 'BoardDetailCtrl'
-          }
-        }
+        templateUrl: 'templates/board-detail.html',
+        controller: 'BoardDetailCtrl'
       })
       .state('tab.board.council-detail', {
         url: '/council/:boardId',
