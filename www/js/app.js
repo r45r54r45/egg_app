@@ -85,15 +85,11 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         views: {
           'tab-board': {
             templateUrl: 'templates/tab-board.html'
-          },
-          'sibal': {
-            templateUrl: 'templates/board-detail.html',
-            controller: 'BoardDetailCtrl'
           }
         }
       })
       .state('tab.board.free', {
-        url: '/board_free',
+        url: '/free',
         views: {
           'board-list-free': {
             templateUrl: 'templates/board-list.html',
@@ -107,7 +103,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         }
       })
       .state('tab.board.council', {
-        url: '/board_council',
+        url: '/council',
         views: {
           'board-list-council': {
             templateUrl: 'templates/board-list.html',
@@ -120,10 +116,10 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
           }
         }
       })
-      .state('tab.board.detail', {
-        url: '/detail/:boardId',
+      .state('tab.board-detail', {
+        url: '/free/:boardId',
         views: {
-          'board-detail': {
+          'tab-board': {
             templateUrl: 'templates/board-detail.html',
             controller: 'BoardDetailCtrl'
           }

@@ -182,7 +182,8 @@ angular.module('starter.controllers', [])
     $scope.type=type;
     $scope.go=function(){
       console.log("go");
-      $state.go("tab.board.detail",{ boardId: 3});
+      console.log($state);
+      $state.go("tab.board-detail",{boardId:4});
     }
   })
   .controller('BoardDetailCtrl',function($scope){
