@@ -328,11 +328,10 @@ ion-header-bar{
   padding:7px 15px 5px 15px;
 }
 .boardList .row,.boardList .col{
-  padding:0px;
+  padding:0px !important;
 }
 
 .boardIconText{
-  position: absolute;
   margin:0px 15px 0px 10px;
 }
 
@@ -395,7 +394,7 @@ ion-header-bar{
 }
 
 .scroll .row{
-  padding 0px 16px;
+  padding: 0px 16px;
 }
 .top-title{
   padding: 16px 16px;
