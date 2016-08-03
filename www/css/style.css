@@ -416,3 +416,36 @@ ion-header-bar{
   margin-top:30px;
   margin-bottom: 20px;
 }
+.popup-body>span {
+  font-family: 'Noto Sans Kr', sans-serif !important;
+  font-weight:200 !important;
+  font-size:12px;
+}
+.popup-body{
+  text-align: center;
+}
+.popup-head{
+  border:none !important;
+}
+.popup{
+  width: 85vw !important;
+  padding:10px 55px;
+}
+.popup-title{
+  font-family: 'Noto Sans Kr', 'Open Sans' sans-serif !important;
+  font-weight:200 !important;
+  font-size:14px;
+}
+div.popup-buttons>button{
+  font-family: 'Noto Sans Kr', 'Open Sans' sans-serif !important;
+  font-weight:200 !important;
+  font-size:14px;
+  border: 1px solid rgba(82, 82, 82, 0.5);
+  height:40px;
+  border-radius: 20px !important;
+  min-height: 40px !important;
+  margin:0px 10px;
+}
+.button.button-positive{
+  background-color: #213b73;
+}
