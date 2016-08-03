@@ -85,6 +85,10 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         views: {
           'tab-board': {
             templateUrl: 'templates/tab-board.html'
+          },
+          'sibal': {
+            templateUrl: 'templates/board-detail.html',
+            controller: 'BoardDetailCtrl'
           }
         }
       })
@@ -113,6 +117,15 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
                 return 2;
               }
             }
+          }
+        }
+      })
+      .state('tab.board.detail', {
+        url: '/detail/:boardId',
+        views: {
+          'board-detail': {
+            templateUrl: 'templates/board-detail.html',
+            controller: 'BoardDetailCtrl'
           }
         }
       })

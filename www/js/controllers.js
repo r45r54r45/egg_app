@@ -178,14 +178,16 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('BoardCtrl', function ($scope,type) {
-    $scope.settings = {
-      enableFriends: true
-    };
+  .controller('BoardCtrl', function ($scope,type,$state) {
     $scope.type=type;
+    $scope.go=function(){
+      console.log("go");
+      $state.go("tab.board.detail",{ boardId: 3});
+    }
   })
+  .controller('BoardDetailCtrl',function($scope){
 
-
+  })
 
   .controller('MypageCtrl', function ($scope, User) {
     $scope.settings = {

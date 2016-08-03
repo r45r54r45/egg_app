@@ -2,8 +2,7 @@
   <ion-nav-title><span >BOARD</span></ion-nav-title>
   <ion-content class="has-tabs-top">
     <ion-list>
-      <ion-item href="#/detail" class="boardList" ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
-        <!--여기 ion-item에 padding 줘봤자 안돼요.. 인스펙터에서 켜보고 그아래 a태그 있는거에 패딩 줘서 하세요 -->
+      <ion-item ng-click="go(1)" class="boardList" ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
         <div class="row">
           <div class="col col-75">
             <div class="row">
