@@ -332,6 +332,7 @@ ion-header-bar{
 }
 
 .boardIconText{
+  position: absolute;
   margin:0px 15px 0px 10px;
 }
 
