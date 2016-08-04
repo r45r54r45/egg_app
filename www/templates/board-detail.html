@@ -1,13 +1,13 @@
 <ion-view hide-nav-bar="true">
   <ion-content>
-    <div>
+    <div style="min-height: 30px;">
       <img src="img/adam.jpg" style="width: 100%;">
     </div>
     <div class="center padding">
       <div style="margin-top:10px;"><span class="eMainTitleKor small text-grey">{{data.title}}</span></div>
       <div><span class="eMainTitleKor xtiny text-grey">{{data.createdAt|timeDiff}} | {{data.User.username}}</span></div>
       <div style="margin-bottom:20px;margin-top:5px;"><span class="eMainTitleKor tiny text-grey">{{data.body}}</span></div>
-      <div style="float:left"><img class="heart" src="img/heart.svg"><span class="xtiny boardIconText" style="position: absolute;color:rgba(82,82,82,.8)">{{data.heart}}</span></div>
+      <div style="float:left"><img ng-click="likeBtn()" class="heart" src="img/heart.svg"><span class="xtiny boardIconText" style="position: absolute;color:rgba(82,82,82,.8)">{{data.heart}}</span></div>
       <div style="float:right"><span class="eMainTitleKor xtiny" style="color:rgba(82,82,82, .8)">댓글 <span>{{data.comment}}</span> 개</span></div>
 
       <div style="clear:both"></div>

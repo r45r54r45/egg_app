@@ -1,4 +1,4 @@
-<ion-modal-view hide-nav-bar="true">
+<ion-modal-view hide-nav-bar="true" ng-init="board={}">
   <ion-content scroll="false">
     <div style="width: 100%; min-height:100vw; background:grey; position: relative;" class="">
       <img src="img/adam.jpg" style="position: absolute;
@@ -9,14 +9,14 @@
     width: 100px;
     height: 100px;">
       <!--이거 이미지는 이미지 없을 때 기본으로 뜨는 중간에 svg-->
-      <img src="img/adam.jpg" style="width: 100%;">
+      <img src="img/adam.jpg" style="width: 100%;" ng-click="openFileDialog()">
     </div>
     <div class="list">
       <label class="item item-input">
-        <input type="text" placeholder="제목">
+        <input type="text" placeholder="제목" ng-model="board.title">
       </label>
       <label class="item item-input">
-        <textarea placeholder="내용을 입력하세요."></textarea>
+        <textarea placeholder="내용을 입력하세요." ng-model="board.body"></textarea>
       </label>
     </div>
   </ion-content>
@@ -29,7 +29,7 @@
         <span>글 작성하기</span>
       </div>
       <div class="col col-33 center">
-        <button ng-click="submit()">작성</button>
+        <button ng-click="submit(board)">작성</button>
       </div>
     </div>
   </div>

@@ -190,14 +190,14 @@ angular.module('starter.controllers', [])
         $scope.boardList = data;
       });
     }
-    $scope.canLoadMore={};
-    $scope.canLoadMore['free']=true;
-    $scope.canLoadMore['council']=true;
-    var offset={};
-    offset['free']=10;
-    offset['council']=10;
+    $scope.canLoadMore = {};
+    $scope.canLoadMore['free'] = true;
+    $scope.canLoadMore['council'] = true;
+    var offset = {};
+    offset['free'] = 10;
+    offset['council'] = 10;
     $scope.loadMore = function () {
-      $http.get("https://egg-yonsei.appspot.com/board/"+type+"_list/" + offset[type]).success(function (data) {
+      $http.get("https://egg-yonsei.appspot.com/board/" + type + "_list/" + offset[type]).success(function (data) {
         if (data.length == 0) {
           $scope.$broadcast('scroll.infiniteScrollComplete');
           $scope.canLoadMore[$scope.type] = false;
@@ -205,7 +205,7 @@ angular.module('starter.controllers', [])
           $scope.boardList = $scope.boardList.concat(data);
           offset[type] += 10;
         }
-      }).error(function(msg){
+      }).error(function (msg) {
         console.log(msg);
       });
     }
@@ -223,19 +223,34 @@ angular.module('starter.controllers', [])
     $scope.openModal = function () {
       $scope.modal.show();
     };
+
     /*
      submit popup
      */
-    $scope.submit = function () {
+    $scope.submit = function (board) {
       var confirmPopup = $ionicPopup.confirm({
         title: '글 공개',
         template: '글을 업로드 하시겠습니까?'
       });
       confirmPopup.then(function (res) {
         if (res) {
-          console.log('You are sure');
+          var data = {
+            user: 1,
+            title: board.title,
+            body: board.body,
+            type: 1
+          };
+          console.log(data);
+          // https://egg-yonsei.appspot.com
+          $http.post("http://localhost:3000/board/write", data).success(function (res) {
+            if (res.result) {
+              $scope.modal.remove();
+            } else {
+              alert('네트워크 문제로 인해 글이 업로드 되지 않았습니다.');
+            }
+          })
         } else {
-          console.log('You are not sure');
+          // 글 공개 보류
         }
       });
     };
@@ -256,7 +271,7 @@ angular.module('starter.controllers', [])
       });
     };
   })
-  .controller('BoardDetailCtrl', function ($scope, $state, $ionicViewSwitcher, $stateParams, $http,$ionicScrollDelegate) {
+  .controller('BoardDetailCtrl', function ($scope, $state, $ionicViewSwitcher, $stateParams, $http, $ionicScrollDelegate) {
     $http.get("https://egg-yonsei.appspot.com/board/watch/" + $stateParams.boardId).success(function (data) {
       $scope.data = data;
     });
@@ -269,6 +284,21 @@ angular.module('starter.controllers', [])
     //   // $ionicViewSwitcher.nextDirection('back');
     //   // $state.go("tab.board.free");
     // }
+    $scope.likeBtn = function () {
+      var data = {
+        board: $stateParams.boardId,
+        user: 1
+      };
+      $http.post("https://egg-yonsei.appspot.com/board/like", data).success(function (data) {
+        if (data.like) {
+          $scope.data.heart++;
+          alert('좋아요 되었습니다.');
+        } else {
+          $scope.data.heart--;
+          alert('좋아요가 취소되었습니다.');
+        }
+      })
+    }
     var offset = 10;
     $scope.canLoadMore = false;
     $scope.loadMore = function () {
@@ -280,20 +310,20 @@ angular.module('starter.controllers', [])
           $scope.commentList = $scope.commentList.concat(data);
           $scope.$broadcast('scroll.infiniteScrollComplete');
           $scope.canLoadMore = false;
-        } else{
+        } else {
           console.log("no oring");
           $scope.commentList = $scope.commentList.concat(data);
           offset += 10;
         }
       });
     }
-    $scope.submitComment=function(boardId){
-      var data={};
-      data.body=$scope.newComment_body;
-      $scope.newComment_body="";
-      data.user=1;
-      data.board=boardId;
-      $http.post("https://egg-yonsei.appspot.com/board/comment",data).success(function(data){
+    $scope.submitComment = function (boardId) {
+      var data = {};
+      data.body = $scope.newComment_body;
+      $scope.newComment_body = "";
+      data.user = 1;
+      data.board = boardId;
+      $http.post("https://egg-yonsei.appspot.com/board/comment", data).success(function (data) {
         $ionicScrollDelegate.scrollTop(true);
         $http.get("https://egg-yonsei.appspot.com/board/comment/" + $stateParams.boardId).success(function (data) {
           $scope.commentList = data;
