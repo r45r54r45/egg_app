@@ -9,6 +9,7 @@
   "dependencies": {
     "ionic-ratings": "^0.2.0",
     "angularjs-slider": "^5.4.1",
-    "ngstorage": "^0.3.10"
+    "ngstorage": "^0.3.10",
+    "moment": "^2.14.1"
   }
 }

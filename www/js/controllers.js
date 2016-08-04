@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-  .controller('ClassCtrl', function ($scope, $ionicModal, $ionicLoading,$ionicPopup,$state) {
+  .controller('ClassCtrl', function ($scope, $ionicModal, $ionicLoading, $ionicPopup, $state) {
     $ionicModal.fromTemplateUrl('templates/modal/class-sort.html', {
       scope: $scope,
       animation: 'slide-in-up'
@@ -32,20 +32,20 @@ angular.module('starter.controllers', [])
     /*
      open class popup
      */
-    $scope.openClass = function(classNum) {
+    $scope.openClass = function (classNum) {
       var confirmPopup = $ionicPopup.confirm({
         title: '수업 제목',
         template: '25포인트가 소모됩니다. 강의 평가를 확인하시겠습니까?'
       });
-      confirmPopup.then(function(res) {
-        if(res) {
-          location.href="#/tab/class/"+classNum;
+      confirmPopup.then(function (res) {
+        if (res) {
+          location.href = "#/tab/class/" + classNum;
         } else {
           openClassNoPoint();
         }
       });
     };
-    var openClassNoPoint = function() {
+    var openClassNoPoint = function () {
       var alertPopup = $ionicPopup.alert({
         template: '포인트가 부족합니다.'
       });
@@ -77,35 +77,35 @@ angular.module('starter.controllers', [])
     };
 
     /*
-    textarea logic
+     textarea logic
      */
-    $scope.countOf = function(text) {
+    $scope.countOf = function (text) {
       var s = text ? text.split(/\s+/) : 0; // it splits the text on space/tab/enter
-      var count= s ? s.length : '';
+      var count = s ? s.length : '';
       return count;
     };
 
     /*
      checkbox logic
-      */
-    var checkboxCountAlert = function() {
+     */
+    var checkboxCountAlert = function () {
       var alertPopup = $ionicPopup.alert({
         template: '선택된 태그가 너무 많습니다. <br>신중하게 선택해주세요 '
       });
     };
-    $scope.checkboxResult=[];
-    $scope.checkboxList=["c1","c2","c3"];
-    $scope.checkCheckboxCount=function(i){
-      var count=0;
-      if($scope.checkboxResult[i]==false){
+    $scope.checkboxResult = [];
+    $scope.checkboxList = ["c1", "c2", "c3"];
+    $scope.checkCheckboxCount = function (i) {
+      var count = 0;
+      if ($scope.checkboxResult[i] == false) {
         return;
       }
-      $scope.checkboxResult.forEach(function(item,index){
-        if(item==true){
-          if(count+1>2){
+      $scope.checkboxResult.forEach(function (item, index) {
+        if (item == true) {
+          if (count + 1 > 2) {
             checkboxCountAlert();
-            $scope.checkboxResult[i]=false;
-          }else{
+            $scope.checkboxResult[i] = false;
+          } else {
             count++;
           }
         }
@@ -115,14 +115,14 @@ angular.module('starter.controllers', [])
 
     /*
      submit popup
-      */
-    $scope.submit = function() {
+     */
+    $scope.submit = function () {
       var confirmPopup = $ionicPopup.confirm({
         title: '수업평가',
         template: '수업 평가를 등록하시겠습니까?'
       });
-      confirmPopup.then(function(res) {
-        if(res) {
+      confirmPopup.then(function (res) {
+        if (res) {
           console.log('You are sure');
         } else {
           console.log('You are not sure');
@@ -133,7 +133,7 @@ angular.module('starter.controllers', [])
   })
   .controller('NoticeCtrl', function ($scope) {
   })
-  .controller('ClassDetailCommentCtrl',function($scope){
+  .controller('ClassDetailCommentCtrl', function ($scope) {
 
   })
   .controller('ChatsCtrl', function ($scope, Chats) {
@@ -151,7 +151,7 @@ angular.module('starter.controllers', [])
     };
   })
 
-  .controller('ClassDetailCtrl', function ($scope, $stateParams,$ionicModal) {
+  .controller('ClassDetailCtrl', function ($scope, $stateParams, $ionicModal) {
     // $scope.chat = Chats.get($stateParams.chatId);
     console.log($stateParams.classId);
     $ionicModal.fromTemplateUrl('templates/modal/class-detail-comment.html', {
@@ -178,12 +178,42 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('BoardCtrl', function ($scope,type,$state,$ionicViewSwitcher,$ionicModal,$ionicPopup) {
-    $scope.type=type;
-    $scope.go=function(){
-      $ionicViewSwitcher.nextDirection('forward');
-      $state.go("board-detail",{boardId:4});
+  .controller('BoardCtrl', function ($scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
+    $scope.type = type;
+    // https://egg-yonsei.appspot.com
+    if (type == "free") {
+      $http.get("https://egg-yonsei.appspot.com/board/free_list").success(function (data) {
+        $scope.boardList = data;
+      });
+    } else {
+      $http.get("https://egg-yonsei.appspot.com/board/council_list").success(function (data) {
+        $scope.boardList = data;
+      });
     }
+    $scope.canLoadMore={};
+    $scope.canLoadMore['free']=true;
+    $scope.canLoadMore['council']=true;
+    var offset={};
+    offset['free']=10;
+    offset['council']=10;
+    $scope.loadMore = function () {
+      $http.get("https://egg-yonsei.appspot.com/board/"+type+"_list/" + offset[type]).success(function (data) {
+        if (data.length == 0) {
+          $scope.$broadcast('scroll.infiniteScrollComplete');
+          $scope.canLoadMore[$scope.type] = false;
+        } else {
+          $scope.boardList = $scope.boardList.concat(data);
+          offset[type] += 10;
+        }
+      }).error(function(msg){
+        console.log(msg);
+      });
+    }
+    $scope.go = function (boardId) {
+      $ionicViewSwitcher.nextDirection('forward');
+      $state.go("board-detail", {boardId: boardId});
+    }
+
     $ionicModal.fromTemplateUrl('templates/modal/board-write.html', {
       scope: $scope,
       animation: 'slide-in-up'
@@ -193,17 +223,16 @@ angular.module('starter.controllers', [])
     $scope.openModal = function () {
       $scope.modal.show();
     };
-
     /*
      submit popup
      */
-    $scope.submit = function() {
+    $scope.submit = function () {
       var confirmPopup = $ionicPopup.confirm({
         title: '글 공개',
         template: '글을 업로드 하시겠습니까?'
       });
-      confirmPopup.then(function(res) {
-        if(res) {
+      confirmPopup.then(function (res) {
+        if (res) {
           console.log('You are sure');
         } else {
           console.log('You are not sure');
@@ -213,13 +242,13 @@ angular.module('starter.controllers', [])
     /*
      cancel popup
      */
-    $scope.goBack = function() {
+    $scope.goBack = function () {
       var confirmPopup = $ionicPopup.confirm({
         title: '글 작성 취소',
         template: '글 작성을 취소하시겠습니까?'
       });
-      confirmPopup.then(function(res) {
-        if(res) {
+      confirmPopup.then(function (res) {
+        if (res) {
           $scope.modal.hide();
         } else {
           console.log('You are not sure');
@@ -227,10 +256,51 @@ angular.module('starter.controllers', [])
       });
     };
   })
-  .controller('BoardDetailCtrl',function($scope,$state,$ionicViewSwitcher){
-    $scope.goBack=function(){
-      $ionicViewSwitcher.nextDirection('back');
-      $state.go("tab.board.free");
+  .controller('BoardDetailCtrl', function ($scope, $state, $ionicViewSwitcher, $stateParams, $http,$ionicScrollDelegate) {
+    $http.get("https://egg-yonsei.appspot.com/board/watch/" + $stateParams.boardId).success(function (data) {
+      $scope.data = data;
+    });
+    $http.get("https://egg-yonsei.appspot.com/board/comment/" + $stateParams.boardId).success(function (data) {
+      $scope.commentList = data;
+      console.log("load more init");
+      $scope.canLoadMore = true;
+    });
+    // $scope.goBack=function(){
+    //   // $ionicViewSwitcher.nextDirection('back');
+    //   // $state.go("tab.board.free");
+    // }
+    var offset = 10;
+    $scope.canLoadMore = false;
+    $scope.loadMore = function () {
+      console.log("more");
+      $http.get("https://egg-yonsei.appspot.com/board/comment/" + $stateParams.boardId + "/" + offset).success(function (data) {
+        console.log(data);
+        if (data.length < 10) {
+          console.log("oring");
+          $scope.commentList = $scope.commentList.concat(data);
+          $scope.$broadcast('scroll.infiniteScrollComplete');
+          $scope.canLoadMore = false;
+        } else{
+          console.log("no oring");
+          $scope.commentList = $scope.commentList.concat(data);
+          offset += 10;
+        }
+      });
+    }
+    $scope.submitComment=function(boardId){
+      var data={};
+      data.body=$scope.newComment_body;
+      $scope.newComment_body="";
+      data.user=1;
+      data.board=boardId;
+      $http.post("https://egg-yonsei.appspot.com/board/comment",data).success(function(data){
+        $ionicScrollDelegate.scrollTop(true);
+        $http.get("https://egg-yonsei.appspot.com/board/comment/" + $stateParams.boardId).success(function (data) {
+          $scope.commentList = data;
+          $scope.canLoadMore = true;
+          var offset = 10;
+        });
+      });
     }
   })
 
@@ -248,7 +318,7 @@ angular.module('starter.controllers', [])
     $scope.login = function () {
       $scope.openModal();
     }
-    $scope.confirm=function(){
+    $scope.confirm = function () {
       $scope.closeModal();
       User.login();
     }

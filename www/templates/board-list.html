@@ -1,30 +1,31 @@
 <ion-view title="Board" hide-back-button="true">
   <ion-content class="has-tabs-top has-header">
     <ion-list>
-      <ion-item ng-click="go(1)" class="boardList" ng-repeat="i in [1,2,3,4,5,6,7,8,9]">
+      <ion-item ng-click="go(board.id)" class="boardList" ng-repeat="board in boardList">
         <div class="row">
           <div class="col col-75">
             <div class="row">
-              <span class="textLightKorDark small">제목입니다.</span>
+              <span class="textLightKorDark small">{{board.title}}</span>
+            </div>
+            <div class="row" style="padding-right: 30px !important;">
+              <span class="textLightKorDark xtiny" style="text-overflow: ellipsis; overflow-y:hidden; white-space: nowrap;">{{board.body}}</span>
             </div>
             <div class="row">
-              <span class="textLightKorDark xtiny">글 ㄴㄴ 내용은 프리뷰</span>
-            </div>
-            <div class="row">
-              <span class="textLightKorDark textPaddingTop" style="font-size:8px;">3시간 전 | 헬로미투 </span>
+              <span class="textLightKorDark textPaddingTop" style="font-size:8px;">{{board.createdAt|timeDiff}} | {{board.User.username}} </span>
             </div>
           </div>
           <div class="col col-25 col-center" style="display: table;">
             <img class="heart" src="img/heart.svg" style="display: table-cell;vertical-align: middle;">
-            <span class="xtiny boardIconText" style="display: table-cell;vertical-align: middle; padding-right:5px;">8</span>
+            <span class="xtiny boardIconText" style="display: table-cell;vertical-align: middle; padding-right:5px;">{{board.heart}}</span>
             <img class="comment"src="img/comment.svg" style="display: table-cell;vertical-align: middle;">
-            <span class="xtiny boardIconText" style="display: table-cell;vertical-align: middle;">8</span>
+            <span class="xtiny boardIconText" style="display: table-cell;vertical-align: middle;">{{board.comment}}</span>
             <!--이 위 img 에 하트 svg 넣어주세여. 그 다음에 색 변하는건 제가 할게여-->
           </div>
         </div>
       </ion-item>
     </ion-list>
     <ion-infinite-scroll
+      ng-if="canLoadMore[type]"
       on-infinite="loadMore()"
       distance="1%">
     </ion-infinite-scroll>

@@ -81,7 +81,6 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board', {
         url: '/board',
-        cache: false,
         abstract:true,
         views: {
           'tab-board': {
@@ -91,7 +90,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board.free', {
         url: '/free',
-        cache: false,
+        cache:false,
         views: {
           'board-list-free': {
             templateUrl: 'templates/board-list.html',
@@ -106,7 +105,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board.council', {
         url: '/council',
-        cache: false,
+        cache:false,
         views: {
           'board-list-council': {
             templateUrl: 'templates/board-list.html',
@@ -121,20 +120,10 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('board-detail', {
         url: '/free/:boardId',
+        cache:false,
         templateUrl: 'templates/board-detail.html',
         controller: 'BoardDetailCtrl'
       })
-      .state('tab.board.council-detail', {
-        url: '/council/:boardId',
-        cache: false,
-        views: {
-          'board-list-council': {
-            templateUrl: 'templates/board-detail.html',
-            controller: 'BoardDetailCtrl'
-          }
-        }
-      })
-
       .state('tab.mypage', {
         url: '/mypage',
         views: {
@@ -170,4 +159,9 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         $(element).barrating(scope.$eval(attrs.ratingInfo));
       }
     };
-  });
+  })
+  .filter('timeDiff', function() {
+  return function( input ) {
+    return moment(input).utcOffset("-09:00").fromNow();
+  }
+});
