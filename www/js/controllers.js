@@ -181,15 +181,21 @@ angular.module('starter.controllers', [])
   .controller('BoardCtrl', function ($scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
     $scope.type = type;
     // https://egg-yonsei.appspot.com
-    if (type == "free") {
-      $http.get("https://egg-yonsei.appspot.com/board/free_list").success(function (data) {
-        $scope.boardList = data;
-      });
-    } else {
-      $http.get("https://egg-yonsei.appspot.com/board/council_list").success(function (data) {
-        $scope.boardList = data;
-      });
+    $scope.refresh=function(){
+      if (type == "free") {
+        $http.get("https://egg-yonsei.appspot.com/board/free_list").success(function (data) {
+          $scope.boardList = data;
+          $scope.$broadcast('scroll.refreshComplete');
+        });
+      } else {
+        $http.get("https://egg-yonsei.appspot.com/board/council_list").success(function (data) {
+          $scope.boardList = data;
+          $scope.$broadcast('scroll.refreshComplete');
+        });
+      }
     }
+    $scope.refresh();
+
     $scope.canLoadMore = {};
     $scope.canLoadMore['free'] = true;
     $scope.canLoadMore['council'] = true;
@@ -198,13 +204,14 @@ angular.module('starter.controllers', [])
     offset['council'] = 10;
     $scope.loadMore = function () {
       $http.get("https://egg-yonsei.appspot.com/board/" + type + "_list/" + offset[type]).success(function (data) {
+        console.log(data);
         if (data.length == 0) {
-          $scope.$broadcast('scroll.infiniteScrollComplete');
           $scope.canLoadMore[$scope.type] = false;
         } else {
           $scope.boardList = $scope.boardList.concat(data);
           offset[type] += 10;
         }
+        $scope.$broadcast('scroll.infiniteScrollComplete');
       }).error(function (msg) {
         console.log(msg);
       });
@@ -223,11 +230,42 @@ angular.module('starter.controllers', [])
     $scope.openModal = function () {
       $scope.modal.show();
     };
+    $scope.imageUrl=0;
+    $scope.openFileDialog=function(){
+      window.imagePicker.getPictures(
+        function(results) {
+          for (var i = 0; i < results.length; i++) {
+            var win = function (r) {
+              $scope.imageUrl=JSON.parse(r.response).image;
+            }
 
+            var fail = function (error) {
+              alert("An error has occurred: Code = " + error.code);
+              console.log("upload error source " + error.source);
+              console.log("upload error target " + error.target);
+            }
+
+            var options = new FileUploadOptions();
+            // options.fileKey = "file";
+            // options.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1);
+            // options.mimeType = "text/plain";
+            var ft = new FileTransfer();
+            ft.upload(results[i], encodeURI("https://egg-yonsei.appspot.com/board/upload"), win, fail, options);
+          }
+        }, function (error) {
+          console.log('Error: ' + error);
+        },{
+          maximumImagesCount: 1,
+          width: 400,
+          height: 400,
+          quality: 80
+        }
+      );
+    }
     /*
      submit popup
      */
-    $scope.submit = function (board) {
+    $scope.submit = function (board,imageUrl) {
       var confirmPopup = $ionicPopup.confirm({
         title: '글 공개',
         template: '글을 업로드 하시겠습니까?'
@@ -238,11 +276,12 @@ angular.module('starter.controllers', [])
             user: 1,
             title: board.title,
             body: board.body,
-            type: 1
+            type: 1,
+            image:imageUrl
           };
           console.log(data);
           // https://egg-yonsei.appspot.com
-          $http.post("http://localhost:3000/board/write", data).success(function (res) {
+          $http.post("https://egg-yonsei.appspot.com/board/write", data).success(function (res) {
             if (res.result) {
               $scope.modal.remove();
             } else {
@@ -291,11 +330,13 @@ angular.module('starter.controllers', [])
       };
       $http.post("https://egg-yonsei.appspot.com/board/like", data).success(function (data) {
         if (data.like) {
-          $scope.data.heart++;
-          alert('좋아요 되었습니다.');
+          // $scope.$apply(function(){
+            $scope.data.heart++;
+          // });
         } else {
-          $scope.data.heart--;
-          alert('좋아요가 취소되었습니다.');
+          // $scope.$apply(function(){
+            $scope.data.heart--;
+          // });
         }
       })
     }
@@ -325,6 +366,9 @@ angular.module('starter.controllers', [])
       data.board = boardId;
       $http.post("https://egg-yonsei.appspot.com/board/comment", data).success(function (data) {
         $ionicScrollDelegate.scrollTop(true);
+        // $scope.$apply(function(){
+          $scope.data.comment++;
+        // });
         $http.get("https://egg-yonsei.appspot.com/board/comment/" + $stateParams.boardId).success(function (data) {
           $scope.commentList = data;
           $scope.canLoadMore = true;

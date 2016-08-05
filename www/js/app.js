@@ -119,7 +119,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         }
       })
       .state('board-detail', {
-        url: '/free/:boardId',
+        url: '/board/:boardId',
         cache:false,
         templateUrl: 'templates/board-detail.html',
         controller: 'BoardDetailCtrl'
