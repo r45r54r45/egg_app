@@ -236,9 +236,10 @@ angular.module('starter.controllers', [])
         function(results) {
           for (var i = 0; i < results.length; i++) {
             var win = function (r) {
-              $scope.imageUrl=JSON.parse(r.response).image;
+              $scope.$apply(function(){
+                $scope.imageUrl=JSON.parse(r.response).image;
+              });
             }
-
             var fail = function (error) {
               alert("An error has occurred: Code = " + error.code);
               console.log("upload error source " + error.source);
@@ -303,6 +304,8 @@ angular.module('starter.controllers', [])
       });
       confirmPopup.then(function (res) {
         if (res) {
+          $scope.board={};
+          $scope.imageUrl=0;
           $scope.modal.hide();
         } else {
           console.log('You are not sure');
