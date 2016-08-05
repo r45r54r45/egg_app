@@ -136,20 +136,6 @@ angular.module('starter.controllers', [])
   .controller('ClassDetailCommentCtrl', function ($scope) {
 
   })
-  .controller('ChatsCtrl', function ($scope, Chats) {
-    // With the new view caching in Ionic, Controllers are only called
-    // when they are recreated or on app start, instead of every page change.
-    // To listen for when this page is active (for example, to refresh data),
-    // listen for the $ionicView.enter event:
-    //
-    //$scope.$on('$ionicView.enter', function(e) {
-    //});
-
-    $scope.chats = Chats.all();
-    $scope.remove = function (chat) {
-      Chats.remove(chat);
-    };
-  })
 
   .controller('ClassDetailCtrl', function ($scope, $stateParams, $ionicModal) {
     // $scope.chat = Chats.get($stateParams.chatId);
@@ -267,6 +253,10 @@ angular.module('starter.controllers', [])
      submit popup
      */
     $scope.submit = function (board,imageUrl) {
+      if(!board.title||!board.body){
+        alert("제목과 내용을 써주세요.");
+        return;
+      }
       var confirmPopup = $ionicPopup.confirm({
         title: '글 공개',
         template: '글을 업로드 하시겠습니까?'
