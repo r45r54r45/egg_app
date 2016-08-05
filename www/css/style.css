@@ -460,7 +460,12 @@ div.popup-buttons>button{
 }
 .button-comment{
   background: none;
-  color:rgba(82, 82, 82, 0.7);;
+  color:rgba(82, 82, 82, 0.7);
+  border: 1px solid rgba(82,82,82, .3);
+    border-radius: 20px;
+    width: 55px;
+    height: 100%;
+    line-height: 2.2 !important;
 }
 ion-footer-bar>div.item{
   border: none;
@@ -469,5 +474,17 @@ ion-footer-bar>div.item>label.item-input-wrapper{
   background: none;
 }
 .item-input-wrapper>input{
-  font-size: 11px;
+  font-size: 12px;
+}
+.list>.item{
+  border-color:rgba(82, 82, 82, .05);
+}
+
+.boardWriteTextarea{
+  resize:none;
+  padding-top: 7px;
+  height:250px;;
+}
+.button.button-positive.activated{
+  background-color: #1d335b;
 }
