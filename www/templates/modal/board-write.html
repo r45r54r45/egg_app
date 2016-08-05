@@ -1,5 +1,14 @@
-<ion-modal-view hide-nav-bar="true" ng-init="board={}">
-  <ion-content scroll="false">
+<ion-modal-view ng-init="board={}">
+  <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+    <ion-nav-buttons side="left">
+      <button ng-click="goBack()">뒤로</button>
+    </ion-nav-buttons>
+    <ion-nav-title>글 작성하기</ion-nav-title>
+    <ion-nav-buttons side="right">
+      <button ng-click="submit(board,imageUrl)">작성</button>
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content class="has-header">
     <div style="width: 100%; min-height:100vw; background:grey; position: relative;" class="">
       <img src="img/emptyImage.svg" style="position: absolute;
     left: 50%;
@@ -7,9 +16,9 @@
     top: 50%;
     margin-top: -23px;
     width: 46px;
-    height: 46px;">
+    height: 46px;" ng-click="openFileDialog()" ng-show="imageUrl==0">
       <!--이거 이미지는 이미지 없을 때 기본으로 뜨는 중간에 svg-->
-      <img src="img/adam.jpg" style="width: 100%;" ng-click="openFileDialog()">
+      <img ng-src="{{imageUrl}}" style="width: 100%; min-height:100vw;">
     </div>
     <div class="list">
       <label class="item item-input">
@@ -20,6 +29,7 @@
       </label>
     </div>
   </ion-content>
+<<<<<<< HEAD
   <div style="position: absolute; left:0; top:0; width: 100%; height: 30px; background: transparent;">
     <div class="row">
       <div class="col col-33 center">
@@ -33,4 +43,7 @@
       </div>
     </div>
   </div>
+=======
+
+>>>>>>> origin/master
 </ion-modal-view>

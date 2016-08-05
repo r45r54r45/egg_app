@@ -1,5 +1,9 @@
 <ion-view title="Board" hide-back-button="true">
   <ion-content class="has-tabs-top has-header">
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="refresh()">
+    </ion-refresher>
     <ion-list>
       <ion-item ng-click="go(board.id)" class="boardList" ng-repeat="board in boardList">
         <div class="row">
@@ -25,9 +29,10 @@
       </ion-item>
     </ion-list>
     <ion-infinite-scroll
+      immediate-check="false"
       ng-if="canLoadMore[type]"
       on-infinite="loadMore()"
-      distance="1%">
+      distance="10%">
     </ion-infinite-scroll>
   </ion-content>
   <div style="position: absolute; bottom: 60px; right:15px; " ng-show="type=='free'">
