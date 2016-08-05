@@ -370,7 +370,16 @@ ion-header-bar{
 
 
 .bar.bar-positive .title{
-  color:red;
+  color:white;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight:300 !important;
+  font-size: 16px;
+}
+.bar.bar-stable .title{
+  color:white;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight:300 !important;
+  font-size: 16px;
 }
 
 .rating-yes-no>.list{
@@ -487,4 +496,7 @@ ion-footer-bar>div.item>label.item-input-wrapper{
 }
 .button.button-positive.activated{
   background-color: #1d335b;
+}
+.navigation-dark{
+  color:white;
 }

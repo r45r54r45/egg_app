@@ -1,11 +1,11 @@
 <ion-modal-view ng-init="board={}">
   <ion-nav-bar class="bar-stable nav-title-slide-ios7">
     <ion-nav-buttons side="left">
-      <button ng-click="goBack()">뒤로</button>
+      <button class="navigation-dark" ng-click="goBack()">뒤로</button>
     </ion-nav-buttons>
-    <ion-nav-title>글 작성하기</ion-nav-title>
+    <ion-nav-title><span class="small navigation-dark">글 작성하기</span></ion-nav-title>
     <ion-nav-buttons side="right">
-      <button ng-click="submit(board,imageUrl)">작성</button>
+      <button class="navigation-dark" ng-click="submit(board,imageUrl)">작성</button>
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-content class="has-header">
@@ -29,7 +29,6 @@
       </label>
     </div>
   </ion-content>
-<<<<<<< HEAD
   <div style="position: absolute; left:0; top:0; width: 100%; height: 30px; background: transparent;">
     <div class="row">
       <div class="col col-33 center">
@@ -43,7 +42,4 @@
       </div>
     </div>
   </div>
-=======
-
->>>>>>> origin/master
 </ion-modal-view>
