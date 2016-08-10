@@ -2,7 +2,840 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70144001-f483-48a9-abe7-2f078d9787ff" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-hdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-hdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-ldpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-ldpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-mdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-mdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xhdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-xhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xxhdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-xxhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/icon/drawable-xxxhdpi-icon.png" afterPath="$PROJECT_DIR$/resources/android/icon/drawable-xxxhdpi-icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-hdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-hdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-ldpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-ldpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-mdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-mdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-xhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-land-xxxhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-hdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-hdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-ldpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-ldpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-mdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-mdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-xhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxxhdpi-screen.png" afterPath="$PROJECT_DIR$/resources/android/splash/drawable-port-xxxhdpi-screen.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/icon.png" afterPath="$PROJECT_DIR$/resources/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-40.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-40@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-40@3x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-40@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-50.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-50.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-50@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-50@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-60@3x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-60@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-72.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-72.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-72@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-72@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-76.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-76.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-76@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-76@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-83.5@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-83.5@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon-small@3x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon-small@3x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/icon/icon@2x.png" afterPath="$PROJECT_DIR$/resources/ios/icon/icon@2x.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-568h@2x~iphone.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-568h@2x~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-667h.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-667h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-736h.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-736h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape-736h.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape-736h.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape@2x~ipad.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape~ipad.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Landscape~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait@2x~ipad.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait@2x~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait~ipad.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default-Portrait~ipad.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default@2x~iphone.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default@2x~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/ios/splash/Default~iphone.png" afterPath="$PROJECT_DIR$/resources/ios/splash/Default~iphone.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/splash.png" afterPath="$PROJECT_DIR$/resources/splash.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/adam.jpg" afterPath="$PROJECT_DIR$/www/img/adam.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/ben.png" afterPath="$PROJECT_DIR$/www/img/ben.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/ionic.png" afterPath="$PROJECT_DIR$/www/img/ionic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/max.png" afterPath="$PROJECT_DIR$/www/img/max.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/mike.png" afterPath="$PROJECT_DIR$/www/img/mike.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/notice-background.png" afterPath="$PROJECT_DIR$/www/img/notice-background.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/perry.png" afterPath="$PROJECT_DIR$/www/img/perry.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/plus_btn.png" afterPath="$PROJECT_DIR$/www/img/plus_btn.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/sample-notice-image.png" afterPath="$PROJECT_DIR$/www/img/sample-notice-image.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/sample-notice-logo.png" afterPath="$PROJECT_DIR$/www/img/sample-notice-logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js.gzip" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js.gzip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/dist/zepto.min.gz" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/dist/zepto.min.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.bowerrc" afterPath="$PROJECT_DIR$/.bowerrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.editorconfig" afterPath="$PROJECT_DIR$/.editorconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/egg_app.iml" afterPath="$PROJECT_DIR$/.idea/egg_app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/egg_app_node_modules.xml" afterPath="$PROJECT_DIR$/.idea/libraries/egg_app_node_modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.io-config.json" afterPath="$PROJECT_DIR$/.io-config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hooks/README.md" afterPath="$PROJECT_DIR$/hooks/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ionic.project" afterPath="$PROJECT_DIR$/ionic.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ionic.app.scss" afterPath="$PROJECT_DIR$/scss/ionic.app.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/css/style.css" afterPath="$PROJECT_DIR$/www/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/comment.svg" afterPath="$PROJECT_DIR$/www/img/comment.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/emptyImage.svg" afterPath="$PROJECT_DIR$/www/img/emptyImage.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/heart.svg" afterPath="$PROJECT_DIR$/www/img/heart.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/plus.svg" afterPath="$PROJECT_DIR$/www/img/plus.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/star.svg" afterPath="$PROJECT_DIR$/www/img/star.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/starLine.svg" afterPath="$PROJECT_DIR$/www/img/starLine.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/img/yonsei.svg" afterPath="$PROJECT_DIR$/www/img/yonsei.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/services.js" afterPath="$PROJECT_DIR$/www/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-animate/.bower.json" afterPath="$PROJECT_DIR$/www/lib/angular-animate/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-animate/README.md" afterPath="$PROJECT_DIR$/www/lib/angular-animate/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.js" afterPath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.min.js" afterPath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.min.js.map" afterPath="$PROJECT_DIR$/www/lib/angular-animate/angular-animate.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-animate/bower.json" afterPath="$PROJECT_DIR$/www/lib/angular-animate/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-animate/index.js" afterPath="$PROJECT_DIR$/www/lib/angular-animate/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-animate/package.json" afterPath="$PROJECT_DIR$/www/lib/angular-animate/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/.bower.json" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/README.md" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.js" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.min.js.map" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/angular-sanitize.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/bower.json" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/index.js" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-sanitize/package.json" afterPath="$PROJECT_DIR$/www/lib/angular-sanitize/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/.bower.json" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/CHANGELOG.md" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/LICENSE" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/README.md" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/api/angular-ui-router.d.ts" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/api/angular-ui-router.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/bower.json" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/release/angular-ui-router.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/release/angular-ui-router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/release/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/release/angular-ui-router.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/common.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/resolve.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/resolve.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/state.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/state.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/stateDirectives.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/stateDirectives.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/stateFilters.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/stateFilters.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/templateFactory.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/templateFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/urlMatcherFactory.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/urlMatcherFactory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/urlRouter.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/urlRouter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/view.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/view.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/viewDirective.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/viewDirective.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular-ui-router/src/viewScroll.js" afterPath="$PROJECT_DIR$/www/lib/angular-ui-router/src/viewScroll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/.bower.json" afterPath="$PROJECT_DIR$/www/lib/angular/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/README.md" afterPath="$PROJECT_DIR$/www/lib/angular/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular-csp.css" afterPath="$PROJECT_DIR$/www/lib/angular/angular-csp.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.js" afterPath="$PROJECT_DIR$/www/lib/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/angular.min.js.map" afterPath="$PROJECT_DIR$/www/lib/angular/angular.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/bower.json" afterPath="$PROJECT_DIR$/www/lib/angular/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/index.js" afterPath="$PROJECT_DIR$/www/lib/angular/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angular/package.json" afterPath="$PROJECT_DIR$/www/lib/angular/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/.bower.json" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/CHANGELOG.md" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/Gruntfile.js" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/LICENSE" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/README.md" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/bower.json" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/demo.css" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/demo.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/demo.js" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/directiveInCustomTemplate.html" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/directiveInCustomTemplate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/index.html" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/lib/bootstrap.min.css" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/lib/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/lib/ui-bootstrap-tpls.js" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/lib/ui-bootstrap-tpls.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/sliderModal.html" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/demo/sliderModal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/dist/rzslider.css" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/dist/rzslider.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/dist/rzslider.js" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/dist/rzslider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/dist/rzslider.min.css" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/dist/rzslider.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/dist/rzslider.min.js" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/dist/rzslider.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/issue_template.md" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/issue_template.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/karma.conf.js" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/package.json" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/src/rzSliderTpl.html" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/src/rzSliderTpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/src/rzslider.js" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/src/rzslider.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/src/rzslider.less" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/src/rzslider.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/angularjs-slider/src/variables.less" afterPath="$PROJECT_DIR$/www/lib/angularjs-slider/src/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/.bower.json" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/CHANGELOG.md" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/LICENSE" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/README.md" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/bower.json" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/build/config.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/build/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/dist/ionic.io.bundle.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/dist/ionic.io.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/gulpfile.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/package.json" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/analytics.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/analytics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/angular.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/es5.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/es5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/serializers.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/serializers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/storage.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/analytics/storage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/auth/angular.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/auth/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/auth/auth.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/auth/auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/auth/es5.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/auth/es5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/angular.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/app.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/core.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/data-types.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/data-types.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/es5.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/es5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/events.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/events.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/logger.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/logger.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/promise.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/promise.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/request.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/request.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/settings.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/storage.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/storage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/user.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/core/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/deploy/angular.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/deploy/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/deploy/deploy.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/deploy/deploy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/deploy/es5.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/deploy/es5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/angular.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/es5.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/es5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/push-dev.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/push-dev.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/push-message.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/push-message.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/push-token.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/push-token.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/push.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/push/push.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/util/util.js" afterPath="$PROJECT_DIR$/www/lib/ionic-platform-web-client/src/util/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/.bower.json" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/LICENSE.md" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/LICENSE.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/README.md" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/bower.json" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/dist/ionic-ratings.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/dist/ionic-ratings.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/gulpfile.js" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/ionic.project" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/ionic.project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/package.json" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic-ratings/src/ionic-ratings.js" afterPath="$PROJECT_DIR$/www/lib/ionic-ratings/src/ionic-ratings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/css/ionic.css" afterPath="$PROJECT_DIR$/www/lib/ionic/css/ionic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular-ui/angular-ui-router.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular-ui/angular-ui-router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular-ui/angular-ui-router.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular-ui/angular-ui-router.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-animate.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-animate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-animate.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-animate.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-resource.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-resource.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-resource.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-resource.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-sanitize.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-sanitize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-sanitize.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular-sanitize.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/angular/angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic-angular.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic.bundle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/js/ionic.min.js" afterPath="$PROJECT_DIR$/www/lib/ionic/js/ionic.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ionic/version.json" afterPath="$PROJECT_DIR$/www/lib/ionic/version.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/.bower.json" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/CHANGELOG.md" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/LICENSE.txt" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/README.md" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/bower.json" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/jquery.barrating.min.js" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/jquery.barrating.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/jquery.barrating.min.js.map" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/jquery.barrating.min.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-1to10.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-1to10.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-horizontal.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-horizontal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-movie.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-movie.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-pill.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-pill.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-reversed.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-reversed.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-square.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bars-square.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bootstrap-stars.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/bootstrap-stars.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/css-stars.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/css-stars.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/fontawesome-stars-o.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/fontawesome-stars-o.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/fontawesome-stars.css" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/dist/themes/fontawesome-stars.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/gulpfile.js" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/jquery.barrating.js" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/jquery.barrating.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/karma.conf.js" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/package.json" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-1to10.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-1to10.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-horizontal.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-horizontal.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-movie.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-movie.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-pill.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-pill.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-reversed.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-reversed.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-square.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bars-square.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bootstrap-stars.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/bootstrap-stars.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/css-stars.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/css-stars.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/fontawesome-stars-o.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/fontawesome-stars-o.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/fontawesome-stars.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/fontawesome-stars.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/mixins.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/variables.less" afterPath="$PROJECT_DIR$/www/lib/jquery-bar-rating/themes/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/.bower.json" afterPath="$PROJECT_DIR$/www/lib/jquery/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/AUTHORS.txt" afterPath="$PROJECT_DIR$/www/lib/jquery/AUTHORS.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/LICENSE.txt" afterPath="$PROJECT_DIR$/www/lib/jquery/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/README.md" afterPath="$PROJECT_DIR$/www/lib/jquery/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/bower.json" afterPath="$PROJECT_DIR$/www/lib/jquery/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/dist/core.js" afterPath="$PROJECT_DIR$/www/lib/jquery/dist/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.js" afterPath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.min.js" afterPath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.min.map" afterPath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.min.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.slim.js" afterPath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.slim.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.slim.min.js" afterPath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.slim.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.slim.min.map" afterPath="$PROJECT_DIR$/www/lib/jquery/dist/jquery.slim.min.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/external/sizzle/LICENSE.txt" afterPath="$PROJECT_DIR$/www/lib/jquery/external/sizzle/LICENSE.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/external/sizzle/dist/sizzle.js" afterPath="$PROJECT_DIR$/www/lib/jquery/external/sizzle/dist/sizzle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/external/sizzle/dist/sizzle.min.js" afterPath="$PROJECT_DIR$/www/lib/jquery/external/sizzle/dist/sizzle.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/external/sizzle/dist/sizzle.min.map" afterPath="$PROJECT_DIR$/www/lib/jquery/external/sizzle/dist/sizzle.min.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/.eslintrc" afterPath="$PROJECT_DIR$/www/lib/jquery/src/.eslintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax/jsonp.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax/jsonp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax/load.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax/load.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax/parseXML.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax/parseXML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax/var/location.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax/var/location.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax/var/nonce.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax/var/nonce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax/var/rquery.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax/var/rquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/ajax/xhr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/attributes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/attributes/attr.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/attributes/attr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/attributes/classes.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/attributes/classes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/attributes/prop.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/attributes/prop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/attributes/support.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/attributes/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/attributes/val.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/attributes/val.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/callbacks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/DOMEval.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/DOMEval.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/access.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/access.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/init.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/init.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/parseHTML.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/parseHTML.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/ready-no-deferred.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/ready-no-deferred.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/ready.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/ready.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/readyException.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/readyException.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/support.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/core/var/rsingleTag.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/core/var/rsingleTag.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/addGetHookIf.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/addGetHookIf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/adjustCSS.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/adjustCSS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/curCSS.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/curCSS.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/hiddenVisibleSelectors.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/hiddenVisibleSelectors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/showHide.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/showHide.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/support.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/var/cssExpand.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/var/cssExpand.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/var/getStyles.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/var/getStyles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/var/isHiddenWithinTree.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/var/isHiddenWithinTree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/var/rmargin.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/var/rmargin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/var/rnumnonpx.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/var/rnumnonpx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/css/var/swap.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/css/var/swap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/data.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/data/Data.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/data/Data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/data/var/acceptData.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/data/var/acceptData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/data/var/dataPriv.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/data/var/dataPriv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/data/var/dataUser.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/data/var/dataUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/deferred.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/deferred.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/deferred/exceptionHook.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/deferred/exceptionHook.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/deprecated.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/dimensions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/effects.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/effects.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/effects/Tween.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/effects/Tween.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/effects/animatedSelector.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/effects/animatedSelector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/event.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/event/ajax.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/event/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/event/alias.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/event/alias.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/event/focusin.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/event/focusin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/event/support.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/event/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/event/trigger.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/event/trigger.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/exports/amd.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/exports/amd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/exports/global.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/exports/global.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/jquery.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/_evalUrl.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/_evalUrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/buildFragment.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/buildFragment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/getAll.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/getAll.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/setGlobalEval.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/setGlobalEval.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/support.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/var/rcheckableType.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/var/rcheckableType.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/var/rscriptType.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/var/rscriptType.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/var/rtagName.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/var/rtagName.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/wrapMap.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/manipulation/wrapMap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/offset.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/offset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/queue.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/queue.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/queue/delay.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/queue/delay.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/selector-native.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/selector-native.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/selector-sizzle.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/selector-sizzle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/selector.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/selector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/serialize.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/serialize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/traversing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/traversing/findFilter.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/traversing/findFilter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/traversing/var/dir.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/traversing/var/dir.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/traversing/var/rneedsContext.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/traversing/var/rneedsContext.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/traversing/var/siblings.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/traversing/var/siblings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/ObjectFunctionString.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/ObjectFunctionString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/arr.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/arr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/class2type.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/class2type.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/concat.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/concat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/document.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/document.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/documentElement.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/documentElement.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/fnToString.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/fnToString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/getProto.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/getProto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/hasOwn.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/hasOwn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/indexOf.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/indexOf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/pnum.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/pnum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/push.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/push.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/rcssNum.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/rcssNum.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/rnotwhite.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/rnotwhite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/slice.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/slice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/support.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/support.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/var/toString.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/var/toString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/jquery/src/wrap.js" afterPath="$PROJECT_DIR$/www/lib/jquery/src/wrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/.bower.json" afterPath="$PROJECT_DIR$/www/lib/moment/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/CHANGELOG.md" afterPath="$PROJECT_DIR$/www/lib/moment/CHANGELOG.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/LICENSE" afterPath="$PROJECT_DIR$/www/lib/moment/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/README.md" afterPath="$PROJECT_DIR$/www/lib/moment/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/bower.json" afterPath="$PROJECT_DIR$/www/lib/moment/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/af.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ar-ma.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ar-ma.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ar-sa.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ar-sa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ar-tn.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ar-tn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ar.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/az.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/az.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/be.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/be.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/bg.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/bn.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/bo.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/bo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/br.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/bs.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ca.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/cs.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/cv.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/cv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/cy.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/da.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/de-at.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/de-at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/de.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/dv.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/dv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/el.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/en-au.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/en-ca.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/en-gb.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/en-ie.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/en-ie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/en-nz.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/en-nz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/eo.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/es-do.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/es-do.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/es.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/et.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/eu.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/fa.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/fi.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/fo.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/fr-ca.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/fr-ch.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/fr-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/fr.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/fy.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/fy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/gd.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/gd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/gl.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/he.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/hi.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/hr.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/hu.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/hy-am.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/hy-am.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/id.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/is.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/it.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ja.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/jv.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/jv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ka.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/kk.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/kk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/km.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ko.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ky.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ky.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/lb.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/lb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/lo.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/lo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/lt.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/lv.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/me.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/mk.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ml.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/mr.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/mr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ms-my.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ms-my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ms.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/my.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/nb.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ne.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ne.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/nl.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/nn.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/nn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/pa-in.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/pa-in.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/pl.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/pt-br.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/pt.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ro.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ru.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/se.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/se.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/si.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/sk.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/sl.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/sq.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/sr-cyrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/sr.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ss.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ss.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/sv.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/sw.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/sw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/ta.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/ta.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/te.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/te.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/th.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/tl-ph.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/tl-ph.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/tlh.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/tlh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/tr.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/tzl.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/tzl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/tzm-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/tzm.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/tzm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/uk.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/uz.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/uz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/vi.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/x-pseudo.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/x-pseudo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/zh-cn.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/locale/zh-tw.js" afterPath="$PROJECT_DIR$/www/lib/moment/locale/zh-tw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/min/locales.js" afterPath="$PROJECT_DIR$/www/lib/moment/min/locales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/min/locales.min.js" afterPath="$PROJECT_DIR$/www/lib/moment/min/locales.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/min/moment-with-locales.js" afterPath="$PROJECT_DIR$/www/lib/moment/min/moment-with-locales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/min/moment-with-locales.min.js" afterPath="$PROJECT_DIR$/www/lib/moment/min/moment-with-locales.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/min/moment.min.js" afterPath="$PROJECT_DIR$/www/lib/moment/min/moment.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/min/tests.js" afterPath="$PROJECT_DIR$/www/lib/moment/min/tests.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/moment.d.ts" afterPath="$PROJECT_DIR$/www/lib/moment/moment.d.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/moment.js" afterPath="$PROJECT_DIR$/www/lib/moment/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/check-overflow.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/check-overflow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/date-from-array.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/date-from-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-anything.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-anything.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-array.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-object.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-string-and-array.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-string-and-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-string-and-format.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-string-and-format.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-string.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/from-string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/local.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/local.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/parsing-flags.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/parsing-flags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/utc.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/utc.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/create/valid.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/create/valid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/abs.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/abs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/add-subtract.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/add-subtract.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/as.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/as.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/bubble.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/bubble.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/constructor.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/constructor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/create.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/create.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/duration.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/duration.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/get.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/get.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/humanize.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/humanize.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/iso-string.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/iso-string.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/prototype.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/duration/prototype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/format/format.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/format/format.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/base-config.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/base-config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/calendar.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/constructor.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/constructor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/en.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/en.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/formats.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/formats.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/invalid.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/invalid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/lists.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/lists.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/locale.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/locale.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/locales.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/locales.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/ordinal.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/ordinal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/pre-post-format.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/pre-post-format.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/prototype.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/prototype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/relative.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/relative.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/set.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/locale/set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/add-subtract.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/add-subtract.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/calendar.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/clone.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/clone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/compare.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/compare.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/constructor.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/constructor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/creation-data.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/creation-data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/diff.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/diff.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/format.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/format.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/from.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/from.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/get-set.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/get-set.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/locale.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/locale.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/min-max.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/min-max.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/moment.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/now.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/now.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/prototype.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/prototype.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/start-end-of.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/start-end-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/to-type.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/to-type.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/to.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/to.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/valid.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/moment/valid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/parse/regex.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/parse/regex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/parse/token.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/parse/token.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/aliases.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/aliases.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/constants.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/day-of-month.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/day-of-month.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/day-of-week.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/day-of-week.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/day-of-year.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/day-of-year.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/hour.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/hour.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/millisecond.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/millisecond.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/minute.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/minute.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/month.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/month.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/offset.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/offset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/priorities.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/priorities.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/quarter.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/quarter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/second.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/second.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/timestamp.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/timestamp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/timezone.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/timezone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/units.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/units.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/week-calendar-utils.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/week-calendar-utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/week-year.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/week-year.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/week.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/week.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/units/year.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/units/year.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/abs-ceil.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/abs-ceil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/abs-floor.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/abs-floor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/abs-round.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/abs-round.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/compare-arrays.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/compare-arrays.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/defaults.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/defaults.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/deprecate.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/deprecate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/extend.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/extend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/has-own-prop.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/has-own-prop.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/hooks.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/hooks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/index-of.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/index-of.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-array.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-array.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-date.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-date.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-function.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-function.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-object-empty.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-object-empty.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-object.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-object.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-undefined.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/is-undefined.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/keys.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/keys.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/map.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/some.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/some.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/to-int.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/to-int.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/zero-fill.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/lib/utils/zero-fill.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/af.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/af.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ar-ma.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ar-ma.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ar-sa.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ar-sa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ar-tn.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ar-tn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ar.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/az.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/az.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/be.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/be.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/bg.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/bn.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/bn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/bo.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/bo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/br.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/bs.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/bs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ca.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/cs.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/cv.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/cv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/cy.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/cy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/da.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/de-at.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/de-at.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/de.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/dv.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/dv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/el.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/en-au.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/en-au.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/en-ca.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/en-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/en-gb.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/en-gb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/en-ie.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/en-ie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/en-nz.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/en-nz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/eo.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/eo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/es-do.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/es-do.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/es.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/et.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/eu.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/fa.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/fi.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/fo.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/fo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/fr-ca.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/fr-ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/fr-ch.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/fr-ch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/fr.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/fy.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/fy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/gd.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/gd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/gl.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/he.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/hi.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/hi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/hr.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/hu.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/hy-am.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/hy-am.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/id.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/is.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/it.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ja.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/jv.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/jv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ka.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/kk.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/kk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/km.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/km.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ko.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ky.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ky.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/lb.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/lb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/lo.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/lo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/lt.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/lv.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/me.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/me.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/mk.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/mk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ml.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ml.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/mr.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/mr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ms-my.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ms-my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ms.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/my.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/nb.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/nb.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ne.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ne.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/nl.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/nn.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/nn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/pa-in.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/pa-in.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/pl.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/pt-br.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/pt-br.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/pt.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ro.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ru.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/se.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/se.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/si.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/sk.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/sl.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/sq.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/sq.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/sr-cyrl.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/sr-cyrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/sr.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ss.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ss.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/sv.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/sw.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/sw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/ta.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/ta.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/te.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/te.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/th.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/tl-ph.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/tl-ph.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/tlh.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/tlh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/tr.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/tzl.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/tzl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/tzm-latn.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/tzm-latn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/tzm.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/tzm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/uk.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/uz.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/uz.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/vi.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/x-pseudo.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/x-pseudo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/zh-cn.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/zh-cn.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/locale/zh-tw.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/locale/zh-tw.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/src/moment.js" afterPath="$PROJECT_DIR$/www/lib/moment/src/moment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/templates/amd-named.js" afterPath="$PROJECT_DIR$/www/lib/moment/templates/amd-named.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/templates/amd.js" afterPath="$PROJECT_DIR$/www/lib/moment/templates/amd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/templates/default.js" afterPath="$PROJECT_DIR$/www/lib/moment/templates/default.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/templates/globals.js" afterPath="$PROJECT_DIR$/www/lib/moment/templates/globals.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/templates/locale-header.js" afterPath="$PROJECT_DIR$/www/lib/moment/templates/locale-header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/moment/templates/test-header.js" afterPath="$PROJECT_DIR$/www/lib/moment/templates/test-header.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/.bower.json" afterPath="$PROJECT_DIR$/www/lib/ngstorage/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/.editorconfig" afterPath="$PROJECT_DIR$/www/lib/ngstorage/.editorconfig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/.gitattributes" afterPath="$PROJECT_DIR$/www/lib/ngstorage/.gitattributes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/.npmignore" afterPath="$PROJECT_DIR$/www/lib/ngstorage/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/LICENSE" afterPath="$PROJECT_DIR$/www/lib/ngstorage/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/README.md" afterPath="$PROJECT_DIR$/www/lib/ngstorage/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/bower.json" afterPath="$PROJECT_DIR$/www/lib/ngstorage/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/ngStorage.js" afterPath="$PROJECT_DIR$/www/lib/ngstorage/ngStorage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/ngStorage.min.js" afterPath="$PROJECT_DIR$/www/lib/ngstorage/ngStorage.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/ngstorage/package.js" afterPath="$PROJECT_DIR$/www/lib/ngstorage/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/platform.js/.bower.json" afterPath="$PROJECT_DIR$/www/lib/platform.js/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/platform.js/LICENSE" afterPath="$PROJECT_DIR$/www/lib/platform.js/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/platform.js/bower.json" afterPath="$PROJECT_DIR$/www/lib/platform.js/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/platform.js/platform.js" afterPath="$PROJECT_DIR$/www/lib/platform.js/platform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/.bower.json" afterPath="$PROJECT_DIR$/www/lib/plugin/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/.gitignore" afterPath="$PROJECT_DIR$/www/lib/plugin/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/CHANGELOG" afterPath="$PROJECT_DIR$/www/lib/plugin/CHANGELOG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/www/lib/plugin/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/Gruntfile.js" afterPath="$PROJECT_DIR$/www/lib/plugin/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/LICENSE" afterPath="$PROJECT_DIR$/www/lib/plugin/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/README.md" afterPath="$PROJECT_DIR$/www/lib/plugin/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/bower.json" afterPath="$PROJECT_DIR$/www/lib/plugin/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/circle.yml" afterPath="$PROJECT_DIR$/www/lib/plugin/circle.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/dist/plugin.js" afterPath="$PROJECT_DIR$/www/lib/plugin/dist/plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/dist/plugin.min.js" afterPath="$PROJECT_DIR$/www/lib/plugin/dist/plugin.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/.bower.json" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/.gitignore" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/.travis.yml" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/MIT-LICENSE" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/MIT-LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/README.md" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/dist/zepto.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/dist/zepto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/dist/zepto.min.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/dist/zepto.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/anim.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/anim.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/iphone/index.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/iphone/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/iphone/iphone.css" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/iphone/iphone.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/load_jquery_on_ie.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/load_jquery_on_ie.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/snow/index.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/snow/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/touch_events.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/examples/touch_events.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/package.json" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/ajax.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/assets.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/assets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/callbacks.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/callbacks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/data.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/deferred.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/deferred.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/detect.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/detect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/event.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/form.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/form.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/fx.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/fx.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/fx_methods.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/fx_methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/gesture.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/gesture.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/ie.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/ie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/ios3.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/ios3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/selector.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/selector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/stack.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/stack.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/touch.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/touch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/zepto.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/src/zepto.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/ajax.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/ajax.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/ajax_deferred.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/ajax_deferred.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/callbacks.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/callbacks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/data.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/data.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/deferred.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/deferred.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/detect.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/detect.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/event.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/evidence_runner.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/evidence_runner.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_javascript.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_javascript.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_selector.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_selector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_selector_javascript.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_selector_javascript.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_simple.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/ajax_load_simple.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/iframe_document.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/iframe_document.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/zepto.json" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fixtures/zepto.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/form.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/assets.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/assets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/fx.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/fx.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/gesture.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/gesture.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/touch.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/touch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/touchcancel.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/functional/touchcancel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fx.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/fx.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/index.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/ios3.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/ios3.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/runner.coffee" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/runner.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/selector.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/selector.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/server.coffee" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/server.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/stack.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/stack.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/test.css" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/test.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/touch.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/touch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/zepto.html" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/test/zepto.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/vendor/evidence.js" afterPath="$PROJECT_DIR$/www/lib/plugin/lib/zeptojs/vendor/evidence.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/package.json" afterPath="$PROJECT_DIR$/www/lib/plugin/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/src/js/plugin.js" afterPath="$PROJECT_DIR$/www/lib/plugin/src/js/plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/concurrent.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/concurrent.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/connect.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/connect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/copy.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/copy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/jscs.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/jscs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/jshint.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/jshint.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/mocha_phantomjs.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/mocha_phantomjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/open.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/open.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/shell.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/shell.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/uglify.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/uglify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/version.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/version.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/config/watch.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/config/watch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/jscs/tasks.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/jscs/tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/jshint/tasks.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/jshint/tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/jslinting.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/jslinting.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/lint/tasks.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/lint/tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tasks/version/tasks.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tasks/version/tasks.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tests/runner/config.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tests/runner/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tests/runner/index.html" afterPath="$PROJECT_DIR$/www/lib/plugin/tests/runner/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tests/runner/main.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tests/runner/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tests/unit/factory.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tests/unit/factory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tests/unit/plugin.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tests/unit/plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/plugin/tests/unit/uuid.js" afterPath="$PROJECT_DIR$/www/lib/plugin/tests/unit/uuid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs-text/.bower.json" afterPath="$PROJECT_DIR$/www/lib/requirejs-text/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs-text/LICENSE" afterPath="$PROJECT_DIR$/www/lib/requirejs-text/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs-text/README.md" afterPath="$PROJECT_DIR$/www/lib/requirejs-text/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs-text/bower.json" afterPath="$PROJECT_DIR$/www/lib/requirejs-text/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs-text/package.json" afterPath="$PROJECT_DIR$/www/lib/requirejs-text/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs-text/text.js" afterPath="$PROJECT_DIR$/www/lib/requirejs-text/text.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs/.bower.json" afterPath="$PROJECT_DIR$/www/lib/requirejs/.bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs/README.md" afterPath="$PROJECT_DIR$/www/lib/requirejs/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs/bower.json" afterPath="$PROJECT_DIR$/www/lib/requirejs/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/lib/requirejs/require.js" afterPath="$PROJECT_DIR$/www/lib/requirejs/require.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/board-detail.html" afterPath="$PROJECT_DIR$/www/templates/board-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/board-list.html" afterPath="$PROJECT_DIR$/www/templates/board-list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/class-detail.html" afterPath="$PROJECT_DIR$/www/templates/class-detail.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/login.html" afterPath="$PROJECT_DIR$/www/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/modal/board-write.html" afterPath="$PROJECT_DIR$/www/templates/modal/board-write.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/modal/class-add.html" afterPath="$PROJECT_DIR$/www/templates/modal/class-add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/modal/class-detail-comment.html" afterPath="$PROJECT_DIR$/www/templates/modal/class-detail-comment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/modal/class-sort.html" afterPath="$PROJECT_DIR$/www/templates/modal/class-sort.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/modal/login-join.html" afterPath="$PROJECT_DIR$/www/templates/modal/login-join.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-board.html" afterPath="$PROJECT_DIR$/www/templates/tab-board.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-class.html" afterPath="$PROJECT_DIR$/www/templates/tab-class.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-mypage.html" afterPath="$PROJECT_DIR$/www/templates/tab-mypage.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tab-notice.html" afterPath="$PROJECT_DIR$/www/templates/tab-notice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/tabs.html" afterPath="$PROJECT_DIR$/www/templates/tabs.html" />
     </list>
     <ignored path="egg_app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,31 +856,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="class-add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/modal/class-add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="class-sort.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/templates/modal/class-sort.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="17" selection-start-line="11" selection-start-column="7" selection-end-line="15" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2220">
-              <caret line="148" column="36" selection-start-line="148" selection-start-column="36" selection-end-line="148" selection-end-column="36" />
+            <state relative-caret-position="3270">
+              <caret line="218" column="22" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
               <folding>
                 <marker date="1470382887000" expanded="true" signature="10069:10130" ph="..." />
               </folding>
@@ -55,7 +868,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="class-detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/class-detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
@@ -83,18 +906,40 @@
       <file leaf-file-name="board-write.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/templates/modal/board-write.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="180">
+              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#ion-content#0;n#ion-modal-view#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <file leaf-file-name="ionic.app.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="195">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_bar.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/lib/ionic/scss/_bar.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="765">
+              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -160,15 +1005,15 @@
         <option value="$PROJECT_DIR$/www/templates/tabs.html" />
         <option value="$PROJECT_DIR$/www/templates/tab-notice.html" />
         <option value="$PROJECT_DIR$/www/css/style.css" />
-        <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/lib/ionic/css/ionic.css" />
         <option value="$PROJECT_DIR$/www/templates/board-detail.html" />
         <option value="$PROJECT_DIR$/www/templates/board-list.html" />
-        <option value="$PROJECT_DIR$/www/templates/modal/board-write.html" />
-        <option value="$PROJECT_DIR$/www/js/app.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers.js" />
         <option value="$PROJECT_DIR$/www/templates/class-detail.html" />
+        <option value="$PROJECT_DIR$/www/templates/modal/board-write.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers.js" />
+        <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/js/app.js" />
       </list>
     </option>
   </component>
@@ -212,7 +1057,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -322,8 +1166,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egg_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egg_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egg_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="egg_app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -444,24 +1317,36 @@
       <workItem from="1470325282088" duration="2842000" />
       <workItem from="1470380181557" duration="66000" />
       <workItem from="1470382816847" duration="297000" />
-      <workItem from="1470401621735" duration="513000" />
+      <workItem from="1470401621735" duration="4876000" />
+      <workItem from="1470640429643" duration="2627000" />
+      <workItem from="1470817492745" duration="1258000" />
+      <workItem from="1470860140728" duration="90000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93425000" />
+    <option name="totallyTimeSpent" value="101763000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2453125" sideWeight="0.5079051" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24384432" sideWeight="0.49209487" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24384432" sideWeight="0.49209487" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32802126" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -492,13 +1377,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -510,7 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -569,13 +1446,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1410">
           <caret line="94" column="22" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -730,14 +1600,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -756,7 +1618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99270">
           <caret line="6618" column="26" selection-start-line="6618" selection-start-column="26" selection-end-line="6618" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -764,7 +1625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -772,7 +1632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="17" selection-start-line="11" selection-start-column="7" selection-end-line="15" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,37 +1673,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/templates/modal/board-write.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="148" column="36" selection-start-line="148" selection-start-column="36" selection-end-line="148" selection-end-column="36" />
-          <folding>
-            <marker date="1470382887000" expanded="true" signature="10069:10130" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1740">
           <caret line="283" column="11" selection-start-line="283" selection-start-column="11" selection-end-line="283" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,6 +1690,58 @@
             <element signature="n#style#0;n#div#1;n#div#3;n#ion-item#0;n#ion-list#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#3;n#ion-item#0;n#ion-list#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/templates/modal/board-write.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#ion-content#0;n#ion-modal-view#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/lib/ionic/scss/_bar.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3270">
+          <caret line="218" column="22" selection-start-line="218" selection-start-column="22" selection-end-line="218" selection-end-column="22" />
+          <folding>
+            <marker date="1470382887000" expanded="true" signature="10069:10130" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
