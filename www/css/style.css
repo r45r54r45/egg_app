@@ -317,7 +317,7 @@ ion-header-bar{
   background:#213b73 !important;
 }
 .tab-nav{
-  /*background: #262727 !important;*/
+  background: #262727 !important;
 }
 .comment{
   height:22px;
@@ -525,4 +525,13 @@ button.button.button-icon.icon.ion-levels.activated::after{
 }
 .topbar-icon{
   width:45px;
+}
+
+.tab-title{
+  color:rgba(255, 255, 255, .6);
+  font-family: 'Open Sans','Noto Sans KR',  sans-serif;
+  font-size: 10px;
+}
+.school-id a {
+  text-decoration: none;
 }
