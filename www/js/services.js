@@ -9,6 +9,12 @@ angular.module('starter.services', [])
       $state.go("login");
     }
   })
+  .service('Server', function () {
+    this.makeUrl=function(string){
+      return "http://localhost:3000"+string;
+      // return "localhost:3000"+string;
+    }
+  })
   .factory('Chats', function () {
     // Might use a resource here that returns a JSON array
 

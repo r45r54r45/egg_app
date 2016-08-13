@@ -5,13 +5,13 @@
   </ion-header-bar>
   <ion-content class=" padding" style="height:100vh; padding-top:24vh;">
     <div class="row">
-      <input class="extra trans white registration-text" placeholder="닉네임" type="text">
+      <input class="extra trans white registration-text" placeholder="닉네임" type="text" ng-model="custom.nickname">
     </div>
     <div class="row">
-      <select class="middle clean extra white registration-text">
-        <option selected>학부</option>
-        <option>TAD</option>
-        <option>2</option>
+      <select class="middle clean extra white registration-text" ng-model="custom.major">
+        <option value=""selected>학부</option>
+        <option value="TAD">TAD</option>
+        <option value="HASS">HASS</option>
       </select>
     </div>
   </ion-content>

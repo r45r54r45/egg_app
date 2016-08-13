@@ -7,16 +7,16 @@
       <div class="list">
         <label class="item item-input trans no-border login-form no-padding-left">
           <span class="input-label form-text tiny">포탈 아이디</span>
-          <input class="form-text form-input" type="number" pattern="\d*">
+          <input class="form-text form-input" type="number" pattern="\d*" ng-model="id">
         </label>
         <label class="item item-input trans no-border login-form no-padding-left">
           <span class="input-label form-text tiny">포탈 비밀번호</span>
-          <input class="form-text form-input" type="password">
+          <input class="form-text form-input" type="password" ng-model="pw">
         </label>
       </div>
     </div>
     <div class="center">
-      <button class="transparent tiny" ng-click="login()">로그인</button>
+      <button class="transparent tiny" ng-click="login(id,pw)">로그인</button>
     </div>
   </ion-content>
   <div class="bar bar-footer" style="background:none;background-color: transparent; border:none;border:none;">

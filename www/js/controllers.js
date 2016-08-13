@@ -1,6 +1,9 @@
 angular.module('starter.controllers', [])
 
-  .controller('ClassCtrl', function ($scope, $ionicModal, $ionicLoading, $ionicPopup, $state) {
+  .controller('ClassCtrl', function ($http, Server, $scope, $ionicModal, $ionicLoading, $ionicPopup, $state) {
+    // $http.get(Server.makeUrl("/class"))
+
+    // $scope.classList
     $ionicModal.fromTemplateUrl('templates/modal/class-sort.html', {
       scope: $scope,
       animation: 'slide-in-up'
@@ -164,17 +167,17 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('BoardCtrl', function ($scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
+  .controller('BoardCtrl', function (Server, $scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
     $scope.type = type;
     // https://egg-yonsei.appspot.com
-    $scope.refresh=function(){
+    $scope.refresh = function () {
       if (type == "free") {
-        $http.get("https://egg-yonsei.appspot.com/board/free_list").success(function (data) {
+        $http.get(Server.makeUrl("/board/free_list")).success(function (data) {
           $scope.boardList = data;
           $scope.$broadcast('scroll.refreshComplete');
         });
       } else {
-        $http.get("https://egg-yonsei.appspot.com/board/council_list").success(function (data) {
+        $http.get(Server.makeUrl("/board/council_list")).success(function (data) {
           $scope.boardList = data;
           $scope.$broadcast('scroll.refreshComplete');
         });
@@ -189,7 +192,7 @@ angular.module('starter.controllers', [])
     offset['free'] = 10;
     offset['council'] = 10;
     $scope.loadMore = function () {
-      $http.get("https://egg-yonsei.appspot.com/board/" + type + "_list/" + offset[type]).success(function (data) {
+      $http.get(Server.makeUrl("/board/" + type + "_list/" + offset[type])).success(function (data) {
         console.log(data);
         if (data.length == 0) {
           $scope.canLoadMore[$scope.type] = false;
@@ -216,14 +219,14 @@ angular.module('starter.controllers', [])
     $scope.openModal = function () {
       $scope.modal.show();
     };
-    $scope.imageUrl=0;
-    $scope.openFileDialog=function(){
+    $scope.imageUrl = 0;
+    $scope.openFileDialog = function () {
       window.imagePicker.getPictures(
-        function(results) {
+        function (results) {
           for (var i = 0; i < results.length; i++) {
             var win = function (r) {
-              $scope.$apply(function(){
-                $scope.imageUrl=JSON.parse(r.response).image;
+              $scope.$apply(function () {
+                $scope.imageUrl = JSON.parse(r.response).image;
               });
             }
             var fail = function (error) {
@@ -237,11 +240,11 @@ angular.module('starter.controllers', [])
             // options.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1);
             // options.mimeType = "text/plain";
             var ft = new FileTransfer();
-            ft.upload(results[i], encodeURI("https://egg-yonsei.appspot.com/board/upload"), win, fail, options);
+            ft.upload(results[i], encodeURI(Server.makeUrl("/board/upload")), win, fail, options);
           }
         }, function (error) {
           console.log('Error: ' + error);
-        },{
+        }, {
           maximumImagesCount: 1,
           width: 400,
           height: 400,
@@ -252,8 +255,8 @@ angular.module('starter.controllers', [])
     /*
      submit popup
      */
-    $scope.submit = function (board,imageUrl) {
-      if(!board.title||!board.body){
+    $scope.submit = function (board, imageUrl) {
+      if (!board.title || !board.body) {
         alert("제목과 내용을 써주세요.");
         return;
       }
@@ -268,11 +271,11 @@ angular.module('starter.controllers', [])
             title: board.title,
             body: board.body,
             type: 1,
-            image:imageUrl
+            image: imageUrl
           };
           console.log(data);
           // https://egg-yonsei.appspot.com
-          $http.post("https://egg-yonsei.appspot.com/board/write", data).success(function (res) {
+          $http.post(Server.makeUrl("/board/write"), data).success(function (res) {
             if (res.result) {
               $scope.modal.remove();
             } else {
@@ -294,8 +297,8 @@ angular.module('starter.controllers', [])
       });
       confirmPopup.then(function (res) {
         if (res) {
-          $scope.board={};
-          $scope.imageUrl=0;
+          $scope.board = {};
+          $scope.imageUrl = 0;
           $scope.modal.hide();
         } else {
           console.log('You are not sure');
@@ -303,11 +306,11 @@ angular.module('starter.controllers', [])
       });
     };
   })
-  .controller('BoardDetailCtrl', function ($scope, $state, $ionicViewSwitcher, $stateParams, $http, $ionicScrollDelegate) {
-    $http.get("https://egg-yonsei.appspot.com/board/watch/" + $stateParams.boardId).success(function (data) {
+  .controller('BoardDetailCtrl', function (Server, $scope, $state, $ionicViewSwitcher, $stateParams, $http, $ionicScrollDelegate) {
+    $http.get(Server.makeUrl("/board/watch/") + $stateParams.boardId).success(function (data) {
       $scope.data = data;
     });
-    $http.get("https://egg-yonsei.appspot.com/board/comment/" + $stateParams.boardId).success(function (data) {
+    $http.get(Server.makeUrl("/board/comment/") + $stateParams.boardId).success(function (data) {
       $scope.commentList = data;
       console.log("load more init");
       $scope.canLoadMore = true;
@@ -321,14 +324,14 @@ angular.module('starter.controllers', [])
         board: $stateParams.boardId,
         user: 1
       };
-      $http.post("https://egg-yonsei.appspot.com/board/like", data).success(function (data) {
+      $http.post(Server.makeUrl("/board/like"), data).success(function (data) {
         if (data.like) {
           // $scope.$apply(function(){
-            $scope.data.heart++;
+          $scope.data.heart++;
           // });
         } else {
           // $scope.$apply(function(){
-            $scope.data.heart--;
+          $scope.data.heart--;
           // });
         }
       })
@@ -337,7 +340,7 @@ angular.module('starter.controllers', [])
     $scope.canLoadMore = false;
     $scope.loadMore = function () {
       console.log("more");
-      $http.get("https://egg-yonsei.appspot.com/board/comment/" + $stateParams.boardId + "/" + offset).success(function (data) {
+      $http.get(Server.makeUrl("/board/comment/") + $stateParams.boardId + "/" + offset).success(function (data) {
         console.log(data);
         if (data.length < 10) {
           console.log("oring");
@@ -357,12 +360,12 @@ angular.module('starter.controllers', [])
       $scope.newComment_body = "";
       data.user = 1;
       data.board = boardId;
-      $http.post("https://egg-yonsei.appspot.com/board/comment", data).success(function (data) {
+      $http.post(Server.makeUrl("/board/comment"), data).success(function (data) {
         $ionicScrollDelegate.scrollTop(true);
         // $scope.$apply(function(){
-          $scope.data.comment++;
+        $scope.data.comment++;
         // });
-        $http.get("https://egg-yonsei.appspot.com/board/comment/" + $stateParams.boardId).success(function (data) {
+        $http.get(Server.makeUrl("/board/comment/") + $stateParams.boardId).success(function (data) {
           $scope.commentList = data;
           $scope.canLoadMore = true;
           var offset = 10;
@@ -380,26 +383,92 @@ angular.module('starter.controllers', [])
     }
   })
 
-  .controller('LoginCtrl', function ($scope, User, $ionicModal) {
-    // ionic.keyboard.disable();
-    $scope.login = function () {
+  .controller('LoginCtrl', function ($http, Server, $scope, User, $ionicModal, $ionicLoading) {
+    var loginData = {id: "", pw: ""};
+    var loadingShow = function () {
+      $ionicLoading.show({
+        template: '포털 인증 중...'
+      }).then(function () {
+        console.log("The loading indicator is now displayed");
+      });
+    };
+    var loadingHide = function () {
+      $ionicLoading.hide().then(function () {
+        console.log("The loading indicator is now hidden");
+      });
+    };
+    $scope.login = function (id, pw) {
+      if (!id || !pw) {
+        alert('학번과 비밀번호를 입력해주세요');
+        return;
+      }
+      loginData.id = id;
+      loginData.pw = pw;
       $scope.openModal();
+      return;
+      // loadingShow();
+      // var data={id:$scope.id,pw:$scope.pw};
+      // $http.post(Server.makeUrl("/user/login"),data).then(function(res){
+      //   loadingHide();
+      //   if(res.login){
+      //     $scope.openModal();
+      //   }else{
+      //     alert("포탈인증에 실패하였습니다.");
+      //   }
+      // });
+    }
+    $scope.custom = {
+      major: "",
+      name: ""
     }
     $scope.confirm = function () {
-      $scope.closeModal();
-      User.login();
-    }
-    $ionicModal.fromTemplateUrl('templates/modal/login-join.html', {
-      scope: $scope,
-      animation: 'slide-in-up'
-    }).then(function (modal) {
-      $scope.modal_join = modal;
-    });
+      var details = {
+        'email': loginData.id + "@uicstuco.co.kr",
+        'password': loginData.pw
+      };
+      details.custom = {
+        major: $scope.custom.major,
+        name: $scope.custom.nickname
+      };
+      Ionic.Auth.signup(details).then(function (res) {
+        console.log("signup success");
+        console.log("sign up", res);
+        Ionic.Auth.login('basic', {'remember': true}, details)
+          .then(function () {
+            // replace dash with the name of your main state
+            var user=Ionic.User.current();
+            var push = new Ionic.Push({
+              "debug": true
+            });
+            var callback = function(data) {
+              console.log('Registered token:', data.token);
+              console.log(data.token);
+              console.log(user);
+              push.saveToken(data.token);
+              user.save();
+              $scope.closeModal();
+              User.login();
+            }
+            push.register(callback);
+          });
+      });
+    };
+
+    $ionicModal.fromTemplateUrl('templates/modal/login-join.html', function (modal) {
+        $scope.modal_join = modal;
+      },
+      {
+        scope: $scope,
+        animation: 'slide-in-up',
+        focusFirstInput: true
+      });
     $scope.openModal = function (type) {
       $scope.modal_join.show();
     };
     $scope.closeModal = function (type) {
       $scope.modal_join.hide();
     };
+
+
   })
 
