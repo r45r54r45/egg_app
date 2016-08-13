@@ -422,36 +422,39 @@ angular.module('starter.controllers', [])
       name: ""
     }
     $scope.confirm = function () {
-      var details = {
-        'email': loginData.id + "@uicstuco.co.kr",
-        'password': loginData.pw
-      };
-      details.custom = {
-        major: $scope.custom.major,
-        name: $scope.custom.nickname
-      };
-      Ionic.Auth.signup(details).then(function (res) {
-        console.log("signup success");
-        console.log("sign up", res);
-        Ionic.Auth.login('basic', {'remember': true}, details)
-          .then(function () {
-            // replace dash with the name of your main state
-            var user=Ionic.User.current();
-            var push = new Ionic.Push({
-              "debug": true
-            });
-            var callback = function(data) {
-              console.log('Registered token:', data.token);
-              console.log(data.token);
-              console.log(user);
-              push.saveToken(data.token);
-              user.save();
-              $scope.closeModal();
-              User.login();
-            }
-            push.register(callback);
-          });
-      });
+      // var details = {
+      //   'email': loginData.id + "@uicstuco.co.kr",
+      //   'password': loginData.pw
+      // };
+      // details.custom = {
+      //   major: $scope.custom.major,
+      //   name: $scope.custom.nickname
+      // };
+      // Ionic.Auth.signup(details).then(function (res) {
+      //   console.log("signup success");
+      //   console.log("sign up", res);
+      //   Ionic.Auth.login('basic', {'remember': true}, details)
+      //     .then(function () {
+      //       // replace dash with the name of your main state
+      //       var user=Ionic.User.current();
+      //       var push = new Ionic.Push({
+      //         "debug": true
+      //       });
+      //       var callback = function(data) {
+      //         console.log('Registered token:', data.token);
+      //         console.log(data.token);
+      //         console.log(user);
+      //         push.saveToken(data.token);
+      //         user.save();
+      //         $scope.closeModal();
+      //         User.login();
+      //       }
+      //       push.register(callback);
+      //     });
+      // });
+      //temp for jaeha
+      $scope.closeModal();
+      User.login();
     };
 
     $ionicModal.fromTemplateUrl('templates/modal/login-join.html', function (modal) {
