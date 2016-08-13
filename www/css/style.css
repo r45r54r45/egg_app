@@ -579,3 +579,7 @@ button.button.button-icon.icon.ion-levels.activated::after{
 .tabs-color-active-positive>div.tab-nav>a{
   margin-top:8px;
 }
+
+ion-tabs.board-nav>.tab-nav>a.tab-item-active>span.tab-title{
+  color:#525252;
+}
