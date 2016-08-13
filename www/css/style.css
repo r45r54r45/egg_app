@@ -316,7 +316,7 @@ button.halfTransparent{
 ion-header-bar{
   background:#213b73 !important;
 }
-.tab-nav{
+.tabs-color-active-positive>.tab-nav{
   background: #262727 !important;
 }
 .comment{
@@ -527,11 +527,17 @@ button.button.button-icon.icon.ion-levels.activated::after{
   width:45px;
 }
 
-.tab-title{
+.tabs-color-active-positive>.tab-title{
   color:rgba(255, 255, 255, .6);
   font-family: 'Open Sans','Noto Sans KR',  sans-serif;
-  font-size: 10px;
 }
 .school-id a {
   text-decoration: none;
+  pointer-events: none;
+}
+.tabs-background-stable>a>.tab-nav>span.tab-title.ng-binding{
+  color:#213B73;
+}
+.tab-item.tab-item-active{
+  border-color:#213B73 !important;
 }
