@@ -544,3 +544,38 @@ button.button.button-icon.icon.ion-levels.activated::after{
 .tab-item.tab-item-active{
   border-color:#213B73 !important;
 }
+.classIcon {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  height: 22px !important;
+  background-image: url("../img/class.svg");
+  background-size:contain;
+}
+.boardIcon {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 22px !important;
+  background-image: url("../img/board.svg");
+  background-size:contain;
+}
+.mypageIcon {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 22px !important;
+  background-image: url("../img/mypage.svg");
+  background-size:contain;
+}
+.noticesIcon {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 22px !important;
+  background-image: url("../img/notices.svg");
+  background-size:contain;
+}
+.tabs-color-active-positive>div.tab-nav>a>span.tab-title.ng-binding{
+  color:#908D8D;
+}
+.tabs-color-active-positive>div.tab-nav>a{
+  margin-top:6px;
+}
