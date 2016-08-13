@@ -176,7 +176,6 @@ button.transparent{
 }
 button.transparent-large{
     border-radius: 25px;
-    padding-top: 3px;
     height: 50px;
     width: 100px;
     margin-bottom: 8px;
@@ -287,6 +286,11 @@ div.vertical-mid-div>div{
   font-family: 'Noto Sans Kr', sans-serif;
   font-weight:300;
   color:rgba(255, 255, 255, 0.6);
+}
+.textLigthKorFull{
+  font-family: 'Noto Sans Kr', sans-serif;
+  font-weight:300;
+  color:rgba(255, 255, 255, 0.95);
 }
 .textLightKorDark{
   font-family: 'Noto Sans Kr', sans-serif;
@@ -534,10 +538,9 @@ button.button.button-icon.icon.ion-levels.activated::after{
 .school-id a {
   text-decoration: none;
   pointer-events: none;
+  color:rgba(255, 255, 255, 0.6);
 }
-.tabs-background-stable>a>.tab-nav>span.tab-title.ng-binding{
-  color:#213B73;
-}
+
 .tab-item.tab-item-active{
   border-color:#213B73 !important;
 }
