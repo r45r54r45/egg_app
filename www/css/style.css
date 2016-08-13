@@ -518,3 +518,6 @@ button.button.button-icon.icon.ion-levels.activated::after{
 .popup{
   background-color: white !important;
 }
+.topbar-icon{
+  width:45px;
+}
