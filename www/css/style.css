@@ -457,11 +457,12 @@ div.popup-buttons>button{
   font-family: 'Noto Sans Kr', 'Open Sans' sans-serif !important;
   font-weight:200 !important;
   font-size:14px;
-  border: 1px solid rgba(82, 82, 82, 0.5);
+  border: 1px solid rgba(82, 82, 82, 0.2);
   height:40px;
   border-radius: 20px !important;
   min-height: 40px !important;
   margin:0px 10px;
+  background-color:white;
 }
 .button.button-positive{
   background-color: #213b73;
@@ -506,4 +507,14 @@ ion-footer-bar>div.item>label.item-input-wrapper{
 textarea, input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
 -webkit-appearance: none;
 border-radius: 0;
+}
+
+button.button.button-icon.icon.ion-levels.activated::before{
+  font-size: 25px;
+}
+button.button.button-icon.icon.ion-levels.activated::after{
+  font-size: 25px;
+}
+.popup{
+  background-color: white !important;
 }
