@@ -12,6 +12,7 @@
 
 span, button{
   font-family: 'Noto Sans KR', sans-serif;
+
 }
 
 .tabs-color-active-positive{
@@ -163,6 +164,7 @@ border: none;
 }
 
 button.transparent{
+  -webkit-appearance: none;
   margin-top: 75px;
     border-radius: 16px;
     padding-top: 3px;
