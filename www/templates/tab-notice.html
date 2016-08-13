@@ -18,10 +18,19 @@
       </div>
     </div>
   </ion-content>
-  <div style="position: absolute; top:10px; left:10px;z-index: 1;">
+  <div style="position: absolute; top:10px; left:10px;z-index: 1;" id="greeting">
     <span class="white-text eMainTitleKor small">안녕하세요</span>
     <p class="white-text textPaddingTop">
       <span style="font-size:2.2em ">바나나</span><span> 님!</span>
     </p>
   </div>
 </ion-view>
+
+<script type = "text/javascript" language = "javascript">
+var fade_out = function() {
+  //$("#greeting").fadeOut("slow").empty();
+  $("#greeting").fadeOut('slow');
+}
+
+setTimeout(fade_out, 1000);
+</script>
