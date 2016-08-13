@@ -502,11 +502,16 @@ ion-footer-bar>div.item>label.item-input-wrapper{
 }
 .navigation-dark{
   color:white;
+  background: none;
+    border: none;
 }
 
 textarea, input.text, input[type="text"], input[type="button"], input[type="submit"], .input-checkbox {
 -webkit-appearance: none;
-border-radius: 0;
+  border-radius: 0;
+  border:none;
+  background-color: none;
+  background: none;
 }
 
 button.button.button-icon.icon.ion-levels.activated::before{
