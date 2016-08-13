@@ -583,3 +583,33 @@ button.button.button-icon.icon.ion-levels.activated::after{
 ion-tabs.board-nav>.tab-nav>a.tab-item-active>span.tab-title{
   color:#525252;
 }
+.tab-item.tab-item-active{
+  border-color: none;
+}
+
+ion-view>ion-nav-bar.bar-stable>div.nav-bar-block>ion-header-bar.bar-stable>div{
+  text-align: center;
+}
+.title.title-left.header-item{
+  text-align: center;
+}
+.main-bottom-tab>div.tab-nav>a.tab-item-active{
+  margin-top: 8px !important;
+  border-style: none !important;
+}
+.main-bottom-tab>div.tab-nav>a.tab-item.activated{
+  margin-top: 8px !important;
+  border-style: none !important;
+
+}
+
+.board-top-tab>div.tab-nav>a.tab-item-active{
+  border-color: #213B73;
+  color: #525252;
+}
+.board-top-tab>div.tab-nav>a.tab-item.activated{
+  border-width: 0px 0px 2px 0px !important;
+  color: #525252;
+  border-color: #213B73;
+
+}
