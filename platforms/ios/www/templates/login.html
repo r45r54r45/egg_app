@@ -1,0 +1,25 @@
+<ion-view class="padding notice-bg" hide-nav-bar="true">
+  <ion-content has-bouncing="false" scroll="false">
+    <div class="center" style="margin-top:20vh;">
+      <img src="img/yonsei.svg" style="width:75px; height:75px;">
+    </div>
+    <div class="overall-padding">
+      <div class="list">
+        <label class="item item-input trans no-border login-form no-padding-left">
+          <span class="input-label form-text tiny">포탈 아이디</span>
+          <input class="form-text form-input" type="number" pattern="\d*" ng-model="id">
+        </label>
+        <label class="item item-input trans no-border login-form no-padding-left">
+          <span class="input-label form-text tiny">포탈 비밀번호</span>
+          <input class="form-text form-input" type="password" ng-model="pw">
+        </label>
+      </div>
+    </div>
+    <div class="center">
+      <button class="transparent tiny" ng-click="login(id,pw)">로그인</button>
+    </div>
+  </ion-content>
+  <div class="bar bar-footer" style="background:none;background-color: transparent; border:none;border:none;">
+    <div class="title" style="color:white"><span style="font-size:9px;">&copy YONSEI</span></div>
+  </div>
+</ion-view>

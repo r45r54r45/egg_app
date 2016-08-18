@@ -1,0 +1,73 @@
+<ion-view  view-title="강의평가">
+  <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+    <ion-nav-buttons side="left">
+      <img class="button button-icon ion-levels topbar-icon" src="img/point.svg" />
+      <!--<button class="button button-icon icon ion-android-radio-button-on" style="padding-right: 0; opacity:1;color:white;" disabled></button>-->
+      <button class="button" style="padding-left: 0; border:none; opacity:1; color: white;background: none;" disabled>3333</button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+    <img class="button button-icon ion-levels topbar-icon" src="img/filter.svg" ng-click="openModal('sort')"/>
+    <!--<button class="button button-icon icon ion-levels" style="color:white;" ng-click="openModal('sort')"></button>-->
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <span class="middle eMainTitle">
+          Words from<br/>the wise!
+        </span>
+      </ion-item>
+      <ion-item ng-repeat="i in [1,2,3,4]" style="padding:0;" ng-click="openClass(i)" ng-class="{even_item: $index%2 == 0, courseEvaluationRow:true}"  >
+        <!--이 아래 부분만 수정하면 화면에 나오는 네개 다 바뀝니다-->
+        <div class="row">
+          <div class="col col-50" style="height: 30px;">
+            <span class="eCourseTitle small" style="white-space: normal ">History of Science and Technology</span>
+          </div>
+          <div class="col col-10"></div>
+          <div class="col no-padding">
+            <div class="row">
+              <div class="col col-67"><span class="eCourseCriteria tiny">Professor</span></div>
+              <div class="col col-33"><span class="eCourseScore tiny">3.8/5</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-50"></div>
+          <div class="col col-10"></div>
+          <div class="col no-padding">
+            <div class="row">
+              <div class="col col-67"><span class="eCourseCriteria tiny">Difficulty</span></div>
+              <div class="col col-33"><span class="eCourseScore tiny">1.2/5</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-50">
+            <img class="star"src="img/star.svg"/>
+            <img class="star"src="img/star.svg"/>
+            <img class="star"src="img/star.svg"/>
+            <img class="star"src="img/star.svg"/>
+            <img class="star"src="img/starLine.svg"/>
+          </div>
+          <div class="col col-10"></div>
+          <div class="col no-padding">
+            <div class="row">
+              <div class="col col-67"><span class="eCourseCriteria tiny">Take Again?</span></div>
+              <div class="col col-33"><span class="eCourseScore tiny">89%</span></div>
+            </div>
+          </div>
+        </div>
+      </ion-item>
+      <!--색 옅은 파란색이었다가 흰색이었다 하는 부분은 제가 추가할게요-->
+    </ion-list>
+    <ion-infinite-scroll
+      on-infinite=""
+      distance="1%">
+    </ion-infinite-scroll>
+    <!--&lt;!&ndash;<button ng-click="showLoading()">on</button>&ndash;&gt;-->
+  </ion-content>
+  <!-- align to the bottom of the page -->
+  <div style="position: absolute; bottom: 60px; right:15px; ">
+    <img src="img/plus.svg" style="width: 50px; height:50px;" ng-click="openModal('add')">
+  </div>
+</ion-view>
