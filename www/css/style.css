@@ -613,3 +613,7 @@ ion-view>ion-nav-bar.bar-stable>div.nav-bar-block>ion-header-bar.bar-stable>div{
   border-color: #213B73;
 
 }
+.ionic_ratings .icon {
+  font-size: 43px;
+  margin: 8px;
+}

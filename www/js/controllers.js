@@ -25,6 +25,30 @@ angular.module('starter.controllers', [])
         $scope.modal_add.show();
       }
     };
+    $scope.choice=[];
+    $scope.checkboxResult = [];
+    $scope.describe="";
+    // 나중에
+    // $scope.count=$scope.countOf($scope.textarea);
+    $scope.rating=0;
+    $scope.rating_word="";
+    // $scope.priceSlider1.value;
+    // $scope.priceSlider2.value;
+
+
+    $scope.ratingsObject = {
+      iconOn: 'ion-ios-star',    //Optional
+      iconOff: 'ion-ios-star-outline',   //Optional
+      iconOnColor: '#213C74',  //Optional
+      iconOffColor:  '#213C74',    //Optional
+      rating:  -1, //Optional
+      minRating:0,    //Optional
+      readOnly: true, //Optional
+      callback: function(rating) {    //Mandatory
+        $scope.rating=rating;
+      }
+    };
+
     $scope.closeModal = function (type) {
       if (type === "sort") {
         $scope.modal_sort.hide();
@@ -66,13 +90,25 @@ angular.module('starter.controllers', [])
     //   });
     // };
 
-    $scope.priceSlider = {
-      value: 0,
+    $scope.priceSlider1 = {
+      value: 1,
       options: {
         showTicks: true,
-        floor: 0,
+        floor: 1,
         ceil: 5,
-        minLimit: 0,
+        minLimit: 1,
+        maxLimit: 5,
+        hidePointerLabels: true,
+        hideLimitLabels: true
+      }
+    };
+    $scope.priceSlider2 = {
+      value: 1,
+      options: {
+        showTicks: true,
+        floor: 1,
+        ceil: 5,
+        minLimit: 1,
         maxLimit: 5,
         hidePointerLabels: true,
         hideLimitLabels: true
@@ -96,7 +132,7 @@ angular.module('starter.controllers', [])
         template: '선택된 태그가 너무 많습니다. <br>신중하게 선택해주세요 '
       });
     };
-    $scope.checkboxResult = [];
+
     $scope.checkboxList = ["c1", "c2", "c3"];
     $scope.checkCheckboxCount = function (i) {
       var count = 0;
@@ -120,12 +156,35 @@ angular.module('starter.controllers', [])
      submit popup
      */
     $scope.submit = function () {
+      var checkResult=[];
+      $scope.checkboxResult.forEach(function(item,index){
+        if(item==true){
+          checkResult.push(index);
+        }
+      });
+
+      var data={
+        professor_rate: $scope.priceSlider1.value,
+        difficulty: $scope.priceSlider2.value,
+        professor: $scope.choice[1],
+        attendance: $scope.choice[2],
+        grade: $scope.choice[3],
+        capacity: $scope.choice[4],
+        tags: checkResult.toString(),
+        describe: $("#describe").val(),
+        rating: $scope.rating,
+        userId: "todo",
+        classId: "todo"
+      };
+      console.log(data);
+      return;
       var confirmPopup = $ionicPopup.confirm({
         title: '수업평가',
         template: '수업 평가를 등록하시겠습니까?'
       });
       confirmPopup.then(function (res) {
         if (res) {
+          // $http
           console.log('You are sure');
         } else {
           console.log('You are not sure');
@@ -134,21 +193,41 @@ angular.module('starter.controllers', [])
     };
 
   })
-  .controller('NoticeCtrl', function ($scope) {
+  .controller('NoticeCtrl', function (Server,$http,$scope) {
+    $scope.list=[];
+    var startVal=0;
+    var load=function(start,callback){
+      var from=start||0;
+      $http.post(Server.makeUrl("/notice/list/"+from),{user:1}).success(function(data){
+        $scope.list = $scope.list.concat(data);
+        startVal+=10;
+        if(callback){
+          callback();
+        }
+      });
+    }
+    load();
+    $scope.loadMore = function () {
+      load(startVal,function(){
+        $scope.$broadcast('scroll.infiniteScrollComplete');
+      });
+    };
   })
   .controller('ClassDetailCommentCtrl', function ($scope) {
 
   })
 
-  .controller('ClassDetailCtrl', function ($scope, $stateParams, $ionicModal) {
+  .controller('ClassDetailCtrl', function ($http,$scope, $stateParams, $ionicModal) {
     // $scope.chat = Chats.get($stateParams.chatId);
     console.log($stateParams.classId);
+
     $ionicModal.fromTemplateUrl('templates/modal/class-detail-comment.html', {
       scope: $scope,
       animation: 'slide-in-up'
     }).then(function (modal) {
       $scope.modal = modal;
     });
+
     $scope.openModal = function () {
       $scope.modal.show();
     };
@@ -167,7 +246,7 @@ angular.module('starter.controllers', [])
     });
   })
 
-  .controller('BoardCtrl', function (Server, $scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
+  .controller('BoardCtrl', function ($ionicNavBarDelegate,Server, $scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
     $scope.type = type;
     // https://egg-yonsei.appspot.com
     $scope.refresh = function () {
@@ -215,9 +294,11 @@ angular.module('starter.controllers', [])
       animation: 'slide-in-up'
     }).then(function (modal) {
       $scope.modal = modal;
+
     });
     $scope.openModal = function () {
       $scope.modal.show();
+      $ionicNavBarDelegate.showBar(true);
     };
     $scope.imageUrl = 0;
     $scope.openFileDialog = function () {
@@ -276,8 +357,11 @@ angular.module('starter.controllers', [])
           console.log(data);
           // https://egg-yonsei.appspot.com
           $http.post(Server.makeUrl("/board/write"), data).success(function (res) {
+            console.log(res.result);
             if (res.result) {
-              $scope.modal.remove();
+              $scope.board = {};
+              $scope.imageUrl = 0;
+              $scope.modal.hide();
             } else {
               alert('네트워크 문제로 인해 글이 업로드 되지 않았습니다.');
             }
@@ -422,39 +506,19 @@ angular.module('starter.controllers', [])
       name: ""
     }
     $scope.confirm = function () {
-      // var details = {
-      //   'email': loginData.id + "@uicstuco.co.kr",
-      //   'password': loginData.pw
-      // };
-      // details.custom = {
-      //   major: $scope.custom.major,
-      //   name: $scope.custom.nickname
-      // };
-      // Ionic.Auth.signup(details).then(function (res) {
-      //   console.log("signup success");
-      //   console.log("sign up", res);
-      //   Ionic.Auth.login('basic', {'remember': true}, details)
-      //     .then(function () {
-      //       // replace dash with the name of your main state
-      //       var user=Ionic.User.current();
-      //       var push = new Ionic.Push({
-      //         "debug": true
-      //       });
-      //       var callback = function(data) {
-      //         console.log('Registered token:', data.token);
-      //         console.log(data.token);
-      //         console.log(user);
-      //         push.saveToken(data.token);
-      //         user.save();
-      //         $scope.closeModal();
-      //         User.login();
-      //       }
-      //       push.register(callback);
-      //     });
-      // });
-      //temp for jaeha
-      $scope.closeModal();
-      User.login();
+      var data = {
+        school_num: loginData.id,
+        major: $scope.custom.major,
+        username: $scope.custom.nickname
+      };
+      window.plugins.OneSignal.getIds(function(ids) {
+        data.push_id=ids.userId;
+        $http.post(Server.makeUrl('/user/register'),data).success(function(dat){
+          console.log(dat);
+          $scope.closeModal();
+          User.login();
+        });
+      });
     };
 
     $ionicModal.fromTemplateUrl('templates/modal/login-join.html', function (modal) {

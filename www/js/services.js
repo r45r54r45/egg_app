@@ -11,7 +11,7 @@ angular.module('starter.services', [])
   })
   .service('Server', function () {
     this.makeUrl=function(string){
-      return "http://localhost:3000"+string;
+      return "https://yicstuco.appspot.com"+string;
       // return "localhost:3000"+string;
     }
   })

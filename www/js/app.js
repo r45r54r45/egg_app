@@ -5,9 +5,9 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers', 'starter.services', 'rzModule'])
+angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers', 'starter.services', 'rzModule','ionic-ratings'])
 
-  .run(function ($ionicPlatform) {
+  .run(function ($ionicPlatform,$state) {
     $ionicPlatform.ready(function () {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
@@ -18,6 +18,23 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       if (window.StatusBar) {
         StatusBar.styleDefault();
       }
+      // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+
+      var notificationOpenedCallback = function(jsonData) {
+        console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
+        if(jsonData.additionalData.id==3){
+          $state.go('tab.class');
+        }
+      };
+      if(window.plugins){
+        window.plugins.OneSignal.init("7ad2ec95-bbbc-4a28-aaf0-097ed2de2177",
+          {googleProjectNumber: "901522536554"},
+          notificationOpenedCallback);
+
+        // Show an alert box if a notification comes in when the user is in your app.
+        window.plugins.OneSignal.enableInAppAlertNotification(true);
+      }
+
     });
   })
 
