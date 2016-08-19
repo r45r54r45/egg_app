@@ -1,14 +1,14 @@
 <ion-view hide-nav-bar="true" class="bg-dark">
   <ion-content class="middle-content" style="" >
     <div class="center">
-      <img src="img/yonsei.svg" class="img img-circle profile-img" style="width:110px; height:110px; border-radius:50%;margin-top:0vh;margin-bottom:1.5vh;">
+      <img src="img/yonsei.svg" class="img img-circle profile-img" style="width:110px; height:110px; border-radius:50%;margin-top:0vh;margin-bottom:1.5vh;" ng-click="easterEgg()">
     </div>
     <div class="row myPageform">
       <div class="col col-33">
         <span class="textLightKor tiny">이름</span>
       </div>
       <div class="col">
-        <span class="textLightKor tiny">이재하</span>
+        <span class="textLightKor tiny">{{userInfo.username}}</span>
       </div>
     </div>
     <div class="row myPageform">
@@ -16,15 +16,15 @@
         <span class="textLightKor tiny">학번</span>
       </div>
       <div class="col">
-        <span class="textLightKor tiny school-id">2013198002</span>
+        <span class="textLightKor tiny school-id">{{userInfo.school_num}}</span>
       </div>
     </div>
     <div class="row myPageform">
       <div class="col col-33">
-        <span class="textLightKor tiny">학과</span>
+        <span class="textLightKor tiny">학부</span>
       </div>
       <div class="col">
-        <span class="textLightKor tiny">정보인터랙션 디자인</span>
+        <span class="textLightKor tiny">{{userInfo.major}}</span>
       </div>
     </div>
     <div class="row ">

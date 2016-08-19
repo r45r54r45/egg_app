@@ -8,6 +8,10 @@
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="refresh()">
+    </ion-refresher>
     <div style="min-height: 30px;">
       <img ng-src="{{data.image}}" style="width: 100%;" ng-show="data.image!=0">
     </div>

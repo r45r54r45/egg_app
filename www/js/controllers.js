@@ -1,7 +1,30 @@
 angular.module('starter.controllers', [])
 
-  .controller('ClassCtrl', function ($http, Server, $scope, $ionicModal, $ionicLoading, $ionicPopup, $state) {
-    // $http.get(Server.makeUrl("/class"))
+  .controller('ClassCtrl', function (User,$http, Server, $scope, $ionicModal, $ionicLoading, $ionicPopup, $state) {
+    $http.get(Server.makeUrl("/class/list/all/0")).success(function(data){
+      $scope.classList=data;
+    });
+    var start=0;
+    $scope.$on('$ionicView.enter', function(event){
+      $scope.currentPoint=User.getPoint();
+    });
+    $scope.currentPoint=User.getPoint();
+    $scope.loadMore=function(){
+      console.log("load more");
+      start+=10;
+      $http.get(Server.makeUrl("/class/list/all/"+start)).success(function(data){
+        $scope.classList=$scope.classList.concat(data);
+        if(data.length<10){
+          $scope.canLoadMore=false;
+        }
+      });
+    }
+    $scope.getPositiveStar = function(num) {
+      return new Array(Math.floor(num));
+    }
+    $scope.getNegativeStar = function(num) {
+      return new Array(5-Math.floor(num));
+    }
 
     // $scope.classList
     $ionicModal.fromTemplateUrl('templates/modal/class-sort.html', {
@@ -16,12 +39,16 @@ angular.module('starter.controllers', [])
     }).then(function (modal) {
       $scope.modal_add = modal;
     });
-
+    $scope.checkboxList=[];
     $scope.openModal = function (type) {
       if (type === "sort") {
         $scope.modal_sort.show();
       } else {
-
+        $http.get(Server.makeUrl('/class/tag')).success(function(data){
+          data.forEach(function(item, index){
+            $scope.checkboxList.push(item.name);
+          });
+        });
         $scope.modal_add.show();
       }
     };
@@ -59,16 +86,20 @@ angular.module('starter.controllers', [])
     /*
      open class popup
      */
-    $scope.openClass = function (classNum) {
+    $scope.openClass = function (classNum,title) {
       var confirmPopup = $ionicPopup.confirm({
-        title: '수업 제목',
+        title: title,
         template: '25포인트가 소모됩니다. 강의 평가를 확인하시겠습니까?'
       });
       confirmPopup.then(function (res) {
         if (res) {
-          location.href = "#/tab/class/" + classNum;
+          if(User.minusPoint(25)==-1){
+            openClassNoPoint();
+          }else{
+            location.href = "#/tab/class/" + classNum;
+          }
         } else {
-          openClassNoPoint();
+
         }
       });
     };
@@ -77,18 +108,18 @@ angular.module('starter.controllers', [])
         template: '포인트가 부족합니다.'
       });
     };
-    // $scope.showLoading = function () {
-    //   $ionicLoading.show({
-    //     template: 'Loading...'
-    //   }).then(function () {
-    //     console.log("The loading indicator is now displayed");
-    //   });
-    // };
-    // $scope.hideLoading = function () {
-    //   $ionicLoading.hide().then(function () {
-    //     console.log("The loading indicator is now hidden");
-    //   });
-    // };
+    $scope.showLoading = function () {
+      $ionicLoading.show({
+        template: 'Loading...'
+      }).then(function () {
+        console.log("The loading indicator is now displayed");
+      });
+    };
+    $scope.hideLoading = function () {
+      $ionicLoading.hide().then(function () {
+        console.log("The loading indicator is now hidden");
+      });
+    };
 
     $scope.priceSlider1 = {
       value: 1,
@@ -133,7 +164,7 @@ angular.module('starter.controllers', [])
       });
     };
 
-    $scope.checkboxList = ["c1", "c2", "c3"];
+
     $scope.checkCheckboxCount = function (i) {
       var count = 0;
       if ($scope.checkboxResult[i] == false) {
@@ -156,6 +187,7 @@ angular.module('starter.controllers', [])
      submit popup
      */
     $scope.submit = function () {
+
       var checkResult=[];
       $scope.checkboxResult.forEach(function(item,index){
         if(item==true){
@@ -173,18 +205,23 @@ angular.module('starter.controllers', [])
         tags: checkResult.toString(),
         describe: $("#describe").val(),
         rating: $scope.rating,
-        userId: "todo",
+        userId: User.getUID(),
         classId: "todo"
       };
-      console.log(data);
-      return;
       var confirmPopup = $ionicPopup.confirm({
         title: '수업평가',
         template: '수업 평가를 등록하시겠습니까?'
       });
       confirmPopup.then(function (res) {
         if (res) {
-          // $http
+          $scope.showLoading();
+          $http.post(Server.makeUrl("/class/assess"),data).success(function(dat){
+            $scope.hideLoading();
+            $scope.closeModal("add");
+          }).error(function(){
+            $scope.hideLoading();
+            $scope.closeModal("add");
+          });
           console.log('You are sure');
         } else {
           console.log('You are not sure');
@@ -193,22 +230,34 @@ angular.module('starter.controllers', [])
     };
 
   })
-  .controller('NoticeCtrl', function (Server,$http,$scope) {
+  .controller('NoticeCtrl', function (User, Server,$http,$scope) {
     $scope.list=[];
     var startVal=0;
     var load=function(start,callback){
       var from=start||0;
-      $http.post(Server.makeUrl("/notice/list/"+from),{user:1}).success(function(data){
+      $http.post(Server.makeUrl("/notice/list/"+from),{user:User.getUID()}).success(function(data){
         $scope.list = $scope.list.concat(data);
         startVal+=10;
         if(callback){
-          callback();
+          callback(data.length);
         }
       });
     }
-    load();
+    $scope.username=User.getUser().username;
+    load(undefined,function(){
+      $("#greeting").addClass("fadeout");
+    });
+    $scope.refresh=function () {
+      startVal=0;
+      load(undefined,function(){
+        $scope.$broadcast('scroll.refreshComplete');
+      });
+    };
     $scope.loadMore = function () {
-      load(startVal,function(){
+      load(startVal,function(length){
+        if(length<10){
+          $scope.canLoadMore=false;
+        }
         $scope.$broadcast('scroll.infiniteScrollComplete');
       });
     };
@@ -217,9 +266,48 @@ angular.module('starter.controllers', [])
 
   })
 
-  .controller('ClassDetailCtrl', function ($http,$scope, $stateParams, $ionicModal) {
+  .controller('ClassDetailCtrl', function (User,Server,$http,$scope, $stateParams, $ionicModal) {
     // $scope.chat = Chats.get($stateParams.chatId);
     console.log($stateParams.classId);
+    $http.get(Server.makeUrl('/class/watch/')+$stateParams.classId).success(function(data){
+      console.log(data);
+      $scope.class=data;
+      $scope.class.tagList=[];
+      $http.get(Server.makeUrl('/class/tag')).success(function(dataTags){
+        $scope.class.info.tags.split(",").forEach(function(item,index){
+          $scope.class.tagList.push(dataTags[parseInt(item)].name);
+        });
+      });
+    });
+    var start=0;
+    $http.get(Server.makeUrl("/class/assess/"+$stateParams.classId)+"/"+start).success(function(assess){
+      $scope.assess=assess;
+    });
+    $scope.loadMore=function(){
+      start+=10;
+      $http.get(Server.makeUrl("/class/assess/"+$stateParams.classId)+"/"+start).success(function(assess){
+        $scope.assess=$scope.assess.concat(assess);
+        $scope.$broadcast('scroll.infiniteScrollComplete');
+        if(assess.length<10){
+          $scope.canLoadMore=false;
+        }
+      });
+    }
+    $scope.likeBtn=function(assessId,index){
+      $http.post(Server.makeUrl("/class/assess/heart"),{assessId:assessId}).success(function(res){
+        console.log(res);
+        $scope.assess[index].heart++;
+      });
+    }
+    $scope.getPositiveStar = function(num) {
+      num=num||0;
+      return new Array(Math.floor(num));
+    }
+    $scope.getNegativeStar = function(num) {
+      num=num||0;
+      return new Array(5-Math.floor(num));
+    }
+    $scope.tagList=[];
 
     $ionicModal.fromTemplateUrl('templates/modal/class-detail-comment.html', {
       scope: $scope,
@@ -227,26 +315,35 @@ angular.module('starter.controllers', [])
     }).then(function (modal) {
       $scope.modal = modal;
     });
-
-    $scope.openModal = function () {
+    var assessID;
+    $scope.body="";
+    $scope.openModal = function (id) {
+      assessID=id;
+      $http.get(Server.makeUrl("/class/comment/"+id+"/"+0)).success(function(comment){
+        $scope.commentList=comment;
+      });
       $scope.modal.show();
     };
     $scope.closeModal = function () {
       $scope.modal.hide();
+      $scope.commentList=[];
     };
-    $scope.loadMore = function () {
-      console.log("class detail", "load more");
-      setTimeout(function () {
-        $scope.$broadcast('scroll.infiniteScrollComplete');
-      }, 3000);
-    };
-
-    $scope.$on('$stateChangeSuccess', function () {
-      $scope.loadMore();
-    });
+    $scope.submitComment=function(body){
+      var data={
+        assessId: assessID,
+        uid: User.getUID(),
+        comment: body
+      };
+      $http.post(Server.makeUrl("/class/assess/comment"),data).success(function(dat){
+        $scope.commentList.unshift({
+          createdAt: new Date(),
+          comment: data.comment
+        });
+      });
+    }
   })
 
-  .controller('BoardCtrl', function ($ionicNavBarDelegate,Server, $scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
+  .controller('BoardCtrl', function (User,$ionicNavBarDelegate,Server, $scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
     $scope.type = type;
     // https://egg-yonsei.appspot.com
     $scope.refresh = function () {
@@ -348,7 +445,7 @@ angular.module('starter.controllers', [])
       confirmPopup.then(function (res) {
         if (res) {
           var data = {
-            user: 1,
+            user: User.getUID(),
             title: board.title,
             body: board.body,
             type: 1,
@@ -390,10 +487,19 @@ angular.module('starter.controllers', [])
       });
     };
   })
-  .controller('BoardDetailCtrl', function (Server, $scope, $state, $ionicViewSwitcher, $stateParams, $http, $ionicScrollDelegate) {
+  .controller('BoardDetailCtrl', function (User,Server, $scope, $state, $ionicViewSwitcher, $stateParams, $http, $ionicScrollDelegate) {
     $http.get(Server.makeUrl("/board/watch/") + $stateParams.boardId).success(function (data) {
       $scope.data = data;
     });
+    $scope.refresh=function(){
+      offset = 10;
+      $http.get(Server.makeUrl("/board/comment/") + $stateParams.boardId).success(function (data) {
+        $scope.commentList = data;
+        console.log("load more init");
+        $scope.canLoadMore = true;
+        $scope.$broadcast('scroll.refreshComplete');
+      });
+    }
     $http.get(Server.makeUrl("/board/comment/") + $stateParams.boardId).success(function (data) {
       $scope.commentList = data;
       console.log("load more init");
@@ -406,7 +512,7 @@ angular.module('starter.controllers', [])
     $scope.likeBtn = function () {
       var data = {
         board: $stateParams.boardId,
-        user: 1
+        user: User.getUID()
       };
       $http.post(Server.makeUrl("/board/like"), data).success(function (data) {
         if (data.like) {
@@ -442,7 +548,7 @@ angular.module('starter.controllers', [])
       var data = {};
       data.body = $scope.newComment_body;
       $scope.newComment_body = "";
-      data.user = 1;
+      data.user = User.getUID();
       data.board = boardId;
       $http.post(Server.makeUrl("/board/comment"), data).success(function (data) {
         $ionicScrollDelegate.scrollTop(true);
@@ -459,19 +565,20 @@ angular.module('starter.controllers', [])
   })
 
   .controller('MypageCtrl', function ($scope, User) {
-    $scope.settings = {
-      enableFriends: true
-    };
+    $scope.userInfo=User.getUser();
     $scope.logout = function () {
       User.logout();
+    }
+    $scope.easterEgg=function(){
+      User.addPoint(100);
     }
   })
 
   .controller('LoginCtrl', function ($http, Server, $scope, User, $ionicModal, $ionicLoading) {
     var loginData = {id: "", pw: ""};
-    var loadingShow = function () {
+    var loadingShow = function (text) {
       $ionicLoading.show({
-        template: '포털 인증 중...'
+        template: text
       }).then(function () {
         console.log("The loading indicator is now displayed");
       });
@@ -506,6 +613,7 @@ angular.module('starter.controllers', [])
       name: ""
     }
     $scope.confirm = function () {
+      loadingShow("잠시만 기다려주세요");
       var data = {
         school_num: loginData.id,
         major: $scope.custom.major,
@@ -514,9 +622,12 @@ angular.module('starter.controllers', [])
       window.plugins.OneSignal.getIds(function(ids) {
         data.push_id=ids.userId;
         $http.post(Server.makeUrl('/user/register'),data).success(function(dat){
-          console.log(dat);
+          loadingHide();
           $scope.closeModal();
-          User.login();
+          if(dat.result){
+            User.initPoint();
+          }
+          User.login(dat.data);
         });
       });
     };

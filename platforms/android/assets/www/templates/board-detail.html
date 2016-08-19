@@ -1,0 +1,50 @@
+<ion-view title="Board">
+  <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+    <ion-nav-buttons side="left">
+      <button ng-click="$ionicGoBack()" class="navigation-dark eMainTitleKor white float-left">뒤로</button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+      <!--<button class="eMainTitleKor navigation-dark white float-right">수정</button>-->
+    </ion-nav-buttons>
+  </ion-nav-bar>
+  <ion-content>
+    <div style="min-height: 30px;">
+      <img ng-src="{{data.image}}" style="width: 100%;" ng-show="data.image!=0">
+    </div>
+    <div class="center padding">
+      <div style="margin-top:10px;"><span class="eMainTitleKor small text-grey">{{data.title}}</span></div>
+      <div><span class="eMainTitleKor xtiny text-grey">{{data.createdAt|timeDiff}} | {{data.User.username}}</span></div>
+      <div style="margin-bottom:20px;margin-top:5px;"><span class="eMainTitleKor tiny text-grey">{{data.body}}</span></div>
+      <div style="float:left"><img ng-click="likeBtn()" class="heart" src="img/heart.svg"><span class="xtiny boardIconText" style="position: absolute;color:rgba(82,82,82,.8)">{{data.heart}}</span></div>
+      <div style="float:right"><span class="eMainTitleKor xtiny" style="color:rgba(82,82,82, .8)">댓글 <span>{{data.comment}}</span> 개</span></div>
+
+      <div style="clear:both"></div>
+    </div>
+    <ion-list delegate-handle="handle">
+      <ion-item style="background-color:#f2f2f2" ng-repeat="comment in commentList">
+        <div>
+          <span  class="tiny" style="">{{comment.User.username}}</span>
+          <span class="xtiny eCourseTitle" style="float:right;color:rgba(82,82,82,.5)">{{comment.createdAt|timeDiff}}</span>
+        </div>
+        <div class="textPaddingTop">
+          <p><span class="xtiny">{{comment.body}}</span></p>
+        </div>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll
+      ng-if="canLoadMore"
+      on-infinite="loadMore()"
+      distance="1%" immediate-check="false">
+    </ion-infinite-scroll>
+  </ion-content>
+  <ion-footer-bar align-title="left" keyboard-attach>
+    <div class="item item-input-inset" style="width: 100%;">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="새 댓글을 작성하세요" ng-model="newComment_body">
+      </label>
+      <button class="button button-small button-comment" ng-click="submitComment(data.id)">
+        <span class="tiny eMainTitleKor" >작성</span>
+      </button>
+    </div>
+  </ion-footer-bar>
+</ion-view>

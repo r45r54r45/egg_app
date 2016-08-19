@@ -613,3 +613,12 @@ ion-view>ion-nav-bar.bar-stable>div.nav-bar-block>ion-header-bar.bar-stable>div{
   border-color: #213B73;
 
 }
+.ionic_ratings .icon {
+  font-size: 43px;
+  margin: 8px;
+}
+.fadeout {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}

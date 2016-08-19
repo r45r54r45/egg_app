@@ -18,7 +18,7 @@
         <span class="tiny eCourseTitle">How would you rate your professor as an instructor?</span>
       </div>
       <div class="row" style="padding: 15px 20px 15px 20px;">
-        <rzslider rz-slider-model="priceSlider.value" rz-slider-options="priceSlider.options"></rzslider>
+        <rzslider rz-slider-model="priceSlider1.value" rz-slider-options="priceSlider1.options"></rzslider>
       </div>
     </div>
     <div class="rating-block">
@@ -29,7 +29,7 @@
         <span class="tiny eCourseTitle">How hard did you have to work for this class?</span>
       </div>
       <div class="row" style="padding: 15px 20px 15px 20px;">
-        <rzslider rz-slider-model="priceSlider.value" rz-slider-options="priceSlider.options"></rzslider>
+        <rzslider rz-slider-model="priceSlider2.value" rz-slider-options="priceSlider2.options"></rzslider>
       </div>
     </div>
     <div class="rating-block">
@@ -40,8 +40,8 @@
         <span class="tiny eCourseTitle">Would you take this professor again?</span>
       </div>
       <ion-list class="rating-yes-no">
-        <ion-radio ng-model="choice1" ng-value="'A'" class="eMainTitleEn">YEAH</ion-radio>
-        <ion-radio ng-model="choice1" ng-value="'B'">UM, NO</ion-radio>
+        <ion-radio name="aa"  ng-model="choice[1]" ng-value="1" class="eMainTitleEn">YEAH</ion-radio>
+        <ion-radio name="aa" ng-model="choice[1]" ng-value="0">UM, NO</ion-radio>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -52,8 +52,8 @@
         <span class="tiny eCourseTitle">Is attendance mandatory for this class?</span>
       </div>
       <ion-list class="rating-yes-no">
-        <ion-radio ng-model="choice2" ng-value="'A'">YEAH</ion-radio>
-        <ion-radio ng-model="choice2" ng-value="'B'">UM, NO</ion-radio>
+        <ion-radio name="bb" ng-model="choice[2]" ng-value="1">YEAH</ion-radio>
+        <ion-radio name="bb" ng-model="choice[2]" ng-value="0">UM, NO</ion-radio>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -64,8 +64,8 @@
         <span class="tiny eCourseTitle">Does the professor fill up the plus quota fully?</span>
       </div>
       <ion-list class="rating-yes-no">
-        <ion-radio ng-model="choice3" ng-value="'A'">YEAH</ion-radio>
-        <ion-radio ng-model="choice3" ng-value="'B'">UM, NO</ion-radio>
+        <ion-radio name="cc" ng-model="choice[3]" ng-value="1">YEAH</ion-radio>
+        <ion-radio name="cc" ng-model="choice[3]" ng-value="0">UM, NO</ion-radio>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -76,9 +76,9 @@
         <span class="tiny eCourseTitle">How many students were in the class?</span>
       </div>
       <ion-list class="rating-yes-no three-options">
-        <ion-radio ng-model="choice4" ng-value="'A'" class="rating-three">Below 10 (Absolute grading)</ion-radio>
-        <ion-radio ng-model="choice4" ng-value="'B'" class="rating-three">Between 10-20 (35% A)</ion-radio>
-        <ion-radio ng-model="choice4" ng-value="'C'" class="rating-three">Above 20</ion-radio>
+        <ion-radio name="dd"  ng-model="choice[4]" ng-value="1" class="rating-three">Below 10 (Absolute grading)</ion-radio>
+        <ion-radio name="dd"  ng-model="choice[4]" ng-value="2" class="rating-three">Between 10-20 (35% A)</ion-radio>
+        <ion-radio name="dd"  ng-model="choice[4]" ng-value="3" class="rating-three">Above 20</ion-radio>
       </ion-list>
     </div>
     <div class="rating-block">
@@ -100,26 +100,21 @@
         <span class="tiny eCourseTitle">This is optional but if you write more than 350 words, you will get an extra 50 points!</span>
       </div>
       <label class="item item-input rating-textarea-label">
-        <textarea placeholder="Write here!" ng-model="textarea" class="rating-textarea"></textarea>
+        <textarea id="describe" placeholder="Write here!" ng-model="describe" class="rating-textarea"></textarea>
       </label>
-      <span style="float:right;color:rgba(82,82,82, .9); font-size:11px;" >{{countOf(textarea)}} <span class="xtiny" style="color:rgba(82,82,82, .5)">words<span></span>
+      <span style="float:right;color:rgba(82,82,82, .9); font-size:11px;" >{{countOf(describe)}}<span class="xtiny" style="color:rgba(82,82,82, .5)">words</span></span>
       <div style="clear: both"></div>
     </div>
     <div class="rating-block" style="padding-bottom:60px; !important">
       <div>
         <span class="small eCourseTitle">Rate this course</span>
       </div>
+
       <div>
         <span class="tiny eCourseTitle">On a scale of 5, how would you rate this course?</span>
-        <div class="col col-100 rating-star" style="text-align:center;">
-          <img class="star-large"src="img/star.svg"/>
-          <img class="star-large"src="img/star.svg"/>
-          <img class="star-large"src="img/star.svg"/>
-          <img class="star-large"src="img/star.svg"/>
-          <img class="star-large"src="img/starLine.svg"/>
-        </div>
-        <div class="center"><span class="eMainTitle" style="font-size:60px;line-height:1.2;">3.0</span></div>
-        <div class="center"><span class="eMainTitle small">Quite Good!</span></div>
+        <ionic-ratings style="margin: 20px;" ratingsobj='ratingsObject'></ionic-ratings>
+        <div class="center"><span class="eMainTitle" style="font-size:60px;line-height:1.2;">{{rating}}</span></div>
+        <div class="center"><span class="eMainTitle small">{{rating_word}}</span></div>
 
       </div>
     </div>

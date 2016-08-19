@@ -6,14 +6,24 @@
       </div>
     </div>
     <ion-list>
-      <ion-item ng-style="$index==0&&{'border-top':'none'}||{}" style="border-bottom: 1px solid #eeeeee;" ng-repeat="i in [1,2,3]">
+      <ion-item ng-style="$index==0&&{'border-top':'none'}||{}" style="border-bottom: 1px solid #eeeeee;" ng-repeat="comment in commentList">
         <div>
-          <span class="xtiny eCourseTitle" style="float:right;color:rgba(82,82,82,.5)">07.02.16</span>
+          <span class="xtiny eCourseTitle" style="float:right;color:rgba(82,82,82,.5)">{{comment.createdAt|timeDiff}}</span>
         </div>
         <div class="textPaddingTop">
-          <p><span class="xtiny">글ㄴㄴ네용은 여기에 나옵니다. 프리뷰입니다. 프리. 프리뷰입니다. 프리뷰뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰 프리뷰입니뷰입니다. 프리뷰다. 프리뷰. 프리뷰입니다. 프리뷰. 프리뷰입니다. 프리뷰</span></p>
+          <p><span class="xtiny">{{comment.comment}}</span></p>
         </div>
       </ion-item>
     </ion-list>
   </ion-content>
+  <ion-footer-bar align-title="left" keyboard-attach>
+    <div class="item item-input-inset" style="width: 100%;">
+      <label class="item-input-wrapper">
+        <input type="text" placeholder="새 댓글을 작성하세요" ng-model="body">
+      </label>
+      <button class="button button-small button-comment" ng-click="submitComment(body); body='';">
+        <span class="tiny eMainTitleKor" >작성</span>
+      </button>
+    </div>
+  </ion-footer-bar>
 </ion-modal-view>

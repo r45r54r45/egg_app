@@ -22,8 +22,10 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
 
       var notificationOpenedCallback = function(jsonData) {
         console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
-        if(jsonData.additionalData.id==3){
-          $state.go('tab.class');
+        if(jsonData.additionalData.type=="notice"){
+          $state.go('tab.notice');
+        }else if(jsonData.additionalData.type=="board"){
+          $state.go('board-detail',{boardId:jsonData.additionalData.boardId});
         }
       };
       if(window.plugins){
