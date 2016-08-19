@@ -1,6 +1,6 @@
 <ion-modal-view hide-nav-bar="true">
   <ion-content>
-    <div class="row" style="margin-bottom:40px">
+    <div class="row" style="margin-bottom:0px">
       <div class="col" style="text-align: right;">
         <button class="button button-icon icon ion-ios-close-empty" ng-click="closeModal()"></button>
       </div>
@@ -8,7 +8,9 @@
     <ion-list>
       <ion-item ng-style="$index==0&&{'border-top':'none'}||{}" style="border-bottom: 1px solid #eeeeee;" ng-repeat="comment in commentList">
         <div>
+
           <span class="xtiny eCourseTitle" style="float:right;color:rgba(82,82,82,.5)">{{comment.createdAt|timeDiff}}</span>
+
         </div>
         <div class="textPaddingTop">
           <p><span class="xtiny">{{comment.comment}}</span></p>
