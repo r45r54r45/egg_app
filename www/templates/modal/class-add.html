@@ -4,7 +4,7 @@
   <ion-content>
     <div class="row top-title" style="margin-bottom:40px;margin-top: 30px;">
       <div class="col-60 ">
-        <span class="middle eMainTitle">History of Science and Technology</span>
+        <span class="middle eMainTitle">{{addModalData.title}}</span>
       </div>
       <div class="col-40" style="text-align: right;">
         <button class="button button-icon icon ion-ios-close-empty" ng-click="closeModal('add')"></button>
@@ -89,7 +89,7 @@
         <span class="tiny eCourseTitle">Select tags that best describe the course. Choose carefully. The fate of future students lies in your hands!</span>
       </div>
       <ion-list  class="rating-yes-no">
-        <ion-checkbox ng-repeat="i in checkboxList" ng-change="checkCheckboxCount($index)" ng-model="checkboxResult[$index]" ng-class="{'clicked' : checkboxResult[$index]}">#{{i}}</ion-checkbox>
+        <ion-checkbox ng-repeat="i in checkboxList track by $index" ng-change="checkCheckboxCount($index)" ng-model="checkboxResult[$index]" ng-class="{'clicked' : checkboxResult[$index]}">#{{i}}</ion-checkbox>
       </ion-list>
     </div>
     <div class="rating-block">

@@ -9,10 +9,15 @@
         <p class="small white-text textLigthKorFull">강의 분류</p>
       </div>
       <div class="center">
-        <select class="middle clean white-text textLigthKorFull">
-          <option selected>공통 교과 과정 (신촌)</option>
-          <option>공통 교과 과정 (송도)</option>
-          <option>알아서 뭐하게</option>
+        <select class="middle clean white-text textLigthKorFull" ng-model="search.category">
+          <option value="" selected>전체</option>
+          <option value="CC">공통 교과 과정 (CC)</option>
+          <option value="UD">UD</option>
+          <option value="ASD">ASD</option>
+          <option value="TAD">TAD</option>
+          <option value="ISSD">ISSD</option>
+          <option value="ISED">ISED</option>
+          <option value="Undecided HASS">Undecided HASS</option>
         </select>
       </div>
     </div>
@@ -21,8 +26,18 @@
         <p class="small white-text textLigthKorFull">수강학기</p>
       </div>
       <div class="center ">
-        <select class="middle clean white-text textLigthKorFull">
-          <option selected>2016년 2학기</option>
+        <select class="middle clean white-text textLigthKorFull" ng-model="search.year">
+          <option value="" selected>전체</option>
+          <option value="2016-2학기">2016-2학기</option>
+          <option value="2016-1학기">2016-1학기</option>
+          <option value="2015-2학기">2016년 2학기</option>
+          <option value="2015-1학기">2016년 2학기</option>
+          <option value="2014-2학기">2016년 2학기</option>
+          <option value="2014-1학기">2016년 2학기</option>
+          <option value="2013-2학기">2016년 2학기</option>
+          <option value="2013-1학기">2016년 2학기</option>
+          <option value="2012-2학기">2016년 2학기</option>
+          <option value="2012-1학기">2016년 2학기</option>
         </select>
       </div>
     </div>
@@ -32,7 +47,7 @@
       </div>
       <div class="center">
         <label class="item item-input clean">
-          <input type="text" class="center small white-text" placeholder="검색하실 수업을 입력하세요">
+          <input type="text" class="center small white-text" placeholder="검색하실 수업을 입력하세요" ng-model="search.text">
         </label>
       </div>
     </div>

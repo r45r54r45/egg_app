@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-  .controller('ClassCtrl', function (User,$http, Server, $scope, $ionicModal, $ionicLoading, $ionicPopup, $state) {
+  .controller('ClassCtrl', function ( $ionicActionSheet,User,$http, Server, $scope, $ionicModal, $ionicLoading, $ionicPopup, $state) {
     $http.get(Server.makeUrl("/class/list/all/0")).success(function(data){
       $scope.classList=data;
     });
@@ -26,6 +26,33 @@ angular.module('starter.controllers', [])
       return new Array(5-Math.floor(num));
     }
 
+    $scope.show = function(id, title) {
+
+      // Show the action sheet
+      var hideSheet = $ionicActionSheet.show({
+        buttons: [
+          { text: '강의평가 올리기' },
+          { text: '강의평가 열람' }
+        ],
+        titleText: '강의평가',
+        cancelText: 'Cancel',
+        cancel: function() {
+          // add cancel code..
+        },
+        buttonClicked: function(index) {
+          console.log(index);
+          if(index==0){
+            $scope.openModal('add',id,title);
+          }else if(index==1){
+            $scope.openClass(id,title);
+          }
+          return true;
+        }
+      });
+
+    };
+
+
     // $scope.classList
     $ionicModal.fromTemplateUrl('templates/modal/class-sort.html', {
       scope: $scope,
@@ -40,10 +67,16 @@ angular.module('starter.controllers', [])
       $scope.modal_add = modal;
     });
     $scope.checkboxList=[];
-    $scope.openModal = function (type) {
+    $scope.addModalData={
+      id: "",
+      title: ""
+    };
+    $scope.openModal = function (type,id,title) {
       if (type === "sort") {
         $scope.modal_sort.show();
       } else {
+        $scope.addModalData.id=id;
+        $scope.addModalData.title=title;
         $http.get(Server.makeUrl('/class/tag')).success(function(data){
           data.forEach(function(item, index){
             $scope.checkboxList.push(item.name);
@@ -89,11 +122,11 @@ angular.module('starter.controllers', [])
     $scope.openClass = function (classNum,title) {
       var confirmPopup = $ionicPopup.confirm({
         title: title,
-        template: '25포인트가 소모됩니다. 강의 평가를 확인하시겠습니까?'
+        template: '10포인트가 소모됩니다. 강의 평가를 확인하시겠습니까?'
       });
       confirmPopup.then(function (res) {
         if (res) {
-          if(User.minusPoint(25)==-1){
+          if(User.minusPoint(10)==-1){
             openClassNoPoint();
           }else{
             location.href = "#/tab/class/" + classNum;
@@ -172,7 +205,7 @@ angular.module('starter.controllers', [])
       }
       $scope.checkboxResult.forEach(function (item, index) {
         if (item == true) {
-          if (count + 1 > 2) {
+          if (count + 1 > 3) {
             checkboxCountAlert();
             $scope.checkboxResult[i] = false;
           } else {
@@ -206,8 +239,15 @@ angular.module('starter.controllers', [])
         describe: $("#describe").val(),
         rating: $scope.rating,
         userId: User.getUID(),
-        classId: "todo"
+        classId: $scope.addModalData.id
       };
+      if(!data.attendance||!data.capacity||!data.grade||!data.professor||data.rating==0) {
+        console.log(data);
+        alert('Please fill in the form');
+        return;
+      }
+      console.log(data);
+
       var confirmPopup = $ionicPopup.confirm({
         title: '수업평가',
         template: '수업 평가를 등록하시겠습니까?'
@@ -218,6 +258,7 @@ angular.module('starter.controllers', [])
           $http.post(Server.makeUrl("/class/assess"),data).success(function(dat){
             $scope.hideLoading();
             $scope.closeModal("add");
+            User.addPoint(50);
           }).error(function(){
             $scope.hideLoading();
             $scope.closeModal("add");
@@ -249,7 +290,7 @@ angular.module('starter.controllers', [])
     });
     $scope.refresh=function () {
       startVal=0;
-      load(undefined,function(){
+      load(startVal,function(){
         $scope.$broadcast('scroll.refreshComplete');
       });
     };
@@ -619,8 +660,10 @@ angular.module('starter.controllers', [])
         major: $scope.custom.major,
         username: $scope.custom.nickname
       };
+      console.log(data);
       window.plugins.OneSignal.getIds(function(ids) {
         data.push_id=ids.userId;
+        console.log(data);
         $http.post(Server.makeUrl('/user/register'),data).success(function(dat){
           loadingHide();
           $scope.closeModal();

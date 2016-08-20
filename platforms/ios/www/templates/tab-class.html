@@ -16,8 +16,9 @@
         <span class="middle eMainTitle">
           Words from<br/>the wise!
         </span>
+        <!--openClass(class.id,class.title)-->
       </ion-item>
-      <ion-item ng-repeat="class in classList" style="padding:0;" ng-click="openClass(class.id,class.title)" ng-class="{even_item: $index%2 == 0, courseEvaluationRow:true}"  >
+      <ion-item ng-repeat="class in classList" style="padding:0;" ng-click="show(class.id,class.title)" ng-class="{even_item: $index%2 == 0, courseEvaluationRow:true}"  >
         <!--이 아래 부분만 수정하면 화면에 나오는 네개 다 바뀝니다-->
         <div class="row">
           <div class="col col-50" style="height: 30px;">
@@ -64,7 +65,7 @@
     <!--&lt;!&ndash;<button ng-click="showLoading()">on</button>&ndash;&gt;-->
   </ion-content>
   <!-- align to the bottom of the page -->
-  <div style="position: absolute; bottom: 60px; right:15px; ">
-    <img src="img/plus.svg" style="width: 50px; height:50px;" ng-click="openModal('add')">
-  </div>
+  <!--<div style="position: absolute; bottom: 60px; right:15px; ">-->
+    <!--<img src="img/plus.svg" style="width: 50px; height:50px;" ng-click="openModal('add')">-->
+  <!--</div>-->
 </ion-view>

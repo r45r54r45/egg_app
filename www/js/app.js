@@ -16,9 +16,11 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         cordova.plugins.Keyboard.disableScroll(true);
       }
       if (window.StatusBar) {
-        StatusBar.styleDefault();
+        // StatusBar.styleDefault();
+        StatusBar.overlaysWebView(true);
+        StatusBar.style(1); //Light
       }
-      // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+      window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 
       var notificationOpenedCallback = function(jsonData) {
         console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
@@ -26,6 +28,8 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
           $state.go('tab.notice');
         }else if(jsonData.additionalData.type=="board"){
           $state.go('board-detail',{boardId:jsonData.additionalData.boardId});
+        }else if(jsonData.additionalData.type=="point"){
+          window.localStorage.point=(parseInt(window.localStorage.point)+jsonData.additionalData.point).toString();
         }
       };
       if(window.plugins){
