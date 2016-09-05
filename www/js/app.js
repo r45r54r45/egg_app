@@ -64,6 +64,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
 
       .state('tab.class', {
         url: '/class',
+        cache:false,
         views: {
           'tab-class': {
             templateUrl: 'templates/tab-class.html',
@@ -109,6 +110,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board.free', {
         url: '/free',
+        cache:false,
         views: {
           'board-list-free': {
             templateUrl: 'templates/board-list.html',
@@ -123,6 +125,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       })
       .state('tab.board.council', {
         url: '/council',
+        cache:false,
         views: {
           'board-list-council': {
             templateUrl: 'templates/board-list.html',
@@ -161,7 +164,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         return 'login';
       } else {
         console.log("class");
-        return 'tab/class';
+        return 'tab/board/free';
       }
     });
 

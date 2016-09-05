@@ -11,6 +11,7 @@ angular.module('starter.controllers', [])
     }
     $http.get(Server.makeUrl("/class/list/all/0"+"?"+serialize($scope.search))).success(function(data){
       $scope.classList=data;
+      console.log( $scope.classList);
     });
     var start=0;
     $scope.$on('$ionicView.enter', function(event){
@@ -415,16 +416,17 @@ angular.module('starter.controllers', [])
   })
 
   .controller('BoardCtrl', function (User,$ionicNavBarDelegate,Server, $scope, type, $state, $ionicViewSwitcher, $ionicModal, $ionicPopup, $http) {
-    $scope.type = type;
+    $scope.type = (type=="free"?1:2);
+    console.log(type);
     // https://egg-yonsei.appspot.com
     $scope.refresh = function () {
       if (type == "free") {
-        $http.get(Server.makeUrl("/board/free_list")).success(function (data) {
+        $http.get(Server.makeUrl("/board/free_list?user="+User.getUID())).success(function (data) {
           $scope.boardList = data;
           $scope.$broadcast('scroll.refreshComplete');
         });
       } else {
-        $http.get(Server.makeUrl("/board/council_list")).success(function (data) {
+        $http.get(Server.makeUrl("/board/council_list?user="+User.getUID())).success(function (data) {
           $scope.boardList = data;
           $scope.$broadcast('scroll.refreshComplete');
         });
@@ -521,7 +523,7 @@ angular.module('starter.controllers', [])
             user: User.getUID(),
             title: board.title,
             body: board.body,
-            type: 1,
+            type: $scope.type,
             image: imageUrl
           };
           console.log(data);
@@ -625,16 +627,20 @@ angular.module('starter.controllers', [])
       $scope.newComment_body = "";
       data.user = User.getUID();
       data.board = boardId;
-      $http.post(Server.makeUrl("/board/comment"), data).success(function (data) {
-        $ionicScrollDelegate.scrollTop(true);
-        // $scope.$apply(function(){
-        $scope.data.comment++;
-        // });
-        $http.get(Server.makeUrl("/board/comment/") + $stateParams.boardId).success(function (data) {
-          $scope.commentList = data;
-          $scope.canLoadMore = true;
-          var offset = 10;
-        });
+      $ionicScrollDelegate.scrollTop(true);
+      var temp_data={
+        User:{
+          username: User.getUser().username
+        },
+        body:data.body,
+        createdAt: new Date()
+      };
+      $scope.commentList.unshift(temp_data);
+      $scope.data.comment++;
+      $http.post(Server.makeUrl("/board/comment"), data).success(function (datum) {
+        console.log(datum);
+      }).error(function(err){
+        console.log(err);
       });
     }
   })

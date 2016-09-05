@@ -1,5 +1,5 @@
 <ion-view title="Board" hide-back-button="true">
-  <ion-content class="has-tabs-top has-header">
+  <ion-content class="has-tabs-top has-header" style="height: calc(100vh - 93px - 50px);">
     <ion-refresher
       pulling-text="Pull to refresh..."
       on-refresh="refresh()">
@@ -35,7 +35,7 @@
       distance="10%">
     </ion-infinite-scroll>
   </ion-content>
-  <div style="position: absolute; bottom: 60px; right:15px; " ng-show="type=='free'">
+  <div style="position: absolute; bottom: 60px; right:15px; ">
     <img src="img/plus.svg" style="width: 50px; height:50px;" ng-click="openModal()">
   </div>
 </ion-view>
