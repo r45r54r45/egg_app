@@ -268,6 +268,7 @@ div.vertical-mid-div>div{
 }
 .star{
   height:15px;
+  margin:2px;
 }
 .star-large{
   height:35px;
@@ -332,6 +333,15 @@ ion-header-bar{
 }
 .heart{
   height: 20px;
+}
+
+ion-item.boardList>.row>.col-75>.row>span.textLightKorDark.xtiny{
+  padding-top:2px;
+  font-size: 12px !important;
+}
+ion-item.boardList>.row>.col-75>.row>span.textLightKorDark.small{
+  text-overflow: ellipsis;
+  overflow-y: hidden;
 }
 
 .boardList>.item-content{
