@@ -3,13 +3,12 @@
     <h1 class="title"></h1>
     <button class="button button-icon icon ion-ios-close-empty" style="color:white" ng-click="closeModal('sort')"></button>
   </ion-header-bar>
-  <ion-content class="blue-background">
-    <div style="height:20vh;padding-top: 50px;">
-      <div class="center">
+  <ion-content class="blue-background  padding"  style="height:100vh; padding-top:24vh;">
+      <div class="row">
         <p class="small white-text textLigthKorFull">강의 분류</p>
       </div>
-      <div class="center">
-        <select class="middle clean white-text textLigthKorFull" ng-model="search.category">
+      <div class="row">
+        <select style="padding-left: 0;" class="middle clean white-text textLigthKorFull" ng-model="search.category">
           <option value="" selected>전체</option>
           <option value="CC">공통 교과 과정 (CC)</option>
           <option value="UD">UD</option>
@@ -20,41 +19,36 @@
           <option value="Undecided HASS">Undecided HASS</option>
         </select>
       </div>
-    </div>
-    <div style="height:20vh;padding-top: 50px;">
-      <div class="center ">
+      <div class="row" style="    margin-top: 4vh;">
         <p class="small white-text textLigthKorFull">수강학기</p>
       </div>
-      <div class="center ">
-        <select class="middle clean white-text textLigthKorFull" ng-model="search.year">
+      <div class="row">
+        <select style="padding-left: 0;" class="middle clean white-text textLigthKorFull" ng-model="search.year">
           <option value="" selected>전체</option>
           <option value="2016-2학기">2016-2학기</option>
           <option value="2016-1학기">2016-1학기</option>
-          <option value="2015-2학기">2016년 2학기</option>
-          <option value="2015-1학기">2016년 2학기</option>
-          <option value="2014-2학기">2016년 2학기</option>
-          <option value="2014-1학기">2016년 2학기</option>
-          <option value="2013-2학기">2016년 2학기</option>
-          <option value="2013-1학기">2016년 2학기</option>
-          <option value="2012-2학기">2016년 2학기</option>
-          <option value="2012-1학기">2016년 2학기</option>
+          <option value="2015-2학기">2015-2학기</option>
+          <option value="2015-1학기">2015-1학기</option>
+          <option value="2014-2학기">2014-2학기</option>
+          <option value="2014-1학기">2014-1학기</option>
+          <option value="2013-2학기">2013-2학기</option>
+          <option value="2013-1학기">2013-1학기</option>
+          <option value="2012-2학기">2012-2학기</option>
+          <option value="2012-1학기">2012-1학기</option>
         </select>
       </div>
-    </div>
-    <div style="height:20vh;padding-top: 50px;">
-      <div class="center ">
+      <div class="row" style="    margin-top: 4vh;">
         <p class="small white-text textLigthKorFull">검색</p>
       </div>
-      <div class="center">
-        <label class="item item-input clean">
-          <input type="text" class="center small white-text" placeholder="검색하실 수업을 입력하세요" ng-model="search.text">
+      <div class="row">
+        <label class="item item-input clean" style="padding-left:0">
+          <input style="width: 80vw;color:white;" type="text" class="small white-text" placeholder="검색하실 수업을 입력하세요" ng-model="search.text">
         </label>
       </div>
-    </div>
-    <div style="height:20vh;padding-top: 50px;">
-      <div class="center">
-        <button class="button search-button transparent-large textLigthKorFull">Search</button>
-      </div>
-    </div>
   </ion-content>
+  <div class="sub-footer padding">
+    <div style="text-align: right;padding-right: 5px;">
+      <button class="button search-button transparent-large textLigthKorFull" ng-click="sortSearch()">Search</button>
+    </div>
+  </div>
 </ion-modal-view>

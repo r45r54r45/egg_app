@@ -1,12 +1,47 @@
 angular.module('starter.services', [])
   .service('User', function ($state) {
-    this.login = function () {
+    this.login = function (data) {
+      this.setUID(data.id);
+      window.localStorage.major=data.major;
+      window.localStorage.school_num=data.school_num;
+      window.localStorage.username=data.username;
       window.localStorage.isLogined=true;
       $state.go("tab.class");
     }
     this.logout = function () {
       window.localStorage.isLogined=false;
       $state.go("login");
+    }
+    this.addPoint=function(num){
+      window.localStorage.point=(parseInt(window.localStorage.point)+num).toString();
+      return window.localStorage.point;
+    }
+    this.minusPoint=function(num){
+      if(parseInt(window.localStorage.point)<num){
+        return -1;
+      }else{
+        window.localStorage.point=(parseInt(window.localStorage.point)-num).toString();
+        return window.localStorage.point;
+      }
+    }
+    this.getPoint=function(){
+      return window.localStorage.point;
+    }
+    this.initPoint=function(initPoint){
+      window.localStorage.point=initPoint;
+    }
+    this.setUID=function(uid){
+      window.localStorage.uid=uid.toString();
+    }
+    this.getUID=function(){
+      return window.localStorage.uid;
+    }
+    this.getUser=function(){
+      return {
+        major:window.localStorage.major,
+        school_num:window.localStorage.school_num,
+        username:window.localStorage.username
+      };
     }
   })
   .service('Server', function () {

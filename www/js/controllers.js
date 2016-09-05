@@ -1,7 +1,15 @@
 angular.module('starter.controllers', [])
 
   .controller('ClassCtrl', function ( $ionicActionSheet,User,$http, Server, $scope, $ionicModal, $ionicLoading, $ionicPopup, $state) {
-    $http.get(Server.makeUrl("/class/list/all/0")).success(function(data){
+    var serialize = function(obj) {
+      var str = [];
+      for(var p in obj)
+        if (obj.hasOwnProperty(p)) {
+          str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
+        }
+      return str.join("&");
+    }
+    $http.get(Server.makeUrl("/class/list/all/0"+"?"+serialize($scope.search))).success(function(data){
       $scope.classList=data;
     });
     var start=0;
@@ -12,7 +20,7 @@ angular.module('starter.controllers', [])
     $scope.loadMore=function(){
       console.log("load more");
       start+=10;
-      $http.get(Server.makeUrl("/class/list/all/"+start)).success(function(data){
+      $http.get(Server.makeUrl("/class/list/all/"+start+"?"+serialize($scope.search))).success(function(data){
         $scope.classList=$scope.classList.concat(data);
         if(data.length<10){
           $scope.canLoadMore=false;
@@ -85,6 +93,27 @@ angular.module('starter.controllers', [])
         $scope.modal_add.show();
       }
     };
+
+    // sort
+    $scope.search={
+      text:"",
+      year:"",
+      category:""
+    };
+    $scope.sortSearch=function(){
+      $scope.canLoadMore=true;
+      $http.get(Server.makeUrl("/class/list/all/0"+"?"+serialize($scope.search))).success(function(data){
+        $scope.classList=data;
+      });
+      start=0;
+      $scope.modal_sort.hide();
+    }
+
+
+
+
+
+
     $scope.choice=[];
     $scope.checkboxResult = [];
     $scope.describe="";
@@ -290,6 +319,7 @@ angular.module('starter.controllers', [])
     });
     $scope.refresh=function () {
       startVal=0;
+      $scope.list=[];
       load(startVal,function(){
         $scope.$broadcast('scroll.refreshComplete');
       });
@@ -440,8 +470,10 @@ angular.module('starter.controllers', [])
     };
     $scope.imageUrl = 0;
     $scope.openFileDialog = function () {
+      alert('image picker load');
       window.imagePicker.getPictures(
         function (results) {
+          alert('image picker start');
           for (var i = 0; i < results.length; i++) {
             var win = function (r) {
               $scope.$apply(function () {
@@ -462,7 +494,7 @@ angular.module('starter.controllers', [])
             ft.upload(results[i], encodeURI(Server.makeUrl("/board/upload")), win, fail, options);
           }
         }, function (error) {
-          console.log('Error: ' + error);
+          alert('Error: ' + error);
         }, {
           maximumImagesCount: 1,
           width: 400,
@@ -558,10 +590,12 @@ angular.module('starter.controllers', [])
       $http.post(Server.makeUrl("/board/like"), data).success(function (data) {
         if (data.like) {
           // $scope.$apply(function(){
+          alert('좋아요 되었습니다.');
           $scope.data.heart++;
           // });
         } else {
           // $scope.$apply(function(){
+          alert('좋아요가 취소되었습니다');
           $scope.data.heart--;
           // });
         }
@@ -606,7 +640,9 @@ angular.module('starter.controllers', [])
   })
 
   .controller('MypageCtrl', function ($scope, User) {
-    $scope.userInfo=User.getUser();
+    $scope.$on('$ionicView.enter', function(event){
+      $scope.userInfo=User.getUser();
+    });
     $scope.logout = function () {
       User.logout();
     }
@@ -636,18 +672,17 @@ angular.module('starter.controllers', [])
       }
       loginData.id = id;
       loginData.pw = pw;
-      $scope.openModal();
-      return;
-      // loadingShow();
-      // var data={id:$scope.id,pw:$scope.pw};
-      // $http.post(Server.makeUrl("/user/login"),data).then(function(res){
-      //   loadingHide();
-      //   if(res.login){
-      //     $scope.openModal();
-      //   }else{
-      //     alert("포탈인증에 실패하였습니다.");
-      //   }
-      // });
+      // $scope.openModal();
+      loadingShow("포탈 인증 중입니다.");
+      var data={id:id,pw:pw};
+      $http.post(Server.makeUrl("/user/login"),data).success(function(res){
+        loadingHide();
+        if(res.login){
+          $scope.openModal();
+        }else{
+          alert("포탈인증에 실패하였습니다.");
+        }
+      });
     }
     $scope.custom = {
       major: "",
@@ -661,18 +696,29 @@ angular.module('starter.controllers', [])
         username: $scope.custom.nickname
       };
       console.log(data);
-      window.plugins.OneSignal.getIds(function(ids) {
-        data.push_id=ids.userId;
-        console.log(data);
-        $http.post(Server.makeUrl('/user/register'),data).success(function(dat){
-          loadingHide();
-          $scope.closeModal();
-          if(dat.result){
-            User.initPoint();
-          }
-          User.login(dat.data);
+      if(window.plugins) {
+        window.plugins.OneSignal.getIds(function (ids) {
+          data.push_id = ids.userId;
+          console.log(data);
+          $http.post(Server.makeUrl('/user/register'), data).success(function (dat) {
+            loadingHide();
+            $scope.closeModal();
+            // if(dat.result){
+            User.initPoint("100");
+            // }
+            User.login(dat.data);
+          });
         });
-      });
+      }else{
+        loadingHide();
+        $scope.closeModal();
+        User.login({
+          id:1,
+          school_num:1,
+          major:1,
+          username:1
+        });
+      }
     };
 
     $ionicModal.fromTemplateUrl('templates/modal/login-join.html', function (modal) {

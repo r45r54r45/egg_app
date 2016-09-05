@@ -1,36 +1,33 @@
 <ion-view hide-nav-bar="true">
   <ion-content class="padding notice-bg">
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="refresh()">
+    </ion-refresher>
     <div style="height:150px;"></div>
     <div class="list card" ng-repeat="notice in list" style="z-index:2">
       <div class="item item-avatar">
-        <img src="img/sample-notice-logo.png">
+        <img src="img/yonsei.png">
         <span class="small" ng-bind="notice.title"></span>
-        <p><span class="xtiny">1시간 전</span></p>
+        <p><span class="xtiny">{{notice.createdAt|timeDiff}}</span></p>
         <!--{{notice.createdAt|timeDiff}}-->
         <p class="no-wrap tiny textPaddingTop" style="font-size:11px;line-height:1.6;" ng-bind-html="notice.body"></p>
       </div>
-      <div class="item item-body no-padding">
+      <div class="item item-body no-padding" ng-show="notice.image">
         <img class="full-image" ng-src="{{notice.image}}" style="margin-bottom: 3px;">
       </div>
     </div>
     <ion-infinite-scroll
       immediate-check="false"
       on-infinite="loadMore()"
-      distance="10%">
+      distance="10%" ng-if="canLoadMore">
     </ion-infinite-scroll>
   </ion-content>
-  <div style="position: absolute; top:10px; left:10px;z-index: 1;" id="greeting">
+  <div style="position: absolute; top:30px; left:10px;z-index: 1;" >
+    <!--id="greeting"-->
     <span class="white-text eMainTitleKor small">안녕하세요</span>
     <p class="white-text textPaddingTop">
-      <span style="font-size:2.2em ">테스트</span><span> 님!</span>
+      <span style="font-size:2.2em ">{{username}}</span><span> 님!</span>
     </p>
   </div>
 </ion-view>
-<!--
-<script >
-var fade_out = function() {
-  $("#greeting").fadeOut('slow');
-}
-setTimeout(fade_out, 1000);
-</script>
--->

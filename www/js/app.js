@@ -16,11 +16,12 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         cordova.plugins.Keyboard.disableScroll(true);
       }
       if (window.StatusBar) {
-        // StatusBar.styleDefault();
-        StatusBar.overlaysWebView(true);
-        StatusBar.style(1); //Light
+        StatusBar.styleDefault();
+        // StatusBar.overlaysWebView(true);
+        // StatusBar.style(1); //Light
+        // Strange behavior detected. window.plugins doesn't fire up
       }
-      window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
+      // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 
       var notificationOpenedCallback = function(jsonData) {
         console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
@@ -32,7 +33,7 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
           window.localStorage.point=(parseInt(window.localStorage.point)+jsonData.additionalData.point).toString();
         }
       };
-      if(window.plugins){
+      if(window.plugins&&window.plugins.OneSignal){
         window.plugins.OneSignal.init("7ad2ec95-bbbc-4a28-aaf0-097ed2de2177",
           {googleProjectNumber: "901522536554"},
           notificationOpenedCallback);

@@ -18,7 +18,7 @@
     width: 46px;
     height: 46px;" ng-click="openFileDialog()" ng-show="imageUrl==0">
       <!--이거 이미지는 이미지 없을 때 기본으로 뜨는 중간에 svg-->
-      <img ng-src="{{imageUrl}}" style="width: 100%; min-height:100vw;">
+      <img ng-src="{{imageUrl}}" style="width: 100%; min-height:100vw;" ng-show="imageUrl!=0">
     </div>
     <div class="list">
       <label class="item item-input">

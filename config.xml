@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<widget id="com.united11uic.unicon" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>UNI.CON</name>
+<widget id="com.united11uic.unicon" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>UNICON</name>
   <description>
         Yonsei uic stuco app
     </description>
@@ -12,8 +12,8 @@
   <preference name="webviewbounce" value="false"/>
   <preference name="UIWebViewBounce" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
-  <preference name="SplashScreenDelay" value="0"/>
-  <preference name="FadeSplashScreenDuration" value="0"/>
+  <preference name="SplashScreenDelay" value="2000"/>
+  <preference name="FadeSplashScreenDuration" value="1000"/>
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
@@ -75,6 +75,7 @@
   <platform name="wp8">
     <icon src="resources/wp8/icon/ApplicationIcon.png" width="99" height="99"/>
     <icon src="resources/wp8/icon/Background.png" width="159" height="159"/>
+    <splash src="resources/wp8/splash/SplashScreenImage.png" width="768" height="1280"/>
   </platform>
   <icon src="resources/android/icon/drawable-xhdpi-icon.png"/>
 </widget>

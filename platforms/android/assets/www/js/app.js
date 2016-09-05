@@ -12,18 +12,25 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
       // for form inputs)
       if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
-        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        cordova.plugins.Keyboard.hideKeyboardAccessoryBar(false);
         cordova.plugins.Keyboard.disableScroll(true);
       }
       if (window.StatusBar) {
         StatusBar.styleDefault();
+        // StatusBar.overlaysWebView(true);
+        // StatusBar.style(1); //Light
+        // Strange behavior detected. window.plugins doesn't fire up
       }
       // window.plugins.OneSignal.setLogLevel({logLevel: 4, visualLevel: 4});
 
       var notificationOpenedCallback = function(jsonData) {
         console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
-        if(jsonData.additionalData.id==3){
-          $state.go('tab.class');
+        if(jsonData.additionalData.type=="notice"){
+          $state.go('tab.notice');
+        }else if(jsonData.additionalData.type=="board"){
+          $state.go('board-detail',{boardId:jsonData.additionalData.boardId});
+        }else if(jsonData.additionalData.type=="point"){
+          window.localStorage.point=(parseInt(window.localStorage.point)+jsonData.additionalData.point).toString();
         }
       };
       if(window.plugins){

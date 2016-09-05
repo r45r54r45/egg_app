@@ -27,8 +27,8 @@ angular.module('starter.services', [])
     this.getPoint=function(){
       return window.localStorage.point;
     }
-    this.initPoint=function(){
-      window.localStorage.point="0";
+    this.initPoint=function(initPoint){
+      window.localStorage.point=initPoint;
     }
     this.setUID=function(uid){
       window.localStorage.uid=uid.toString();

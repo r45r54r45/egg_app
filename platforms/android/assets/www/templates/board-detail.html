@@ -1,13 +1,17 @@
 <ion-view title="Board">
-  <ion-nav-bar class="bar-stable nav-title-slide-ios7">
+  <ion-nav-bar class="bar-stable nav-title-slide-ios7" align-title="center">
     <ion-nav-buttons side="left">
       <button ng-click="$ionicGoBack()" class="navigation-dark eMainTitleKor white float-left">뒤로</button>
     </ion-nav-buttons>
     <ion-nav-buttons side="right">
-      <!--<button class="eMainTitleKor navigation-dark white float-right">수정</button>-->
+      <button class="eMainTitleKor navigation-dark white float-right"></button>
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-content>
+    <ion-refresher
+      pulling-text="Pull to refresh..."
+      on-refresh="refresh()">
+    </ion-refresher>
     <div style="min-height: 30px;">
       <img ng-src="{{data.image}}" style="width: 100%;" ng-show="data.image!=0">
     </div>
