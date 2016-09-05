@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="col col-25 col-center" style="display: table;">
-            <img class="heart" src="img/heart.svg" style="display: table-cell;vertical-align: middle;">
+            <img class="heart" ng-src="{{(board.Board_likes.length==0?'img/heart.svg':'img/heart_fill.svg')}}" style="display: table-cell;vertical-align: middle;">
             <span class="xtiny boardIconText" style="display: table-cell;vertical-align: middle; padding-right:5px;">{{board.heart}}</span>
             <img class="comment"src="img/comment.svg" style="display: table-cell;vertical-align: middle;">
             <span class="xtiny boardIconText" style="display: table-cell;vertical-align: middle;">{{board.comment}}</span>

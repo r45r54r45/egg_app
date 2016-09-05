@@ -163,8 +163,8 @@ angular.module('starter', ['ionic', 'ionic.service.core', 'starter.controllers',
         console.log("login");
         return 'login';
       } else {
-        console.log("class");
-        return 'tab/board/free';
+        console.log("notice");
+        return 'tab/notice';
       }
     });
 

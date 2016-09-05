@@ -6,7 +6,7 @@ angular.module('starter.services', [])
       window.localStorage.school_num=data.school_num;
       window.localStorage.username=data.username;
       window.localStorage.isLogined=true;
-      $state.go("tab.class");
+      $state.go("tab.notice");
     }
     this.logout = function () {
       window.localStorage.isLogined=false;
