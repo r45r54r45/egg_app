@@ -1,28 +1,35 @@
-<ion-view  view-title="강의평가">
+<ion-view view-title="강의평가">
   <ion-nav-bar class="bar-stable nav-title-slide-ios7">
     <ion-nav-buttons side="left">
-      <img class="button button-icon ion-levels topbar-icon" src="img/point.svg" />
+      <!-- <img class="button button-icon ion-levels topbar-icon" src="img/point.svg" /> -->
       <!--<button class="button button-icon icon ion-android-radio-button-on" style="padding-right: 0; opacity:1;color:white;" disabled></button>-->
-      <button class="button" style="padding-left: 0; border:none; opacity:1; color: white;background: none;" disabled>{{currentPoint}}</button>
+      <!-- <button class="button" style="padding-left: 0; border:none; opacity:1; color: white;background: none;" disabled>{{currentPoint}}</button> -->
+      <button class="button eCourseScore small"
+              style="padding-left: 10px; border:none; opacity:1; color: white;background: none;font-size:16px !important;"
+              disabled>{{currentPoint}} <span class="small white eCourseScore" style="display:inline-block;">포인트</span>
+      </button>
     </ion-nav-buttons>
     <ion-nav-buttons side="right">
-    <img class="button button-icon ion-levels topbar-icon" src="img/filter.svg" ng-click="openModal('sort')"/>
-    <!--<button class="button button-icon icon ion-levels" style="color:white;" ng-click="openModal('sort')"></button>-->
+      <img class="button button-icon ion-levels topbar-icon" style="width:40px" src="img/search.svg"
+           ng-click="openModal('sort')"/>
+      <!--<button class="button button-icon icon ion-levels" style="color:white;" ng-click="openModal('sort')"></button>-->
     </ion-nav-buttons>
   </ion-nav-bar>
   <ion-content>
     <ion-list>
-      <ion-item>
+      <!--<ion-item>
         <span class="middle eMainTitle">
-          Words from<br/>the wise!
+          Search Classes<br/>with the magnifying glass!
         </span>
-        <!--openClass(class.id,class.title)-->
-      </ion-item>
-      <ion-item ng-repeat="class in classList" style="padding:0;" ng-click="show(class.id,class.title)" ng-class="{even_item: $index%2 == 0, courseEvaluationRow:true}"  >
+        <!--openClass(class.id,class.title)
+      </ion-item>-->
+      <ion-item ng-repeat="class in classList" style="padding:0;" ng-click="show(class.id,class.title)"
+                ng-class="{even_item: $index%2 == 0, courseEvaluationRow:true}">
         <!--이 아래 부분만 수정하면 화면에 나오는 네개 다 바뀝니다-->
         <div class="row">
-          <div class="col col-50" style="height: 30px;">
-            <span class="eCourseTitle small" style="white-space: normal ">{{class.title}}</span>
+          <div class="col col-50" style="height: 30px;     text-overflow: ellipsis;
+    overflow: hidden;">
+            <span class="eCourseTitle small" style="white-space: nowrap ">{{class.title}}</span>
           </div>
           <div class="col col-10"></div>
           <div class="col no-padding">
@@ -33,7 +40,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col col-50"></div>
+          <div class="col col-50">
+            <span class="eCourseTitle tiny" style="white-space: normal ">| {{class.professor}}</span>
+          </div>
           <div class="col col-10"></div>
           <div class="col no-padding">
             <div class="row">
@@ -43,9 +52,9 @@
           </div>
         </div>
         <div class="row">
-          <div class="col col-50">
-            <img class="star"src="img/star.svg" ng-repeat="i in getPositiveStar(class.rating) track by $index"/>
-            <img class="star"src="img/starLine.svg" ng-repeat="i in getNegativeStar(class.rating) track by $index"/>
+          <div class="col col-50" style="font-size: 0;">
+            <img class="star" src="img/star.svg" ng-repeat="i in getPositiveStar(class.rating) track by $index"/>
+            <img class="star" src="img/starLine.svg" ng-repeat="i in getNegativeStar(class.rating) track by $index"/>
           </div>
           <div class="col col-10"></div>
           <div class="col col-40 no-padding">
@@ -66,6 +75,6 @@
   </ion-content>
   <!-- align to the bottom of the page -->
   <!--<div style="position: absolute; bottom: 60px; right:15px; ">-->
-    <!--<img src="img/plus.svg" style="width: 50px; height:50px;" ng-click="openModal('add')">-->
+  <!--<img src="img/plus.svg" style="width: 50px; height:50px;" ng-click="openModal('add')">-->
   <!--</div>-->
 </ion-view>

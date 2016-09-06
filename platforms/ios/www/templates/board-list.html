@@ -1,5 +1,5 @@
 <ion-view title="Board" hide-back-button="true">
-  <ion-content class="has-tabs-top has-header">
+  <ion-content class="has-tabs-top has-header" style="height: calc(100vh - 93px - 50px);">
     <ion-refresher
       pulling-text="Pull to refresh..."
       on-refresh="refresh()">
@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="col col-25 col-center" style="display: table;">
-            <img class="heart" src="img/heart.svg" style="display: table-cell;vertical-align: middle;">
+            <img class="heart" ng-src="{{(board.Board_likes.length==0?'img/heart.svg':'img/heart_fill.svg')}}" style="display: table-cell;vertical-align: middle;">
             <span class="xtiny boardIconText" style="display: table-cell;vertical-align: middle; padding-right:5px;">{{board.heart}}</span>
             <img class="comment"src="img/comment.svg" style="display: table-cell;vertical-align: middle;">
             <span class="xtiny boardIconText" style="display: table-cell;vertical-align: middle;">{{board.comment}}</span>
@@ -35,7 +35,7 @@
       distance="10%">
     </ion-infinite-scroll>
   </ion-content>
-  <div style="position: absolute; bottom: 60px; right:15px; " ng-show="type=='free'">
+  <div style="position: absolute; bottom: 60px; right:15px; ">
     <img src="img/plus.svg" style="width: 50px; height:50px;" ng-click="openModal()">
   </div>
 </ion-view>

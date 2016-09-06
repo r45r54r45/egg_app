@@ -3,7 +3,7 @@
     <h1 class="title"></h1>
     <button class="button button-icon icon ion-ios-close-empty" style="color:white" ng-click="closeModal('sort')"></button>
   </ion-header-bar>
-  <ion-content class="blue-background  padding"  style="height:100vh; padding-top:24vh;">
+  <ion-content class="blue-background  padding"  style="height:100vh; padding-top:20vh;">
       <div class="row">
         <p class="small white-text textLigthKorFull">강의 분류</p>
       </div>
@@ -38,11 +38,19 @@
         </select>
       </div>
       <div class="row" style="    margin-top: 4vh;">
-        <p class="small white-text textLigthKorFull">검색</p>
+        <p class="small white-text textLigthKorFull">수업명</p>
       </div>
       <div class="row">
         <label class="item item-input clean" style="padding-left:0">
-          <input style="width: 80vw;color:white;" type="text" class="small white-text" placeholder="검색하실 수업을 입력하세요" ng-model="search.text">
+          <input style="width: 80vw;color:white;" type="text" class="small white-text" placeholder="검색하실 수업명을 입력하세요" ng-model="search.text">
+        </label>
+      </div>
+      <div class="row" style="    margin-top: 4vh;">
+        <p class="small white-text textLigthKorFull">교수명</p>
+      </div>
+      <div class="row">
+        <label class="item item-input clean" style="padding-left:0">
+          <input style="width: 80vw;color:white;" type="text" class="small white-text" placeholder="검색하실 교수명을 입력하세요" ng-model="search.professor">
         </label>
       </div>
   </ion-content>

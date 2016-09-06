@@ -99,7 +99,8 @@ angular.module('starter.controllers', [])
     $scope.search = {
       text: "",
       year: "",
-      category: ""
+      category: "",
+      professor: ""
     };
     $scope.sortSearch = function () {
       $scope.canLoadMore = true;
@@ -108,6 +109,12 @@ angular.module('starter.controllers', [])
       });
       start = 0;
       $scope.modal_sort.hide();
+      $scope.search = {
+        text: "",
+        year: "",
+        category: "",
+        professor: ""
+      };
     }
 
 
@@ -468,10 +475,8 @@ angular.module('starter.controllers', [])
     };
     $scope.imageUrl = 0;
     $scope.openFileDialog = function () {
-      alert('image picker load');
       window.imagePicker.getPictures(
         function (results) {
-          alert('image picker start');
           for (var i = 0; i < results.length; i++) {
             var win = function (r) {
               $scope.$apply(function () {
