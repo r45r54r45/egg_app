@@ -636,3 +636,14 @@ ion-view>ion-nav-bar.bar-stable>div.nav-bar-block>ion-header-bar.bar-stable>div{
   opacity: 0;
   transition: visibility 0s 1s, opacity 1s linear;
 }
+
+
+.item-radio.input:checked + .radio-content.item-content{
+  background:rgba(32, 91, 45, .1) !important;
+}
+.radio-content>div{
+  height: 48px;
+}
+label>div.radio-content{
+  padding:0px !important;
+}
